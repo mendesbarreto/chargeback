@@ -20,4 +20,3 @@ final class BaseViewControllerTests: XCTestCase {
         XCTAssertEqual(BaseViewController(coder: coder), nil)
     }
 }
-
