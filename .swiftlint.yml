@@ -1,0 +1,33 @@
+excluded:
+  - Pods
+  - Carthage
+  - ./Carthage/
+  - Chargeback/Resource
+
+line_length:
+  warning: 300
+  error: 300
+
+private_outlet:
+  severity: warning
+
+mark:
+  severity: error
+
+vertical_whitespace:
+  severity: error
+
+type_name:
+  max_length: 60
+  excluded:
+    - T
+    - U
+    - V
+
+identifier_name:
+  excluded:
+    - id
+    - y
+    - x
+    - u
+    - to

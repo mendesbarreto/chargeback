@@ -34,7 +34,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7538DFD52066A6F700B33E41"
+               BlueprintIdentifier = "751254692066E6B800FE888E"
                BuildableName = "ChargebackTests.xctest"
                BlueprintName = "ChargebackTests"
                ReferencedContainer = "container:Chargeback.xcodeproj">

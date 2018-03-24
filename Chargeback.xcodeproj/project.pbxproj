@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751254762066E70500FE888E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E792066E20B00DC799F /* BaseViewController.swift */; };
 		7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC52066A6F600B33E41 /* AppDelegate.swift */; };
-		7538DFC82066A6F600B33E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC72066A6F600B33E41 /* ViewController.swift */; };
-		7538DFCB2066A6F600B33E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFC92066A6F600B33E41 /* Main.storyboard */; };
 		7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCC2066A6F600B33E41 /* Assets.xcassets */; };
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
-		7538DFDB2066A6F700B33E41 /* ChargebackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */; };
+		75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */; };
+		75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */; };
+		B4E33BFF3BB15318EA7F7022 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33348AA96FC698769006F /* NoticeViewController.swift */; };
+		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7538DFD72066A6F700B33E41 /* PBXContainerItemProxy */ = {
+		7512546F2066E6B800FE888E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7538DFBA2066A6F600B33E41 /* Project object */;
 			proxyType = 1;
@@ -26,27 +28,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7512546A2066E6B800FE888E /* ChargebackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargebackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7512546E2066E6B800FE888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7538DFC22066A6F600B33E41 /* Chargeback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargeback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7538DFC52066A6F600B33E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7538DFC72066A6F600B33E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7538DFCA2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7538DFCC2066A6F600B33E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7538DFCF2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7538DFD12066A6F600B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargebackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargebackTests.swift; sourceTree = "<group>"; };
-		7538DFDC2066A6F700B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
+		75DB2E792066E20B00DC799F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
+		B4E33348AA96FC698769006F /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7538DFBF2066A6F600B33E41 /* Frameworks */ = {
+		751254672066E6B800FE888E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7538DFD32066A6F700B33E41 /* Frameworks */ = {
+		7538DFBF2066A6F600B33E41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,11 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7512546B2066E6B800FE888E /* ChargebackTests */ = {
+			isa = PBXGroup;
+			children = (
+				7512546E2066E6B800FE888E /* Info.plist */,
+				B4E3395B0CC3374D146CDBA0 /* Shared */,
+			);
+			path = ChargebackTests;
+			sourceTree = "<group>";
+		};
 		7538DFB92066A6F600B33E41 = {
 			isa = PBXGroup;
 			children = (
 				7538DFC42066A6F600B33E41 /* Chargeback */,
-				7538DFD92066A6F700B33E41 /* ChargebackTests */,
+				7512546B2066E6B800FE888E /* ChargebackTests */,
 				7538DFC32066A6F600B33E41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7538DFC22066A6F600B33E41 /* Chargeback.app */,
-				7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */,
+				7512546A2066E6B800FE888E /* ChargebackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,28 +90,103 @@
 		7538DFC42066A6F600B33E41 /* Chargeback */ = {
 			isa = PBXGroup;
 			children = (
-				7538DFC52066A6F600B33E41 /* AppDelegate.swift */,
-				7538DFC72066A6F600B33E41 /* ViewController.swift */,
-				7538DFC92066A6F600B33E41 /* Main.storyboard */,
-				7538DFCC2066A6F600B33E41 /* Assets.xcassets */,
-				7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */,
-				7538DFD12066A6F600B33E41 /* Info.plist */,
+				75DB2E752066E18E00DC799F /* Shared */,
+				75DB2E722066CA2A00DC799F /* Resource */,
+				B4E336CD5AC2F0AE0ACEDEC8 /* Feature */,
 			);
 			path = Chargeback;
 			sourceTree = "<group>";
 		};
-		7538DFD92066A6F700B33E41 /* ChargebackTests */ = {
+		75DB2E722066CA2A00DC799F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */,
-				7538DFDC2066A6F700B33E41 /* Info.plist */,
+				75DB2E742066CA5200DC799F /* Asset */,
+				75DB2E732066CA4400DC799F /* SupportFile */,
 			);
-			path = ChargebackTests;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		75DB2E732066CA4400DC799F /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				7538DFD12066A6F600B33E41 /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		75DB2E742066CA5200DC799F /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */,
+				7538DFCC2066A6F600B33E41 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		75DB2E752066E18E00DC799F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				75DB2E762066E1AC00DC799F /* Factory */,
+				7538DFC52066A6F600B33E41 /* AppDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		75DB2E762066E1AC00DC799F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				75DB2E792066E20B00DC799F /* BaseViewController.swift */,
+				75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */,
+				75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4E336CD5AC2F0AE0ACEDEC8 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33C035142D543A7D0B216 /* Notice */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B4E3395B0CC3374D146CDBA0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B4E33C035142D543A7D0B216 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33348AA96FC698769006F /* NoticeViewController.swift */,
+			);
+			path = Notice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		751254692066E6B800FE888E /* ChargebackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751254712066E6B800FE888E /* Build configuration list for PBXNativeTarget "ChargebackTests" */;
+			buildPhases = (
+				751254662066E6B800FE888E /* Sources */,
+				751254672066E6B800FE888E /* Frameworks */,
+				751254682066E6B800FE888E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				751254702066E6B800FE888E /* PBXTargetDependency */,
+			);
+			name = ChargebackTests;
+			productName = ChargebackTests;
+			productReference = 7512546A2066E6B800FE888E /* ChargebackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7538DFC12066A6F600B33E41 /* Chargeback */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7538DFDF2066A6F700B33E41 /* Build configuration list for PBXNativeTarget "Chargeback" */;
@@ -116,24 +204,6 @@
 			productReference = 7538DFC22066A6F600B33E41 /* Chargeback.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7538DFD52066A6F700B33E41 /* ChargebackTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7538DFE22066A6F700B33E41 /* Build configuration list for PBXNativeTarget "ChargebackTests" */;
-			buildPhases = (
-				7538DFD22066A6F700B33E41 /* Sources */,
-				7538DFD32066A6F700B33E41 /* Frameworks */,
-				7538DFD42066A6F700B33E41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7538DFD82066A6F700B33E41 /* PBXTargetDependency */,
-			);
-			name = ChargebackTests;
-			productName = ChargebackTests;
-			productReference = 7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,14 +214,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Douglas Mendes Barreto";
 				TargetAttributes = {
+					751254692066E6B800FE888E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 7538DFC12066A6F600B33E41;
+					};
 					7538DFC12066A6F600B33E41 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					7538DFD52066A6F700B33E41 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7538DFC12066A6F600B33E41;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -169,68 +239,62 @@
 			projectRoot = "";
 			targets = (
 				7538DFC12066A6F600B33E41 /* Chargeback */,
-				7538DFD52066A6F700B33E41 /* ChargebackTests */,
+				751254692066E6B800FE888E /* ChargebackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		751254682066E6B800FE888E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7538DFC02066A6F600B33E41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */,
 				7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */,
-				7538DFCB2066A6F600B33E41 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7538DFD42066A6F700B33E41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		751254662066E6B800FE888E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7538DFBE2066A6F600B33E41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7538DFC82066A6F600B33E41 /* ViewController.swift in Sources */,
+				75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */,
 				7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7538DFD22066A6F700B33E41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7538DFDB2066A6F700B33E41 /* ChargebackTests.swift in Sources */,
+				75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */,
+				751254762066E70500FE888E /* BaseViewController.swift in Sources */,
+				B4E33BFF3BB15318EA7F7022 /* NoticeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7538DFD82066A6F700B33E41 /* PBXTargetDependency */ = {
+		751254702066E6B800FE888E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7538DFC12066A6F600B33E41 /* Chargeback */;
-			targetProxy = 7538DFD72066A6F700B33E41 /* PBXContainerItemProxy */;
+			targetProxy = 7512546F2066E6B800FE888E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7538DFC92066A6F600B33E41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7538DFCA2066A6F600B33E41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -242,6 +306,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		751254722066E6B800FE888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Debug;
+		};
+		751254732066E6B800FE888E /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Test;
+		};
+		751254742066E6B800FE888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Release;
+		};
 		7538DFDD2066A6F700B33E41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,13 +476,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74dcbc6d-5e10-44bb-9554-46b2d53a8318";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -371,49 +495,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "323764fa-e7f6-4bd6-9dfd-4ef6f47d2d37";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		7538DFE32066A6F700B33E41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
-			};
-			name = Debug;
-		};
-		7538DFE42066A6F700B33E41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
 			};
 			name = Release;
 		};
@@ -479,38 +572,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74dcbc6d-5e10-44bb-9554-46b2d53a8318";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Test;
-		};
-		7538DFE72066A99C00B33E41 /* Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
 			};
 			name = Test;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		751254712066E6B800FE888E /* Build configuration list for PBXNativeTarget "ChargebackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751254722066E6B800FE888E /* Debug */,
+				751254732066E6B800FE888E /* Test */,
+				751254742066E6B800FE888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7538DFBD2066A6F600B33E41 /* Build configuration list for PBXProject "Chargeback" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -527,16 +616,6 @@
 				7538DFE02066A6F700B33E41 /* Debug */,
 				7538DFE62066A99C00B33E41 /* Test */,
 				7538DFE12066A6F700B33E41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7538DFE22066A6F700B33E41 /* Build configuration list for PBXNativeTarget "ChargebackTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7538DFE32066A6F700B33E41 /* Debug */,
-				7538DFE72066A99C00B33E41 /* Test */,
-				7538DFE42066A6F700B33E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
