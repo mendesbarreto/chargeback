@@ -13,6 +13,7 @@
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
 		75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */; };
 		75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */; };
+		B4E33BFF3BB15318EA7F7022 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33348AA96FC698769006F /* NoticeViewController.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 		75DB2E792066E20B00DC799F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
+		B4E33348AA96FC698769006F /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			children = (
 				75DB2E752066E18E00DC799F /* Shared */,
 				75DB2E722066CA2A00DC799F /* Resource */,
+				B4E336CD5AC2F0AE0ACEDEC8 /* Feature */,
 			);
 			path = Chargeback;
 			sourceTree = "<group>";
@@ -139,12 +142,28 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		B4E336CD5AC2F0AE0ACEDEC8 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33C035142D543A7D0B216 /* Notice */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		B4E3395B0CC3374D146CDBA0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B4E33C035142D543A7D0B216 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33348AA96FC698769006F /* NoticeViewController.swift */,
+			);
+			path = Notice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +280,7 @@
 				7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */,
 				75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */,
 				751254762066E70500FE888E /* BaseViewController.swift in Sources */,
+				B4E33BFF3BB15318EA7F7022 /* NoticeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
