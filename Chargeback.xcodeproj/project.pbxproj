@@ -23,6 +23,7 @@
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E335CC4EF6BF14E50F2480 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
 		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
 		B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */; };
@@ -71,6 +72,7 @@
 		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
 		B4E330925724986058B197C8 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
+		B4E331D4E46248E2484359CA /* NoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBaseModelFactory.swift; sourceTree = "<group>"; };
@@ -277,6 +279,13 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		B4E33729577AFCF8262902B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B4E3395B0CC3374D146CDBA0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +317,14 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		B4E33AE79983310892B31E50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E331D4E46248E2484359CA /* NoticeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B4E33B9CC287512CC1FDFF68 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +350,8 @@
 			children = (
 				B4E332515AE364255E2A4478 /* Controller */,
 				B4E33C6B31852596C05DABE0 /* UseCase */,
+				B4E33AE79983310892B31E50 /* ViewModel */,
+				B4E33729577AFCF8262902B2 /* View */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -483,6 +502,7 @@
 			files = (
 				B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */,
 				B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */,
+				B4E335CC4EF6BF14E50F2480 /* NoticeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

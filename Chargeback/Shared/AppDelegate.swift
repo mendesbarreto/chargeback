@@ -14,7 +14,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+#if TEST
+        print("[INFO] We will run the tests now, beware")
+#else
         window = MainWindowFactory.make()
+#endif
         return true
     }
 
