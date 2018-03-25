@@ -10,7 +10,8 @@ import UIKit
 
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
-        let viewController = BaseViewController()
+        let gateway = EntryPointResourceMoyaGateway()
+        let viewController = NoticeViewController(noticeGateway: gateway)
         viewController.view.backgroundColor = .magenta
         return viewController
     }
