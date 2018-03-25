@@ -12,7 +12,7 @@ class BaseViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         print("this class can not be initialized for NSCoder arg")
         return nil
