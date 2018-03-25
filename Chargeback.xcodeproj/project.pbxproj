@@ -20,17 +20,19 @@
 		B4E3301ABBCE60EBB79B170C /* ReasonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */; };
 		B4E33049391045373115516C /* EntryPointResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */; };
 		B4E330DAB2C530ABF65864E0 /* ResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */; };
+		B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A633FA7833C0EB04589 /* NoticeView.swift */; };
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
-		B4E335CC4EF6BF14E50F2480 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
+		B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
 		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
 		B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */; };
 		B4E33847EA5219F30151E37C /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331F1EE519C0F6E59B8A8 /* BindableView.swift */; };
 		B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */; };
 		B4E33AD7F961A4AB3F1399EF /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FA515F4AA1306BB322A /* Bindable.swift */; };
 		B4E33B262E5A4B4E47A91C88 /* ResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */; };
+		B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A95A10498AC52B452CF /* NoticePresenter.swift */; };
 		B4E33CEA6924C97BEDF69283 /* Chargeback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */; };
 		B4E33D162C3880CB39B3563C /* NubankTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33600525F955954F9FA9D /* NubankTarget.swift */; };
 		B4E33D45E1610007D32CCBD9 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FF3480757F3E900EBFA /* Notice.swift */; };
@@ -89,6 +91,8 @@
 		B4E3384AEB610A1B88169332 /* ResourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
 		B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E3392FEF60189C8CF41146 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
 		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
@@ -267,6 +271,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		B4E3348C998F7410EA2A57F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A95A10498AC52B452CF /* NoticePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B4E336CD5AC2F0AE0ACEDEC8 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +298,7 @@
 		B4E33729577AFCF8262902B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4E33A633FA7833C0EB04589 /* NoticeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +379,7 @@
 				B4E33C6B31852596C05DABE0 /* UseCase */,
 				B4E33AE79983310892B31E50 /* ViewModel */,
 				B4E33729577AFCF8262902B2 /* View */,
+				B4E3348C998F7410EA2A57F5 /* Presenter */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -524,7 +538,6 @@
 			files = (
 				B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */,
 				B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */,
-				B4E335CC4EF6BF14E50F2480 /* NoticeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +568,9 @@
 				B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */,
 				B4E33847EA5219F30151E37C /* BindableView.swift in Sources */,
 				B4E33AD7F961A4AB3F1399EF /* Bindable.swift in Sources */,
+				B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */,
+				B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */,
+				B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

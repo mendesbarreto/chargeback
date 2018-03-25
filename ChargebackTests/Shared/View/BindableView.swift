@@ -9,6 +9,6 @@ class BindableView<T>: UIView, Bindable {
     typealias ViewModel = T
 
     func bind(to: ViewModel) {
-        fatalError("Bind method should be implemented ")
+        fatalError("Bind method should be implemented")
     }
 }
