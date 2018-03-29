@@ -10,6 +10,6 @@ enum ResourceKey: String {
     case chargeback
     case home
     case blockCard = "block_card"
-    case unblockCard = "unbl/ock_card"
+    case unblockCard = "unblock_card"
     case selfRef = "self"
 }
