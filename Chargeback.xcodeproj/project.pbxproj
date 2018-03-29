@@ -24,6 +24,7 @@
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
 		B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
 		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
@@ -97,6 +98,7 @@
 		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
 		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
 		B4E33D503AFC1B24CA20BD18 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B4E33E22826637B208D3084E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4E33FA515F4AA1306BB322A /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		B4E33FF3480757F3E900EBFA /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3392FEF60189C8CF41146 /* Dictionary.swift */,
+				B4E33E22826637B208D3084E /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */,
 				B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */,
 				B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */,
+				B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
