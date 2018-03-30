@@ -20,10 +20,10 @@ final class NoticeViewController: BaseViewController {
     }
 
     var noticeViewModel: NoticeViewModel {
-        return NoticeViewModel(title: .titlePurple(withText: "Ronan é Lindo"),
-                               description: .titlePurple(withText: "Ronan é Lindo"),
-                               continueButtonTitle: .titlePurple(withText: "Ronan é Lindo"),
-                               closeButtonTitle: .titlePurple(withText: "Ronan é Lindo"))
+        return NoticeViewModel(title: .titlePurple(withText: "Antes de continuar"),
+                               description: .descriptionHTMLGray(withText: "<p>Estamos com você nesta! Certifique-se dos pontos abaixo, são muito importantes:<br/><strong>• Você pode <font color=\"#6e2b77\">procurar o nome do estabelecimento no Google</font>. Diversas vezes encontramos informações valiosas por lá e elas podem te ajudar neste processo.</strong><br/><strong>• Caso você reconheça a compra, é muito importante pra nós que entre em contato com o estabelecimento e certifique-se que a situação já não foi resolvida.</strong></p>"),
+                               continueButtonTitle: .titleButtonPurple(withText: "Continuar"),
+                               closeButtonTitle: .titleButtonGray(withText: "Fechar"))
     }
 
     override func viewDidLoad() {

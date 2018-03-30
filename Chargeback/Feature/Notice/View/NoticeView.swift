@@ -22,7 +22,6 @@ final class NoticeView: BindableView<NoticeViewModel> {
         closeButton = UIButton()
         labelHolderView = UIView()
         buttonHolderView = UIStackView()
-
         super.init(frame: frame)
         setupLayout()
     }
@@ -37,6 +36,11 @@ final class NoticeView: BindableView<NoticeViewModel> {
         continueButton.setAttributedTitle(viewModel.continueButtonTitle, for: .normal)
         closeButton.setAttributedTitle(viewModel.closeButtonTitle, for: .normal)
     }
+}
+
+// MAK: Notice View Constraints
+
+extension NoticeView {
 
     private func setupLayout() {
         addSubview(buttonHolderView)
@@ -80,11 +84,14 @@ final class NoticeView: BindableView<NoticeViewModel> {
 
     private func setupDescriptionLayout() {
         descriptionLabel.textAlignment = .left
-        descriptionLabel.lineBreakMode = .byTruncatingTail
+        descriptionLabel.lineBreakMode = .byWordWrapping
+        descriptionLabel.numberOfLines = 0
 
         labelHolderView.addSubview(descriptionLabel)
         descriptionLabel.startAnchor()
-                        .leadingAnchor(to: labelHolderView).bottomAnchor(lessThanOrEqualTo: labelHolderView, constant: 10)
+                        .leadingAnchor(to: labelHolderView)
+                        .trailingAnchor(to: labelHolderView)
+                        .bottomAnchor(lessThanOrEqualTo: labelHolderView, constant: 10)
                         .topAnchor(toEqualAnchor: titleLabel.bottomAnchor)
     }
 }
