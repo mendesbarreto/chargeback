@@ -12,16 +12,17 @@ final class NoticeView: BindableView<NoticeViewModel> {
     private let continueButton: UIButton
     private let closeButton: UIButton
 
-    private let labelsStackView: UIStackView
-    private let buttonStackView: UIStackView
+    private let labelHolderView: UIView
+    private let buttonHolderView: UIStackView
 
     override init(frame: CGRect = .zero) {
         titleLabel = UILabel()
         descriptionLabel = UILabel()
         continueButton = UIButton()
         closeButton = UIButton()
-        labelsStackView = UIStackView()
-        buttonStackView = UIStackView()
+        labelHolderView = UIView()
+        buttonHolderView = UIStackView()
+
         super.init(frame: frame)
         setupLayout()
     }
@@ -30,35 +31,61 @@ final class NoticeView: BindableView<NoticeViewModel> {
         fatalError("This view could not be initialized by coder", file: #file, line: #line)
     }
 
+    override func bind (to viewModel: ViewModel) {
+        titleLabel.attributedText = viewModel.title
+        descriptionLabel.attributedText = viewModel.description
+        continueButton.setAttributedTitle(viewModel.continueButtonTitle, for: .normal)
+        closeButton.setAttributedTitle(viewModel.closeButtonTitle, for: .normal)
+    }
+
     private func setupLayout() {
-        titleLabel.text = "Hello"
-        descriptionLabel.text = "Hello2"
-        continueButton.setTitle("OMG", for: .normal)
-        closeButton.setTitle("OMG2", for: .normal)
-        setupLabelStackView()
+        addSubview(buttonHolderView)
+        addSubview(labelHolderView)
         setupButtonStackView()
+        setupLabelStackView()
+        setupTitleLayout()
+        setupDescriptionLayout()
     }
 
     private func setupButtonStackView() {
-        addSubview(labelsStackView)
-        buttonStackView.addArrangedSubview(titleLabel)
-        buttonStackView.addArrangedSubview(descriptionLabel)
-        buttonStackView.axis = .vertical
-        buttonStackView.startAnchor()
-                       .bottomAnchor(to: self)
-                       .leadingAnchor(to: self)
-                       .trailingAnchor(to: self)
-                       .topAnchor.constraint(equalTo: labelsStackView.bottomAnchor).isActive = true
+        buttonHolderView.addArrangedSubview(continueButton)
+        buttonHolderView.addArrangedSubview(closeButton)
+        buttonHolderView.axis = .vertical
+        buttonHolderView.distribution = .fillProportionally
+        buttonHolderView.startAnchor()
+                        .bottomAnchor(to: self)
+                        .leadingAnchor(to: self)
+                        .trailingAnchor(to: self)
     }
 
     private func setupLabelStackView() {
-        addSubview(labelsStackView)
-        labelsStackView.addArrangedSubview(titleLabel)
-        labelsStackView.addArrangedSubview(descriptionLabel)
-        labelsStackView.axis = .vertical
-        labelsStackView.startAnchor()
+        labelHolderView.backgroundColor = .disabledGrayNu
+        labelHolderView.startAnchor()
                        .topAnchor(to: self)
                        .leadingAnchor(to: self)
                        .trailingAnchor(to: self)
+                       .bottomAnchor.constraint(equalTo: buttonHolderView.topAnchor, constant: 0).isActive = true
+    }
+
+    private func setupTitleLayout () {
+        titleLabel.textAlignment = .center
+        titleLabel.lineBreakMode = .byTruncatingTail
+
+        labelHolderView.addSubview(titleLabel)
+        titleLabel.startAnchor()
+                  .trailingAnchor(to: labelHolderView)
+                  .leadingAnchor(to: labelHolderView)
+                  .topAnchor(to: labelHolderView)
+    }
+
+    private func setupDescriptionLayout() {
+        descriptionLabel.textAlignment = .left
+        descriptionLabel.lineBreakMode = .byTruncatingTail
+
+        labelHolderView.addSubview(descriptionLabel)
+        descriptionLabel.startAnchor()
+                        .leadingAnchor(to: labelHolderView)
+                        .topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
+        descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: labelHolderView.bottomAnchor, constant: 10).isActive = true
     }
 }
