@@ -21,6 +21,7 @@
 		B4E33049391045373115516C /* EntryPointResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */; };
 		B4E330DAB2C530ABF65864E0 /* ResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */; };
 		B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A633FA7833C0EB04589 /* NoticeView.swift */; };
+		B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D312BCEE97D9F053A62 /* UIColor.swift */; };
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
@@ -40,6 +41,7 @@
 		B4E33DA244740CBFFAF44765 /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3384AEB610A1B88169332 /* ResourceError.swift */; };
 		B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330925724986058B197C8 /* DictionaryTests.swift */; };
 		B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3351B7F53E09355EE96AD /* BaseViewController.swift */; };
+		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
 		B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33430591D91087C9FD1C3 /* Resource.swift */; };
@@ -97,7 +99,9 @@
 		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
 		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
+		B4E33D312BCEE97D9F053A62 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B4E33D503AFC1B24CA20BD18 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		B4E33E22826637B208D3084E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4E33FA515F4AA1306BB322A /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		B4E33FF3480757F3E900EBFA /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
@@ -359,6 +363,8 @@
 			children = (
 				B4E3392FEF60189C8CF41146 /* Dictionary.swift */,
 				B4E33E22826637B208D3084E /* UIView.swift */,
+				B4E33D312BCEE97D9F053A62 /* UIColor.swift */,
+				B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -575,6 +581,8 @@
 				B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */,
 				B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */,
 				B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */,
+				B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */,
+				B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

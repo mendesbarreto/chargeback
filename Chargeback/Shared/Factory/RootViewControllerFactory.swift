@@ -12,7 +12,6 @@ final class RootViewControllerFactory {
     static func make() -> UIViewController {
         let gateway = EntryPointResourceMoyaGateway()
         let viewController = NoticeViewController(noticeGateway: gateway)
-        viewController.view.backgroundColor = .magenta
         return viewController
     }
 }
