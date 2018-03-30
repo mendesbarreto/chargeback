@@ -64,7 +64,7 @@ final class NoticeView: BindableView<NoticeViewModel> {
                        .topAnchor(to: self)
                        .leadingAnchor(to: self)
                        .trailingAnchor(to: self)
-                       .bottomAnchor.constraint(equalTo: buttonHolderView.topAnchor, constant: 0).isActive = true
+                       .bottomAnchor(toEqualAnchor: buttonHolderView.topAnchor)
     }
 
     private func setupTitleLayout () {
@@ -84,8 +84,7 @@ final class NoticeView: BindableView<NoticeViewModel> {
 
         labelHolderView.addSubview(descriptionLabel)
         descriptionLabel.startAnchor()
-                        .leadingAnchor(to: labelHolderView)
-                        .topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
-        descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: labelHolderView.bottomAnchor, constant: 10).isActive = true
+                        .leadingAnchor(to: labelHolderView).bottomAnchor(lessThanOrEqualTo: labelHolderView, constant: 10)
+                        .topAnchor(toEqualAnchor: titleLabel.bottomAnchor)
     }
 }
