@@ -22,25 +22,25 @@ extension UIView {
 
     @discardableResult
     func leadingAnchor(to view: UIView, constant: CGFloat = 0) -> Self {
-        leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
+        leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: constant).isActive = true
         return self
     }
 
     @discardableResult
     func trailingAnchor(to view: UIView, constant: CGFloat = 0) -> Self {
-        trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant).isActive = true
+        trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: constant).isActive = true
         return self
     }
 
     @discardableResult
     func topAnchor(to view: UIView, constant: CGFloat = 0) -> Self {
-        topAnchor.constraint(equalTo: view.topAnchor, constant: constant).isActive = true
+        topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant).isActive = true
         return self
     }
 
     @discardableResult
     func bottomAnchor(to view: UIView, constant: CGFloat = 0) -> Self {
-        bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: constant).isActive = true
+        bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: constant).isActive = true
         return self
     }
 }
