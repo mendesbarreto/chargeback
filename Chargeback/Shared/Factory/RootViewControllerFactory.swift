@@ -10,8 +10,7 @@ import UIKit
 
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
-        let gateway = EntryPointResourceMoyaGateway()
-        let viewController = NoticeViewController(noticeGateway: gateway)
+        let viewController = NoticeViewController()
         return viewController
     }
 }
