@@ -34,6 +34,7 @@
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
 		B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
 		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
+		B4E336EA074FA3B989DC4F65 /* ResourceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */; };
 		B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */; };
 		B4E33808FF82CF40BD5CBE6B /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */; };
 		B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */; };
@@ -48,7 +49,9 @@
 		B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3351B7F53E09355EE96AD /* BaseViewController.swift */; };
 		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
+		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
+		B4E33F73835CD0AD489543FA /* ResourceRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C607CE179104644B532 /* ResourceRoutable.swift */; };
 		B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33430591D91087C9FD1C3 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,16 +99,19 @@
 		B4E33565EFB26C5D51FAC41B /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceGateway.swift; sourceTree = "<group>"; };
 		B4E33600525F955954F9FA9D /* NubankTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NubankTarget.swift; sourceTree = "<group>"; };
+		B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterFactory.swift; sourceTree = "<group>"; };
 		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
 		B4E3384AEB610A1B88169332 /* ResourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
 		B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E3392FEF60189C8CF41146 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		B4E339EB745070DC222952B5 /* BindableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
+		B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouter.swift; sourceTree = "<group>"; };
 		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
 		B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCase.swift; sourceTree = "<group>"; };
+		B4E33C607CE179104644B532 /* ResourceRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRoutable.swift; sourceTree = "<group>"; };
 		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
 		B4E33D312BCEE97D9F053A62 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B4E33D4B31D74724607DE556 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 			children = (
 				7512546E2066E6B800FE888E /* Info.plist */,
 				B4E3395B0CC3374D146CDBA0 /* Common */,
+				B4E3338A7DAEB6D8087F4D1B /* Feature */,
 			);
 			path = ChargebackTests;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */,
+				B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -270,11 +278,20 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		B4E3338A7DAEB6D8087F4D1B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B4E336555D096DA67AE5363D /* UserCase */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		B4E333BBAD1CE3E496F6B62E /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */,
 				B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */,
+				B4E33C607CE179104644B532 /* ResourceRoutable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -296,6 +313,13 @@
 				B4E33A95A10498AC52B452CF /* NoticePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E336555D096DA67AE5363D /* UserCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserCase;
 			sourceTree = "<group>";
 		};
 		B4E336CD5AC2F0AE0ACEDEC8 /* Feature */ = {
@@ -415,6 +439,7 @@
 				B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */,
 				B4E333BBAD1CE3E496F6B62E /* Protocol */,
 				B4E3326CA24628F26438C791 /* Error */,
+				B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -621,6 +646,9 @@
 				B4E331447A1AD42119B4E4A0 /* BindableView.swift in Sources */,
 				B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */,
 				B4E33808FF82CF40BD5CBE6B /* FontSize.swift in Sources */,
+				B4E336EA074FA3B989DC4F65 /* ResourceRouter.swift in Sources */,
+				B4E33F73835CD0AD489543FA /* ResourceRoutable.swift in Sources */,
+				B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
