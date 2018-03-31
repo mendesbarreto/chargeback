@@ -5,10 +5,9 @@
 
 import Foundation
 
-enum ResourceKey: String {
+enum ResourceKey: String, Decodable {
     case notice
     case chargeback
-    case home
     case blockCard = "block_card"
     case unblockCard = "unblock_card"
     case selfRef = "self"
