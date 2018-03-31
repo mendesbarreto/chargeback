@@ -5,7 +5,7 @@
 
 import RxSwift
 
-final class EntryPointResourceMoyaGateway: ResourceMoyaGateway, EntryPointResourceGateway  {
+final class EntryPointResourceMoyaGateway: ResourceMoyaGateway, EntryPointResourceGateway {
     func requestInitialResource() -> Observable<BaseModel> {
         let defaultEntryPointResourceApplication = EntryPointBaseModelFactory.make()
         return request(resource: defaultEntryPointResourceApplication)

@@ -75,11 +75,8 @@ extension NSAttributedString {
             throw NSAttributedStringError.problemToConvertStringInData
         }
 
-        var mutableAttr = try NSMutableAttributedString(data:
-                               stringData,
-                               options: [.documentType: NSAttributedString.DocumentType.html],
-                               documentAttributes: nil)
-
-        return mutableAttr
+        return try NSMutableAttributedString(data: stringData,
+                                             options: [.documentType: NSAttributedString.DocumentType.html],
+                                             documentAttributes: nil)
     }
 }

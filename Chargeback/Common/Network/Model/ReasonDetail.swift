@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct ReasonDetail: Decodable{
+struct ReasonDetail: Decodable {
     private enum CodingKyes: String, CodingKey {
         case id
         case title

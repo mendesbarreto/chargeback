@@ -15,6 +15,7 @@ extension UIView {
 }
 
 extension UIView {
+    @discardableResult
     func startAnchor() -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         return self
@@ -22,11 +23,10 @@ extension UIView {
 
     @discardableResult
     func anchorToFit(in view: UIView, constant: CGFloat = 0) -> Self {
-        startAnchor()
-        return self.trailingAnchor(to: view, constant: -constant)
-                   .leadingAnchor(to: view, constant: constant)
-                   .bottomAnchor(to: view, constant: -constant)
-                   .topAnchor(to: view, constant: constant)
+        return startAnchor().trailingAnchor(to: view, constant: -constant)
+                            .leadingAnchor(to: view, constant: constant)
+                            .bottomAnchor(to: view, constant: -constant)
+                            .topAnchor(to: view, constant: constant)
     }
 }
 

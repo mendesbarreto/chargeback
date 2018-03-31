@@ -29,7 +29,7 @@ extension UIColor {
     }
 
     static var blackNu: UIColor {
-        return UIColor(hex:  0x222222)
+        return UIColor(hex: 0x222222)
     }
 
     static var hintNu: UIColor {

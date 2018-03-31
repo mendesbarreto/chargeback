@@ -42,7 +42,7 @@ final class NoticeView: BindableView<NoticeViewModel> {
         return continueButton.rx.tap.asSignal(onErrorJustReturn: ())
     }
 
-    var closeAction: SharedSequence<SignalSharingStrategy, Void>  {
+    var closeAction: SharedSequence<SignalSharingStrategy, Void> {
         return closeButton.rx.tap.asSignal(onErrorJustReturn: ())
     }
 
