@@ -21,8 +21,13 @@ final class ChargebackViewController: BaseViewController {
 
     override func viewDidLoad () {
         super.viewDidLoad()
+        setupLayout()
         setupChargebackView()
         showChargebackUserCase.show()
+    }
+
+    private func setupLayout () {
+        view.backgroundColor = .backgroundNu
     }
 
     private func setupChargebackView() {
