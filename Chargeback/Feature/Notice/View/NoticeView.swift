@@ -65,9 +65,9 @@ extension NoticeView {
     private func setupLabelStackView() {
         labelHolderView.backgroundColor = .disabledGrayNu
         labelHolderView.startAnchor()
-                       .topAnchor(to: self)
-                       .leadingAnchor(to: self)
-                       .trailingAnchor(to: self)
+                       .topAnchor(to: self, constant: 20)
+                       .leadingAnchor(to: self, constant: 20)
+                       .trailingAnchor(to: self, constant: -20)
                        .bottomAnchor(toEqualAnchor: buttonHolderView.topAnchor)
     }
 
@@ -92,6 +92,6 @@ extension NoticeView {
                         .leadingAnchor(to: labelHolderView)
                         .trailingAnchor(to: labelHolderView)
                         .bottomAnchor(lessThanOrEqualTo: labelHolderView, constant: 10)
-                        .topAnchor(toEqualAnchor: titleLabel.bottomAnchor)
+                        .topAnchor(toEqualAnchor: titleLabel.bottomAnchor, constant: 20)
     }
 }
