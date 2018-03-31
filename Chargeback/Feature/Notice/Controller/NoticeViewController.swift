@@ -30,6 +30,7 @@ final class NoticeViewController: BaseViewController {
 
     private func setupNoticeView() {
         view.addSubview(noticeView)
+        view.backgroundColor = .backgroundNu
         noticeView.anchorToFit(in: view)
         noticeView.continueAction.emit(onNext: onContinueAction).disposed(by: disposableBag)
         noticeView.closeAction.emit(onNext: onCloseAction).disposed(by: disposableBag)

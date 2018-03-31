@@ -5,7 +5,7 @@
 
 import UIKit
 
-class BindableView<T>: UIView, Bindable {
+class BindableView<T>: NuView, Bindable {
     typealias ViewModel = T
 
     func bind(to: ViewModel) {

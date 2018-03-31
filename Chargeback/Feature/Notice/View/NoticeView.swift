@@ -7,29 +7,50 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+final class NuDefaultButton: UIButton {
+    override init(frame: CGRect = .zero) {
+        super.init(frame: frame)
+        setupLayout()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("This view could not be initialized by coder", file: #file, line: #line)
+    }
+
+    private func setupLayout() {
+        addTopBorder(color: .disabledGrayNu, width: 1)
+        backgroundColor = .clear
+    }
+
+    override func layoutSubviews () {
+        super.layoutSubviews()
+        setupLayout()
+    }
+}
+
 final class NoticeView: BindableView<NoticeViewModel> {
 
     private let titleLabel: UILabel
     private let descriptionLabel: UILabel
-    private let continueButton: UIButton
-    private let closeButton: UIButton
+    private let continueButton: NuDefaultButton
+    private let closeButton: NuDefaultButton
 
     private let labelHolderView: UIView
     private let buttonHolderView: UIStackView
 
-    var continueAction: SharedSequence<SignalSharingStrategy,  Void> {
+    var continueAction: SharedSequence<SignalSharingStrategy, Void> {
         return continueButton.rx.tap.asSignal(onErrorJustReturn: ())
     }
 
-    var closeAction: SharedSequence<SignalSharingStrategy,  Void>  {
+    var closeAction: SharedSequence<SignalSharingStrategy, Void>  {
         return closeButton.rx.tap.asSignal(onErrorJustReturn: ())
     }
 
     override init(frame: CGRect = .zero) {
         titleLabel = UILabel()
         descriptionLabel = UILabel()
-        continueButton = UIButton()
-        closeButton = UIButton()
+        continueButton = NuDefaultButton()
+        closeButton = NuDefaultButton()
         labelHolderView = UIView()
         buttonHolderView = UIStackView()
         super.init(frame: frame)
@@ -53,8 +74,8 @@ final class NoticeView: BindableView<NoticeViewModel> {
 extension NoticeView {
 
     private func setupLayout() {
-        addSubview(buttonHolderView)
-        addSubview(labelHolderView)
+        addChild(view: buttonHolderView)
+        addChild(view: labelHolderView)
         setupButtonStackView()
         setupLabelStackView()
         setupTitleLayout()
@@ -62,22 +83,25 @@ extension NoticeView {
     }
 
     private func setupButtonStackView() {
+        //closeButton.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        //continueButton.heightAnchor.constraint(equalToConstant: 150)
+
         buttonHolderView.addArrangedSubview(continueButton)
         buttonHolderView.addArrangedSubview(closeButton)
         buttonHolderView.axis = .vertical
-        buttonHolderView.distribution = .fillProportionally
+        buttonHolderView.distribution = .fillEqually
         buttonHolderView.startAnchor()
-                        .bottomAnchor(to: self)
-                        .leadingAnchor(to: self)
-                        .trailingAnchor(to: self)
+                        .bottomAnchor(to: contentView)
+                        .leadingAnchor(to: contentView)
+                        .trailingAnchor(to: contentView)
+                        .heightAnchor.constraint(equalToConstant: 210).isActive = true
     }
 
     private func setupLabelStackView() {
-        labelHolderView.backgroundColor = .disabledGrayNu
         labelHolderView.startAnchor()
-                       .topAnchor(to: self, constant: 20)
-                       .leadingAnchor(to: self, constant: 20)
-                       .trailingAnchor(to: self, constant: -20)
+                       .topAnchor(to: contentView, constant: 40)
+                       .leadingAnchor(to: contentView, constant: 20)
+                       .trailingAnchor(to: contentView, constant: -20)
                        .bottomAnchor(toEqualAnchor: buttonHolderView.topAnchor)
     }
 
@@ -102,6 +126,6 @@ extension NoticeView {
                         .leadingAnchor(to: labelHolderView)
                         .trailingAnchor(to: labelHolderView)
                         .bottomAnchor(lessThanOrEqualTo: labelHolderView, constant: 10)
-                        .topAnchor(toEqualAnchor: titleLabel.bottomAnchor, constant: 20)
+                        .topAnchor(toEqualAnchor: titleLabel.bottomAnchor, constant: 30)
     }
 }

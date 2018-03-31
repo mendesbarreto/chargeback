@@ -6,17 +6,27 @@
 import UIKit
 
 extension UIView {
+    func addTopBorder(color: UIColor, width: CGFloat) {
+        let border = CALayer()
+        border.backgroundColor = color.cgColor
+        border.frame = CGRect(x: 0, y: 0, width: frame.width, height: width)
+        self.layer.addSublayer(border)
+    }
+}
+
+extension UIView {
     func startAnchor() -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         return self
     }
 
     @discardableResult
-    func anchorToFit(in view: UIView) -> Self {
+    func anchorToFit(in view: UIView, constant: CGFloat = 0) -> Self {
         startAnchor()
-        return trailingAnchor(to: view).leadingAnchor(to: view)
-                                       .bottomAnchor(to: view)
-                                       .topAnchor(to: view)
+        return self.trailingAnchor(to: view, constant: -constant)
+                   .leadingAnchor(to: view, constant: constant)
+                   .bottomAnchor(to: view, constant: -constant)
+                   .topAnchor(to: view, constant: constant)
     }
 }
 
