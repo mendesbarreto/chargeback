@@ -5,8 +5,9 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
-final class NoticeViewController: BaseViewController, NoticePresenterOutput {
+final class NoticeViewController: BaseViewController {
     var showNoticeUseCase: ShowNoticeUseCase!
     let noticeView = NoticeView()
 
@@ -23,11 +24,26 @@ final class NoticeViewController: BaseViewController, NoticePresenterOutput {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        view.addSubview(noticeView)
-        noticeView.anchorToFit(in: view)
+        setupNoticeView()
         showNoticeUseCase.show()
     }
 
+    private func setupNoticeView() {
+        view.addSubview(noticeView)
+        noticeView.anchorToFit(in: view)
+        noticeView.continueAction.emit(onNext: onContinueAction).disposed(by: disposableBag)
+        noticeView.closeAction.emit(onNext: onCloseAction).disposed(by: disposableBag)
+    }
+
+    private func onContinueAction() {
+        print("onContinueAction")
+    }
+    private func onCloseAction() {
+        print("closeAction")
+    }
+}
+
+extension NoticeViewController: NoticePresenterOutput {
     func show (notice: NoticeViewModel) {
         noticeView.bind(to: notice)
     }
