@@ -10,6 +10,7 @@
 		7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC52066A6F600B33E41 /* AppDelegate.swift */; };
 		7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCC2066A6F600B33E41 /* Assets.xcassets */; };
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
+		75BEA1B9206F0CC6005ECE89 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */; };
 		75C471232066FB630060E0F1 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471192066FB620060E0F1 /* RxMoya.framework */; };
 		75C471242066FB630060E0F1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711A2066FB620060E0F1 /* RxSwift.framework */; };
 		75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711C2066FB620060E0F1 /* Alamofire.framework */; };
@@ -67,6 +68,7 @@
 		7538DFCC2066A6F600B33E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7538DFCF2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7538DFD12066A6F600B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		75C471192066FB620060E0F1 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		75C4711A2066FB620060E0F1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		75C4711B2066FB620060E0F1 /* Moya.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Moya.framework.dSYM; path = Carthage/Build/iOS/Moya.framework.dSYM; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BEA1B9206F0CC6005ECE89 /* RxCocoa.framework in Frameworks */,
 				75C471232066FB630060E0F1 /* RxMoya.framework in Frameworks */,
 				75C471242066FB630060E0F1 /* RxSwift.framework in Frameworks */,
 				75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */,
@@ -175,6 +178,7 @@
 		75C471182066FB620060E0F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */,
 				75C4711C2066FB620060E0F1 /* Alamofire.framework */,
 				75C4711D2066FB620060E0F1 /* Alamofire.framework.dSYM */,
 				75C471222066FB620060E0F1 /* Moya.framework */,
@@ -539,6 +543,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -547,6 +552,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
