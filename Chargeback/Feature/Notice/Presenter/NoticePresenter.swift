@@ -6,7 +6,7 @@
 import Foundation
 
 protocol NoticePresenterInput {
-    func show(notice: Notice)
+    func show(notice: Notice) throws
     func showError()
 }
 
@@ -23,9 +23,10 @@ final class NoticePresenter: NoticePresenterInput {
         self.presenterOutput = presenterOutput
     }
 
-    func show(notice: Notice) {
+    func show(notice: Notice) throws {
+        let noticeDescriptionHTML: NSAttributedString = try .descriptionHTML(withText: notice.description)
         let viewModel = NoticeViewModel(title: .titlePurple(withText: notice.title),
-                                        description: .descriptionHTML(withText: notice.description),
+                                        description: noticeDescriptionHTML,
                                         continueButtonTitle: .titleButtonPurple(withText: notice.primaryAction.title.uppercased()),
                                         closeButtonTitle: .titleButtonGray(withText: notice.secondaryAction.title.uppercased()))
 
