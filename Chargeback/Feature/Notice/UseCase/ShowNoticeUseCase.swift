@@ -7,10 +7,10 @@ import RxSwift
 
 final class ShowNoticeUseCase {
 
-    let noticeGateway: ResourceRouter
+    let noticeGateway: ResourceRoutable
     let presenter: NoticePresenterInput
 
-    init(noticeGateway: ResourceRouter, presenter: NoticePresenterInput) {
+    init(noticeGateway: ResourceRoutable, presenter: NoticePresenterInput) {
         self.noticeGateway = noticeGateway
         self.presenter = presenter
     }
