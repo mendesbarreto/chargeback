@@ -39,6 +39,24 @@ extension ChargebackView {
     private func setupLayout () {
         setupHeaderLayout()
         setupTitleLayout()
+        setupBodyLayout()
+        addChild(view: bottomContentView)
+        bottomContentView.backgroundColor = .purple
+        bottomContentView.startAnchor()
+                         .bottomAnchor(to: contentView)
+                         .leadingAnchor(to: contentView)
+                         .trailingAnchor(to: contentView)
+                         .topAnchor(toEqualAnchor: bodyContentView.bottomAnchor)
+    }
+
+    private func setupBodyLayout () {
+        addChild(view: bodyContentView)
+        bodyContentView.backgroundColor = .red
+        bodyContentView.startAnchor()
+                       .topAnchor(toEqualAnchor: headerContentView.bottomAnchor)
+                       .leadingAnchor(to: contentView)
+                       .trailingAnchor(to: contentView)
+        bodyContentView.heightAnchor.constraint(equalToConstant: 250).isActive = true
     }
 
     private func setupTitleLayout () {

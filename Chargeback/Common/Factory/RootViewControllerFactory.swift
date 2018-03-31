@@ -10,7 +10,8 @@ import UIKit
 
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
-        let viewController = NoticeViewController()
+        //let viewController = NoticeViewController()
+        let viewController = ChargebackViewController()
         return viewController
     }
 }
