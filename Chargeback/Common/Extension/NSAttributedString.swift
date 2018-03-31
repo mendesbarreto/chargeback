@@ -6,58 +6,60 @@
 import UIKit
 
 enum NSAttributedStringError: Error {
-    case problemToConvertStringInData
+    case problemToConvertStringToDataWithUnicode
+    case problemToCreateAttributedStringWithHTMLString(reason: String)
 }
 
 extension NSAttributedString {
+
     static func titlePurple(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.large, weight: .regular))
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .regular))
     }
 
     static func titleBlack(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .blackNu,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
     }
 
     static func titleButtonPurple(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.small, weight: .bold))
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.small, weight: .bold))
     }
 
     static func titleButtonGray(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.closeGrayNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.small, weight: .bold))
+                                andColor: .closeGrayNu,
+                                andFont: .systemFont(ofSize: FontSize.small, weight: .bold))
     }
 }
 
 extension NSAttributedString {
 
-    static func descriptionHTML (withText text: String ) -> NSAttributedString {
-        return try! attributedStringHTML(withText: text,
-                                andFont: UIFont.systemFont(ofSize: FontSize.small))
+    static func descriptionHTML (withText text: String ) throws -> NSAttributedString {
+        return try attributedStringHTML(withText: text,
+                                andFont: .systemFont(ofSize: FontSize.small))
     }
 
     static func descriptionGray(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
     }
 
     static func descriptionRed(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
     }
 
     static func descriptionBlack(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
     }
 
     static func attributedString (withText text: String, andColor color: UIColor, andFont font: UIFont) -> NSAttributedString {
@@ -72,11 +74,15 @@ extension NSAttributedString {
         text.append("<style>body{font-size:\(font.pointSize)px;}</style>")
 
         guard let stringData = text.data(using: .unicode) else {
-            throw NSAttributedStringError.problemToConvertStringInData
+            throw NSAttributedStringError.problemToConvertStringToDataWithUnicode
         }
 
-        return try NSMutableAttributedString(data: stringData,
-                                             options: [.documentType: NSAttributedString.DocumentType.html],
-                                             documentAttributes: nil)
+        guard let mutableAttr = try? NSMutableAttributedString(data: stringData,
+                                                           options: [.documentType: NSAttributedString.DocumentType.html],
+                                                           documentAttributes: nil) else {
+            throw NSAttributedStringError.problemToCreateAttributedStringWithHTMLString(reason: "Maybe string unicode is not valid")
+        }
+
+        return mutableAttr
     }
 }
