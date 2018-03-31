@@ -37,7 +37,7 @@ final class ChargebackViewController: BaseViewController {
 }
 
 extension ChargebackViewController: ChargebackPresenterOutput {
-    func show (chargebackViewModel: ChargeBackViewModel) {
+    func show (chargebackViewModel: ChargebackViewModel) {
         chargebackView.bind(to: chargebackViewModel)
     }
 

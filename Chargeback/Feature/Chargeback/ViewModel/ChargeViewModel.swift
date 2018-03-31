@@ -5,7 +5,7 @@
 
 import UIKit
 
-struct ChargeBackViewModel {
+struct ChargebackViewModel {
     let title: NSAttributedString
 
     let descriptionLockedCard: NSAttributedString

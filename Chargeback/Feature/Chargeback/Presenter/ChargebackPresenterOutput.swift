@@ -6,7 +6,7 @@
 import Foundation
 
 protocol ChargebackPresenterOutput: class {
-    func show (chargebackViewModel: ChargeBackViewModel)
+    func show (chargebackViewModel: ChargebackViewModel)
 
     func showError ()
 }
