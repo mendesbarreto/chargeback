@@ -24,14 +24,10 @@ final class NoticePresenter: NoticePresenterInput {
     }
 
     func show(notice: Notice) {
-        let title: NSAttributedString = .titlePurple(withText: notice.title)
-        let description: NSAttributedString = .descriptionHTML(withText: notice.description)
-        let continueButtonTitle: NSAttributedString = .titleButtonPurple(withText: notice.primaryAction.title.uppercased())
-        let closeButtonTitle: NSAttributedString = .titleButtonGray(withText: notice.secondaryAction.title.uppercased())
-        let viewModel = NoticeViewModel(title: title,
-                                        description: description,
-                                        continueButtonTitle: continueButtonTitle,
-                                        closeButtonTitle: closeButtonTitle)
+        let viewModel = NoticeViewModel(title: .titlePurple(withText: notice.title),
+                                        description: .descriptionHTML(withText: notice.description),
+                                        continueButtonTitle: .titleButtonPurple(withText: notice.primaryAction.title.uppercased()),
+                                        closeButtonTitle: .titleButtonGray(withText: notice.secondaryAction.title.uppercased()))
 
         presenterOutput?.show(notice: viewModel)
     }

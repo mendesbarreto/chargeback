@@ -80,10 +80,6 @@ extension NSAttributedString {
                                options: [.documentType: NSAttributedString.DocumentType.html],
                                documentAttributes: nil)
 
-//        let mutableString = mutableAttr.mutableString
-//        let range = mutableString.range(of: mutableString.description)
-        //mutableAttr.addAttribute(.font, value: font, range: range)
-
         return mutableAttr
     }
 }

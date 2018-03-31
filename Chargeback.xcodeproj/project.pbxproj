@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7512546E2066E6B800FE888E /* Info.plist */,
-				B4E3395B0CC3374D146CDBA0 /* Shared */,
+				B4E3395B0CC3374D146CDBA0 /* Common */,
 			);
 			path = ChargebackTests;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		B4E3395B0CC3374D146CDBA0 /* Shared */ = {
+		B4E3395B0CC3374D146CDBA0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */,
@@ -345,7 +345,7 @@
 				B4E33D5D16305E6AC8D2DA78 /* Network */,
 				B4E338685616AEE42CE1BACB /* View */,
 			);
-			path = Shared;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		B4E339E3B21C6CA66640E38F /* View */ = {
