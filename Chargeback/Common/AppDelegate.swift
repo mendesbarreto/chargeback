@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Chargeback
 //
-//  Created by douglas.barreto on 3/24/18.
+//  Created by Douglas Mendes  on 3/24/18.
 //  Copyright © 2018 Douglas Mendes Barreto. All rights reserved.
 //
 

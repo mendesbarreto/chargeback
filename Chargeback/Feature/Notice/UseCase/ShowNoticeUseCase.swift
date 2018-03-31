@@ -1,5 +1,5 @@
 //
-// Created by douglas.barreto on 3/30/18.
+// Created by Douglas Mendes  on 3/30/18.
 // Copyright (c) 2018 Douglas Mendes Barreto. All rights reserved.
 //
 
@@ -9,6 +9,7 @@ final class ShowNoticeUseCase {
 
     let noticeGateway: ResourceRoutable
     let presenter: NoticePresenterInput
+    let disposableBag = DisposeBag()
 
     init(noticeGateway: ResourceRoutable, presenter: NoticePresenterInput) {
         self.noticeGateway = noticeGateway
@@ -26,6 +27,6 @@ final class ShowNoticeUseCase {
                 return
             }
             strongSelf.presenter.showError()
-        })
+        }).disposed(by: disposableBag)
     }
 }
