@@ -4,6 +4,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 final class NoticeView: BindableView<NoticeViewModel> {
 
@@ -14,6 +16,14 @@ final class NoticeView: BindableView<NoticeViewModel> {
 
     private let labelHolderView: UIView
     private let buttonHolderView: UIStackView
+
+    var continueAction: SharedSequence<SignalSharingStrategy,  Void> {
+        return continueButton.rx.tap.asSignal(onErrorJustReturn: ())
+    }
+
+    var closeAction: SharedSequence<SignalSharingStrategy,  Void>  {
+        return closeButton.rx.tap.asSignal(onErrorJustReturn: ())
+    }
 
     override init(frame: CGRect = .zero) {
         titleLabel = UILabel()
