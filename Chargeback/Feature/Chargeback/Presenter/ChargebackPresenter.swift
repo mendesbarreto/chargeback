@@ -35,7 +35,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
         let titleContestButton = ChargebackPresenterConst.titleContestButton
         let titleCancelButton = ChargebackPresenterConst.titleCancelButton
         let chargebackViewModel =
-                ChargebackViewModel(title: .titleBlack(withText: chargeback.title.uppercased()),
+                ChargebackViewModel(title: .titleSmallBlack(withText: chargeback.title.uppercased()),
                                     descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
                                     descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard),
                                     descriptionMerchantRecognized: .descriptionBlack(withText: reasonMerchantRecognized.title),

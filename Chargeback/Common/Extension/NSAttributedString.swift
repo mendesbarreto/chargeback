@@ -18,10 +18,10 @@ extension NSAttributedString {
                                 andFont: .systemFont(ofSize: FontSize.large, weight: .regular))
     }
 
-    static func titleBlack(withText text: String ) -> NSAttributedString {
+    static func titleSmallBlack (withText text: String) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: .blackNu,
-                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
+                                andFont: .systemFont(ofSize: FontSize.small, weight: .bold))
     }
 
     static func titleButtonPurple(withText text: String ) -> NSAttributedString {
