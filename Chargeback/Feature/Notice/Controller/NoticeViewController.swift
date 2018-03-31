@@ -37,7 +37,7 @@ final class NoticeViewController: BaseViewController {
     }
 
     private func onContinueAction() {
-        print("onContinueAction")
+        present(ChargebackViewControllerFactory.make(), animated: true)
     }
     private func onCloseAction() {
         print("closeAction")
