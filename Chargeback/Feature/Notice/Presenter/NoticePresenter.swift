@@ -5,12 +5,35 @@
 
 import Foundation
 
-protocol NoticePresentable {
-    func show()
+protocol NoticePresenterInput {
+    func show(notice: Notice)
+    func showError()
 }
 
-final class NoticePresenter: NoticePresentable {
-    func show() {
+protocol NoticePresenterOutput: class {
+    func show(notice: NoticeViewModel)
+    func showError()
+}
 
+final class NoticePresenter: NoticePresenterInput {
+
+    private weak var presenterOutput: NoticePresenterOutput?
+
+    init(presenterOutput: NoticePresenterOutput) {
+        self.presenterOutput = presenterOutput
+    }
+
+    func show(notice: Notice) {
+        let title: NSAttributedString = .titlePurple(withText: notice.title)
+        let description: NSAttributedString = .descriptionHTML(withText: notice.description)
+        let closeButtonTitle: NSAttributedString = .titleButtonPurple(withText: notice.primaryAction.title)
+        let continueButtonTitle: NSAttributedString = .titleButtonGray(withText: notice.secondaryAction.title)
+        let viewModel = NoticeViewModel(title: title, description: description, continueButtonTitle: continueButtonTitle, closeButtonTitle: closeButtonTitle)
+
+        presenterOutput?.show(notice: viewModel)
+    }
+
+    func showError () {
+        presenterOutput?.showError()
     }
 }
