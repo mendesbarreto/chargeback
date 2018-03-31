@@ -9,14 +9,6 @@ enum NSAttributedStringError: Error {
     case problemToConvertStringInData
 }
 
-struct FontSize {
-    static let xLarge: CGFloat = 35
-    static let large: CGFloat = 30
-    static let medium: CGFloat = 20
-    static let small: CGFloat = 18
-    static let xSmall: CGFloat = 12
-}
-
 extension NSAttributedString {
     static func titlePurple(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
@@ -76,6 +68,9 @@ extension NSAttributedString {
 
     static func attributedStringHTML(withText text: String,
                                      andFont font: UIFont) throws -> NSAttributedString {
+        var text = text
+        text.append("<style>body{font-size:\(font.pointSize)px;}</style>")
+
         guard let stringData = text.data(using: .unicode) else {
             throw NSAttributedStringError.problemToConvertStringInData
         }
@@ -85,10 +80,9 @@ extension NSAttributedString {
                                options: [.documentType: NSAttributedString.DocumentType.html],
                                documentAttributes: nil)
 
-        let mutableString = mutableAttr.mutableString
-        let range = mutableString.range(of: mutableString.description)
-
-        mutableAttr.addAttribute(.font, value: font, range: range)
+//        let mutableString = mutableAttr.mutableString
+//        let range = mutableString.range(of: mutableString.description)
+        //mutableAttr.addAttribute(.font, value: font, range: range)
 
         return mutableAttr
     }
