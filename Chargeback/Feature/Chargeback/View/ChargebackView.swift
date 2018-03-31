@@ -6,4 +6,7 @@
 import Foundation
 
 final class ChargebackView: BindableView<ChargeBackViewModel> {
+    override func bind (to viewModel: ViewModel) {
+        print(viewModel)
+    }
 }
