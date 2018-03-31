@@ -13,7 +13,7 @@ extension NSAttributedString {
     static func titlePurple(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: 30, weight: .bold))
+                                andFont: UIFont.systemFont(ofSize: 30, weight: .regular))
     }
 
     static func titleBlack(withText text: String ) -> NSAttributedString {
@@ -31,15 +31,15 @@ extension NSAttributedString {
     static func titleButtonGray(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: UIColor.purpleNu,
-                                andFont: UIFont.systemFont(ofSize: 30, weight: .bold))
+                                andFont: UIFont.systemFont(ofSize: 20, weight: .bold))
     }
 }
 
 extension NSAttributedString {
 
-    static func descriptionHTMLGray(withText text: String ) -> NSAttributedString {
+    static func descriptionHTML (withText text: String ) -> NSAttributedString {
         return try! attributedStringHTML(withText: text,
-                                andFont: UIFont.systemFont(ofSize: 30, weight: .bold))
+                                andFont: UIFont.systemFont(ofSize: 18))
     }
 
     static func descriptionGray(withText text: String ) -> NSAttributedString {
