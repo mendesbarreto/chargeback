@@ -14,3 +14,9 @@ struct ReasonDetailUserResponse: Codable {
     let id: String
     let response: Bool
 }
+
+extension ReasonDetailUserResponse {
+    init (id: ReasonDetailIdKey, response: Bool) {
+        self.init(id: id.rawValue, response: response)
+    }
+}
