@@ -12,10 +12,16 @@ enum NSAttributedStringError: Error {
 
 extension NSAttributedString {
 
-    static func titlePurple(withText text: String ) -> NSAttributedString {
+    static func titleLargePurple (withText text: String) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: .purpleNu,
                                 andFont: .systemFont(ofSize: FontSize.large, weight: .regular))
+    }
+
+    static func titleMediumPurple (withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .purpleNu,
+                                andFont: .systemFont(ofSize: FontSize.medium, weight: .regular))
     }
 
     static func titleSmallBlack (withText text: String) -> NSAttributedString {
@@ -46,20 +52,26 @@ extension NSAttributedString {
 
     static func descriptionGray(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: .purpleNu,
-                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .closeGrayNu,
+                                andFont: .systemFont(ofSize: FontSize.xSmall, weight: .regular))
+    }
+
+    static func descriptionSmallGray (withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .closeGrayNu,
+                                andFont: .systemFont(ofSize: FontSize.xxSmall, weight: .regular))
     }
 
     static func descriptionRed(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: .purpleNu,
-                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .redNu,
+                                andFont: .systemFont(ofSize: FontSize.xSmall, weight: .regular))
     }
 
     static func descriptionBlack(withText text: String ) -> NSAttributedString {
         return attributedString(withText: text,
-                                andColor: .purpleNu,
-                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
+                                andColor: .blackNu,
+                                andFont: .systemFont(ofSize: FontSize.xSmall, weight: .regular))
     }
 
     static func attributedString (withText text: String, andColor color: UIColor, andFont font: UIFont) -> NSAttributedString {
