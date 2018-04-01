@@ -7,19 +7,34 @@ import Moya
 import RxSwift
 import RxMoya
 
+import RxSwift
+import RxMoya
+
 class ResourceMoyaGateway: ResourceGateway {
-    let provider: MoyaProvider<NubankTarget>
+    let provider: MoyaProvider<NubankResourceTarget>
+    let actionProvider: MoyaProvider<NubankActionTarget>
 
     init() {
-        provider = MoyaProvider<NubankTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
+        provider = MoyaProvider<NubankResourceTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
+        actionProvider = MoyaProvider<NubankActionTarget>(plugins: [NetworkLoggerPlugin(verbose: true)])
     }
 
     func request<T: BaseModel>(resource: Resource) -> Observable<T> {
         do {
             let url = try resource.href.asURL()
-            let target =  NubankTarget(resourceUrl: url)
-            return provider.rx.request(target).map(T.self).asObservable()
-        } catch (let error) {
+            let target = NubankResourceTarget(resourceUrl: url)
+            return provider.rx.request(target).filterSuccessfulStatusCodes().map(T.self).asObservable()
+        } catch let error {
+            return Observable.error(error)
+        }
+    }
+
+    func requestAction (resource: Resource, parameters: [String: Any]) -> Observable<Void> {
+        do {
+            let url = try resource.href.asURL()
+            let target = NubankActionTarget(resourceUrl: url, parameters: parameters)
+            return actionProvider.rx.request(target).filterSuccessfulStatusCodes().asObservable().mapTo(())
+        } catch let error {
             return Observable.error(error)
         }
     }

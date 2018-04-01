@@ -9,4 +9,6 @@ protocol ResourceRoutable {
     var currentResource: BaseModel { get }
     func notice() -> Observable<Notice>
     func chargeBack() -> Observable<Chargeback>
+
+    func exec (action: ResourceAction) -> Observable<Void>
 }
