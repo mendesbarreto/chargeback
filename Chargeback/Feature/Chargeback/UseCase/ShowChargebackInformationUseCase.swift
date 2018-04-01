@@ -3,34 +3,44 @@
 // Copyright (c) 2018 Douglas Mendes Barreto. All rights reserved.
 //
 
-import Foundation
+import RxSwift
 
 final class ShowChargebackInformationUseCase {
 
     private let presenter: ChargebackPresenterInput
+    private let resourceRouter: ResourceRoutable
+    private let disposableBag = DisposeBag()
 
-    init (presenter: ChargebackPresenterInput) {
+    init (resourceRouter: ResourceRoutable, presenter: ChargebackPresenterInput) {
         self.presenter = presenter
+        self.resourceRouter = resourceRouter
     }
 
     func show () {
-        let hint = "Nos conte <strong>em detalhes</strong> o que aconteceu com a sua compra em Transaction..."
-        let reasonDetailMerchant = ReasonDetail(id: "merchant_recognized", title: "Reconhece o estabelecimento?")
-        let reasonDetailCardPossession = ReasonDetail(id: "card_in_possession", title: "Está com o cartão em mãos?")
-        let chargeBack = Chargeback(id: "fraud",
-                                    commentHint: hint,
-                                    title: "Não reconheço esta compra",
-                                    autoblock: true,
-                                    reasonDetails: [reasonDetailMerchant, reasonDetailCardPossession],
-                                    links: [:])
-        show(chargeback: chargeBack)
+        presenter.showLoading()
+        resourceRouter.chargeBack().subscribe(onNext: { [weak self] chargeback in
+            guard let strongSelf = self else { return }
+            strongSelf.show(chargeback: chargeback)
+        }, onError: { [weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.presenter.hideLoading()
+            strongSelf.presenter.showError()
+        })
     }
 
     private func show (chargeback: Chargeback) {
+        presenter.hideLoading()
         do {
             try presenter.show(chargeback: chargeback)
+            shouldSHowAutoBlock(of: chargeback)
         } catch {
             presenter.showError()
+        }
+    }
+
+    private func shouldSHowAutoBlock (of chargeback: Chargeback) {
+        if chargeback.autoblock {
+            presenter.showAutoblock()
         }
     }
 }
