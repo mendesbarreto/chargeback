@@ -16,6 +16,4 @@ struct ChargebackViewModel {
 
     let isCardInPossession: Bool
     let isMerchantRecognized: Bool
-
-    let cardBlockerStatusViewModel: CardBlockerStatusViewModel
 }

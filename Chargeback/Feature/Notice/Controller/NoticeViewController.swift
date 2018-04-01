@@ -24,6 +24,10 @@ final class NoticeViewController: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupNoticeView()
+    }
+
+    override func viewDidAppear (_ animated: Bool) {
+        super.viewDidAppear(animated)
         showNoticeUseCase.show()
     }
 
