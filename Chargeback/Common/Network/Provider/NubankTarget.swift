@@ -6,12 +6,12 @@
 import Moya
 import RxMoya
 
-struct NubankTarget: TargetType {
+struct NubankResourceTarget: TargetType {
     private(set) var baseURL: URL
     private(set) var path: String = ""
-    private(set) var sampleData: Data
-    private(set) var headers: [String: String]?
-    private(set) var parameters: [String: Any]
+    private(set) var parameters: [String: Any] = [:]
+    private(set) var sampleData: Data = Data()
+    private(set) var headers: [String: String]? = nil
 
     var method: Moya.Method {
         return .get
@@ -30,13 +30,33 @@ struct NubankTarget: TargetType {
         }
     }
 
-    init(resourceUrl: URL,
-         parameters: [String: Any] = [:],
-         headers: [String: String]? = nil) {
-
+    init (resourceUrl: URL) {
         self.baseURL = resourceUrl
-        self.headers = headers
+    }
+}
+
+struct NubankActionTarget: TargetType {
+    private(set) var baseURL: URL
+    private(set) var parameters: [String: Any]
+    private(set) var path: String = ""
+    private(set) var sampleData: Data = Data()
+    private(set) var headers: [String: String]? = nil
+
+    var method: Moya.Method {
+        return .post
+    }
+
+    var task: Task {
+        return .requestParameters(parameters: parameters, encoding: parameterEncoding)
+    }
+
+    var parameterEncoding: ParameterEncoding {
+        return JSONEncoding.default
+    }
+
+    init(resourceUrl: URL,
+         parameters: [String: Any]) {
+        self.baseURL = resourceUrl
         self.parameters = parameters
-        self.sampleData = Data()
     }
 }
