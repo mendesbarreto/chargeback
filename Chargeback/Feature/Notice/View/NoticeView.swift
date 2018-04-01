@@ -62,6 +62,7 @@ final class NoticeView: BindableView<NoticeViewModel> {
     }
 
     override func bind (to viewModel: ViewModel) {
+        super.bind(to: viewModel)
         titleLabel.attributedText = viewModel.title
         descriptionLabel.attributedText = viewModel.description
         continueButton.setAttributedTitle(viewModel.continueButtonTitle, for: .normal)

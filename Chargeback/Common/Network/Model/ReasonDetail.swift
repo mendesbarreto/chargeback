@@ -5,6 +5,11 @@
 
 import Foundation
 
+enum ReasonDetailIdKey: String {
+    case merchantRecognized = "merchant_recognized"
+    case cardInPossession = "card_in_possession"
+}
+
 struct ReasonDetail: Decodable {
     private enum CodingKyes: String, CodingKey {
         case id
@@ -13,4 +18,8 @@ struct ReasonDetail: Decodable {
 
     let id: String
     let title: String
+
+    var reasonKey: ReasonDetailIdKey? {
+        return ReasonDetailIdKey(rawValue: id)
+    }
 }

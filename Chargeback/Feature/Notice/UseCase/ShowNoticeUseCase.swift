@@ -21,12 +21,20 @@ final class ShowNoticeUseCase {
             guard let strongSelf = self else {
                 return
             }
-            strongSelf.presenter.show(notice: notice)
+            strongSelf.show(notice: notice)
         }, onError: { [weak self] error in
             guard let strongSelf  = self else {
                 return
             }
             strongSelf.presenter.showError()
         }).disposed(by: disposableBag)
+    }
+
+    private func show(notice: Notice) {
+        do {
+            try presenter.show(notice: notice)
+        } catch {
+            presenter.showError()
+        }
     }
 }

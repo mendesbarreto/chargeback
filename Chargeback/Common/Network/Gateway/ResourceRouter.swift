@@ -4,33 +4,92 @@
 //
 
 import RxSwift
+import Foundation
+import Moya
+
+extension Encodable {
+    func asJson () -> [String: Any]? {
+        let jsonEncoder = JSONEncoder()
+        guard let jsonData = try? jsonEncoder.encode(self),
+              let jsonObj = try? JSONSerialization.jsonObject(with: jsonData,
+                                                              options: .allowFragments) else {
+            return nil
+        }
+        return jsonObj as? [String: Any]
+    }
+}
+
+enum ResourceAction {
+    case chargeback(userResponse: ChargeBackUserResponse)
+    case blockCard
+    case unblockCard
+
+    var name: String {
+        switch self {
+        case .chargeback: return "chargeback"
+        case .blockCard: return "block_card"
+        case .unblockCard: return "unblock_card"
+        }
+    }
+
+    var params: [String: Any] {
+        switch self {
+        case .chargeback(let userResponse): return userResponse.asJson() ?? [:]
+        default: return [:]
+        }
+    }
+}
+
+enum ResourceRouterError: Error {
+    case resourceNotFound
+    case resourceActionNotFound
+}
 
 final class ResourceRouter: ResourceRoutable {
 
     static let main = ResourceRouterFactory.make()
 
-    private let noticeGateway: ResourceGateway & EntryPointResourceGateway
+    private let resourceGateway: ResourceGateway & EntryPointResourceGateway
 
     private(set) var currentResource: BaseModel
 
     init(noticeGateway: ResourceGateway & EntryPointResourceGateway) {
-        self.noticeGateway = noticeGateway
+        self.resourceGateway = noticeGateway
         currentResource = BaseModel(links: [:])
     }
 
     func notice() -> Observable<Notice> {
-        return noticeGateway.requestInitialResource().share().flatMap {[unowned self] (model: BaseModel) -> Observable<Notice> in
-            return self.noticeGateway.request(resource: .notice, in: model.links)
-        }.do(onNext: { [weak self] model in
-            self?.currentResource = model
-        })
+        return resourceGateway.requestInitialResource()
+                              .share()
+                              .do(onNext: { [weak self] model in
+                                  self?.currentResource = model
+                              })
+                              .flatMap { [unowned self] (model: BaseModel) -> Observable<Notice> in
+                                  guard let notice = self.get(resource: .notice) else {
+                                      return Observable.error(ResourceRouterError.resourceNotFound)
+                                  }
+                                  return self.resourceGateway.request(resource: notice)
+                              }
+                              .do(onNext: { [weak self] model in
+                                  self?.currentResource = model
+                              })
     }
 
     func chargeBack() -> Observable<Chargeback> {
-        return Observable.empty()
+        guard let chargeback = get(resource: .chargeback) else {
+            return Observable.error(ResourceRouterError.resourceNotFound)
+        }
+        return resourceGateway.request(resource: chargeback)
     }
 
-    func has(resource: ResourceKey) -> Bool {
-        return currentResource.links[resource] != nil
+    func exec (action: ResourceAction) -> Observable<Void> {
+        guard let chargeback = get(resource: .chargeback) else {
+            return Observable.error(ResourceRouterError.resourceActionNotFound)
+        }
+        return resourceGateway.requestAction(resource: chargeback, parameters: action.params)
+    }
+
+    func get (resource: ResourceKey) -> Resource? {
+        return currentResource.links[resource]
     }
 }
