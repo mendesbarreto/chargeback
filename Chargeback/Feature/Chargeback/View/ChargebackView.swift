@@ -67,7 +67,11 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
         cancelButton.setAttributedTitle(viewModel.titleCancelButton, for: .normal)
         reasonMerchantView.bind(to: viewModel.reasonMerchantViewModel)
         reasonCardInPossessionView.bind(to: viewModel.reasonCardInPossessionViewModel)
-        cardBlockerStatusView.bind(to: viewModel.cardBlockerStatusViewModel)
+    }
+
+    // In the next refactor Remover cardBlockerStatusView and move to view controller
+    func bind (toCardBlockerViewModel viewModel: CardBlockerStatusViewModel) {
+        cardBlockerStatusView.bind(to: viewModel)
     }
 }
 

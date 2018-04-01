@@ -26,7 +26,7 @@ enum ResourceAction {
 
     var name: String {
         switch self {
-        case .chargeback: return "chargeback"
+        case .chargeback: return "self"
         case .blockCard: return "block_card"
         case .unblockCard: return "unblock_card"
         }
@@ -79,11 +79,13 @@ final class ResourceRouter: ResourceRoutable {
         guard let chargeback = get(resource: .chargeback) else {
             return Observable.error(ResourceRouterError.resourceNotFound)
         }
-        return resourceGateway.request(resource: chargeback)
+        return resourceGateway.request(resource: chargeback).do(onNext: { [weak self] model in
+            self?.currentResource = model
+        })
     }
 
     func exec (action: ResourceAction) -> Observable<Void> {
-        guard let chargeback = get(resource: .chargeback) else {
+        guard let chargeback = get(action: action) else {
             return Observable.error(ResourceRouterError.resourceActionNotFound)
         }
         return resourceGateway.requestAction(resource: chargeback, parameters: action.params)
@@ -91,5 +93,9 @@ final class ResourceRouter: ResourceRoutable {
 
     func get (resource: ResourceKey) -> Resource? {
         return currentResource.links[resource]
+    }
+
+    func get (action: ResourceAction) -> Resource? {
+        return currentResource.links[action]
     }
 }

@@ -7,13 +7,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-struct CardBlockerStatusViewModel {
-    let lockIconImage: UIImage
-    let unLockIconImage: UIImage
-    let descriptionLockedCard: NSAttributedString
-    let descriptionUnLockedCard: NSAttributedString
-}
-
 final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
     private let descriptionLabel: UILabel = UILabel()
     private let padLockImageView: UIImageView = UIImageView()
@@ -21,13 +14,6 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
     private let blockCardPublishSubject = PublishSubject<Bool>()
     var blockCardAction: SharedSequence<SignalSharingStrategy, Bool> {
         return blockCardPublishSubject.asSignal(onErrorJustReturn: false)
-    }
-
-    private var isCardBlocked: Bool = false {
-        didSet {
-            updateCardBlockImageView()
-            blockCardPublishSubject.onNext(isCardBlocked)
-        }
     }
 
     override init (frame: CGRect = .zero) {
@@ -42,11 +28,11 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
 
     override func bind (to viewModel: ViewModel) {
         super.bind(to: viewModel)
-        isCardBlocked = false
+        updateCardBlockImageView()
     }
 
     private func updateCardBlockImageView () {
-        if isCardBlocked {
+        if viewModel.isCardBlocked {
             padLockImageView.image = viewModel.lockIconImage
             descriptionLabel.attributedText = viewModel.descriptionLockedCard
         } else {
@@ -61,7 +47,12 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
     }
 
     @objc private func onCardBlockStackViewTapped () {
-        isCardBlocked = !isCardBlocked
+        let lastValue = viewModel.isCardBlocked
+        let newValue = !viewModel.isCardBlocked
+        if lastValue != newValue {
+            blockCardPublishSubject.onNext(newValue)
+        }
+        updateCardBlockImageView()
     }
 }
 

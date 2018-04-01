@@ -8,6 +8,6 @@ import Foundation
 final class ShowChargebackInformationUseCaseFactory {
     static func make (presenterOutput: ChargebackPresenterOutput) -> ShowChargebackInformationUseCase {
         let presenterInput = ChargebackPresenterFactory.make(presenterOutput: presenterOutput)
-        return ShowChargebackInformationUseCase(presenter: presenterInput)
+        return ShowChargebackInformationUseCase(resourceRouter: ResourceRouter.main, presenter: presenterInput)
     }
 }

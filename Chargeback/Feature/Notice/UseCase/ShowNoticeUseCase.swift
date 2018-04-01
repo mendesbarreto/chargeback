@@ -17,6 +17,7 @@ final class ShowNoticeUseCase {
     }
 
     func show() {
+        presenter.showLoading()
         noticeGateway.notice().subscribe(onNext: {[weak self] notice in
             guard let strongSelf = self else {
                 return
@@ -27,10 +28,12 @@ final class ShowNoticeUseCase {
                 return
             }
             strongSelf.presenter.showError()
+            strongSelf.presenter.showLoading()
         }).disposed(by: disposableBag)
     }
 
     private func show(notice: Notice) {
+        presenter.hideLoading()
         do {
             try presenter.show(notice: notice)
         } catch {

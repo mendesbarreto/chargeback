@@ -5,11 +5,11 @@
 
 import Foundation
 
-protocol ChargebackPresenterInput {
+protocol ChargebackPresenterInput: LoadablePresenter {
     func show (chargeback: Chargeback) throws
-
     func showChargeBackActionSuccess ()
-
     func showChargeBackActionError ()
+
+    func showAutoblock ()
     func showError ()
 }

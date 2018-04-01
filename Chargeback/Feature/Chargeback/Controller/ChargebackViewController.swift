@@ -7,24 +7,6 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class ChangeUserCardBlockStatusUseCaseFactory {
-    static func make () -> ChangeUserCardBlockStatusUseCase {
-        return ChangeUserCardBlockStatusUseCase(resourceRouter: ResourceRouter.main)
-    }
-}
-
-class ChangeUserCardBlockStatusUseCase {
-    let resourceRouter: ResourceRoutable
-    let presenter:
-
-    init (resourceRouter: ResourceRoutable) {
-        self.resourceRouter = resourceRouter
-    }
-
-    func change (to isCardBlocked: Bool) {
-    }
-}
-
 final class ChargebackViewController: BaseViewController {
 
     private let chargebackView: ChargebackView
@@ -37,7 +19,7 @@ final class ChargebackViewController: BaseViewController {
         super.init()
         showChargebackUserCase = ShowChargebackInformationUseCaseFactory.make(presenterOutput: self)
         chargebackUserCase = ChargebackUseCaseFactory.make(presenterOutput: self)
-        changeUserCardBlockStatusUseCase = ChangeUserCardBlockStatusUseCaseFactory.make()
+        changeUserCardBlockStatusUseCase = ChangeUserCardBlockStatusUseCaseFactory.make(presenterOutput: self)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +30,10 @@ final class ChargebackViewController: BaseViewController {
         super.viewDidLoad()
         setupLayout()
         setupChargebackView()
+    }
+
+    override func viewDidAppear (_ animated: Bool) {
+        super.viewDidAppear(animated)
         showChargebackUserCase.show()
     }
 
@@ -91,13 +77,18 @@ final class ChargebackViewController: BaseViewController {
     }
 }
 
-extension ReasonDetailUserResponse {
-    init (id: ReasonDetailIdKey, response: Bool) {
-        self.init(id: id.rawValue, response: response)
+extension ChargebackViewController: CardBlockerStatusPresenterOutput {
+    func show (cardBlockViewModel: CardBlockerStatusViewModel) {
+        self.chargebackView.bind(toCardBlockerViewModel: cardBlockViewModel)
     }
 }
 
 extension ChargebackViewController: ChargebackPresenterOutput {
+
+    func showAutoblock () {
+        changeUserCardBlockStatusUseCase.change(to: true)
+    }
+
     func show (chargebackViewModel: ChargebackViewModel) {
         chargebackView.bind(to: chargebackViewModel)
     }

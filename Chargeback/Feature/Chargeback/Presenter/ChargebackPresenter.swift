@@ -35,14 +35,9 @@ final class ChargebackPresenter: ChargebackPresenterInput {
                                                                     description: .descriptionBlack(withText: reasonCardInPossession.title))
 
         let hint: NSAttributedString = try .descriptionHTML(withText: chargeback.commentHint)
-        let descriptionLockedCard = ChargebackPresenterConst.descriptionLockedCard
-        let descriptionUnLockedCard = ChargebackPresenterConst.descriptionUnLockedCard
         let titleContestButton = ChargebackPresenterConst.titleContestButton
         let titleCancelButton = ChargebackPresenterConst.titleCancelButton
-        let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,
-                                                                    unLockIconImage: Assets.icChargebackUnlock.image,
-                                                                    descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
-                                                                    descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard))
+
         let chargebackViewModel =
                 ChargebackViewModel(title: .titleSmallBlack(withText: chargeback.title.uppercased()),
                                     reasonCardInPossessionViewModel: reasonCardInPossessionViewModel,
@@ -51,8 +46,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
                                     titleContestButton: .titleButtonGray(withText: titleContestButton),
                                     titleCancelButton: .titleButtonGray(withText: titleCancelButton),
                                     isCardInPossession: false,
-                                    isMerchantRecognized: false,
-                                    cardBlockerStatusViewModel: cardBlockerStatusViewModel)
+                                    isMerchantRecognized: false)
 
         presenterOutput?.show(chargebackViewModel: chargebackViewModel)
     }
@@ -67,6 +61,18 @@ final class ChargebackPresenter: ChargebackPresenterInput {
 
     func showChargeBackActionError () {
         presenterOutput?.showChargebackFailAlert()
+    }
+
+    func showLoading () {
+        presenterOutput?.showLoading()
+    }
+
+    func hideLoading () {
+        presenterOutput?.hideLoading()
+    }
+
+    func showAutoblock () {
+        presenterOutput?.showAutoblock()
     }
 
     private func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
