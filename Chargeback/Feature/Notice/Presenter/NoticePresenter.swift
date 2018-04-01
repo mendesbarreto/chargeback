@@ -5,16 +5,6 @@
 
 import Foundation
 
-protocol NoticePresenterInput {
-    func show(notice: Notice) throws
-    func showError()
-}
-
-protocol NoticePresenterOutput: class {
-    func show(notice: NoticeViewModel)
-    func showError()
-}
-
 final class NoticePresenter: NoticePresenterInput {
 
     private weak var presenterOutput: NoticePresenterOutput?
@@ -35,5 +25,13 @@ final class NoticePresenter: NoticePresenterInput {
 
     func showError () {
         presenterOutput?.showError()
+    }
+
+    func showLoading () {
+        presenterOutput?.showLoading()
+    }
+
+    func hideLoading () {
+        presenterOutput?.hideLoading()
     }
 }

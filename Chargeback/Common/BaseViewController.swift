@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class BaseViewController: UIViewController, LoadableViewController {
+class BaseViewController: UIViewController {
 
     let disposableBag = DisposeBag()
     private var loadingAlert: UIAlertController?
@@ -22,7 +22,9 @@ class BaseViewController: UIViewController, LoadableViewController {
         print("this class can not be initialized for NSCoder arg")
         return nil
     }
+}
 
+extension BaseViewController: LoadablePresenter {
     func showLoading () {
         loadingAlert = LoadingAlertScreenFactory.make()
         present(loadingAlert!, animated: true)

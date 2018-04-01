@@ -5,8 +5,8 @@
 
 import Foundation
 
-protocol LoadablePresenter {
-    func showLoading ()
+protocol NoticePresenterInput: LoadablePresenter {
+    func show (notice: Notice) throws
 
-    func hideLoading ()
+    func showError ()
 }
