@@ -29,7 +29,9 @@
 		B4E3317A14CD453947C78374 /* ChargebackUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */; };
 		B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D312BCEE97D9F053A62 /* UIColor.swift */; };
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
+		B4E3324276869EB1D2C3A116 /* LoadingAlertScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */; };
 		B4E3324A280DE2B359A5F327 /* ShowNoticeUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */; };
+		B4E332769EF92D17D5F5D50E /* LoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */; };
 		B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */; };
 		B4E33375A1ACF6369E0016B0 /* NuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3319126382CF198FACC60 /* NuView.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
@@ -135,6 +137,8 @@
 		B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterOutput.swift; sourceTree = "<group>"; };
 		B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterFactory.swift; sourceTree = "<group>"; };
 		B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenter.swift; sourceTree = "<group>"; };
+		B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableViewController.swift; sourceTree = "<group>"; };
+		B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactory.swift; sourceTree = "<group>"; };
 		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
 		B4E3384AEB610A1B88169332 /* ResourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
 		B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCase.swift; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 				B4E33B9CC287512CC1FDFF68 /* Extension */,
 				B4E339E3B21C6CA66640E38F /* View */,
 				B4E33C09CB008FF7D04E46CC /* Asset */,
+				B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */,
+				B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -853,6 +859,8 @@
 				B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */,
 				B4E337863563B0D68A760BEB /* ChargeBackUserResponse.swift in Sources */,
 				B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */,
+				B4E3324276869EB1D2C3A116 /* LoadingAlertScreenFactory.swift in Sources */,
+				B4E332769EF92D17D5F5D50E /* LoadableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

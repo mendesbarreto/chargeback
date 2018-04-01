@@ -15,7 +15,6 @@ final class ChangeUserCardBlockStatusUseCaseFactory {
 
 class ChangeUserCardBlockStatusUseCase {
     let resourceRouter: ResourceRoutable
-    let presenter:
 
     init (resourceRouter: ResourceRoutable) {
         self.resourceRouter = resourceRouter
