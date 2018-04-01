@@ -5,10 +5,10 @@
 
 import Foundation
 
-protocol ChargebackPresenterOutput: class {
+protocol ChargebackPresenterOutput: class, LoadablePresenter {
     func showChargebackSuccessAlert ()
-
     func showChargebackFailAlert ()
 
+    func showAutoblock ()
     func show (chargebackViewModel: ChargebackViewModel)
 }
