@@ -15,3 +15,14 @@ extension Dictionary where Key == String, Value == Resource {
         }
     }
 }
+
+extension Dictionary where Key == String, Value == Resource {
+    subscript (resource: ResourceAction) -> Value? {
+        get {
+            return self[resource.name]
+        }
+        set {
+            self[resource.name] = newValue
+        }
+    }
+}
