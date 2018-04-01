@@ -1,5 +1,5 @@
 //
-// Created by douglas.barreto on 3/31/18.
+// Created by Douglas Mendes on 3/31/18.
 // Copyright (c) 2018 Douglas Mendes Barreto. All rights reserved.
 //
 
@@ -7,11 +7,8 @@ import UIKit
 
 struct ChargebackViewModel {
     let title: NSAttributedString
-
-    let descriptionLockedCard: NSAttributedString
-    let descriptionUnLockedCard: NSAttributedString
-    let descriptionMerchantRecognized: NSAttributedString
-    let descriptionCardInPossession: NSAttributedString
+    let reasonCardInPossessionViewModel: ReasonDetailViewModel
+    let reasonMerchantViewModel: ReasonDetailViewModel
     let descriptionHint: NSAttributedString
 
     let titleContestButton: NSAttributedString
@@ -20,6 +17,5 @@ struct ChargebackViewModel {
     let isCardInPossession: Bool
     let isMerchantRecognized: Bool
 
-    let lockIconImage: UIImage
-    let unLockIconImage: UIImage
+    let cardBlockerStatusViewModel: CardBlockerStatusViewModel
 }

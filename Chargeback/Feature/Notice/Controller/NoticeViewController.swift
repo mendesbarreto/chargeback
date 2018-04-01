@@ -13,7 +13,6 @@ final class NoticeViewController: BaseViewController {
 
     override  init() {
         super.init()
-
         showNoticeUseCase = ShowNoticeUseCaseFactory.make(presenterOutput: self)
     }
 

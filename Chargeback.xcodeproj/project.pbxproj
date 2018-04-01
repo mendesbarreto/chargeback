@@ -18,15 +18,19 @@
 		75C4712C2066FB630060E0F1 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471222066FB620060E0F1 /* Moya.framework */; };
 		75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */; };
 		75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */; };
+		B4E33005E16E29121203B10D /* ReasonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */; };
 		B4E3301ABBCE60EBB79B170C /* ReasonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */; };
+		B4E330336CB6B5B4C713C96A /* NuAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */; };
 		B4E33049391045373115516C /* EntryPointResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */; };
 		B4E330DAB2C530ABF65864E0 /* ResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */; };
 		B4E33133A7126DDC5F6C9840 /* ChargebackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */; };
 		B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A633FA7833C0EB04589 /* NoticeView.swift */; };
 		B4E331447A1AD42119B4E4A0 /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339EB745070DC222952B5 /* BindableView.swift */; };
+		B4E3317A14CD453947C78374 /* ChargebackUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */; };
 		B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D312BCEE97D9F053A62 /* UIColor.swift */; };
 		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
 		B4E3324A280DE2B359A5F327 /* ShowNoticeUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */; };
+		B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */; };
 		B4E33375A1ACF6369E0016B0 /* NuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3319126382CF198FACC60 /* NuView.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
@@ -35,16 +39,27 @@
 		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
 		B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4B31D74724607DE556 /* Bindable.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
+		B4E3365E68658541BDAF0F62 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */; };
 		B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
+		B4E336AAFC653083D48D7B01 /* ReasonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */; };
 		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
 		B4E336EA074FA3B989DC4F65 /* ResourceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */; };
 		B4E337481C54829168C5B170 /* ChargebackPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B5395E0E0FDEA8ADA8A /* ChargebackPresenterFactory.swift */; };
 		B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */; };
+		B4E337863563B0D68A760BEB /* ChargeBackUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */; };
+		B4E337CEB6789B8BB57899E7 /* NuAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */; };
 		B4E337DAB1DC6C35C72FA742 /* ChargeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3355327D2F843626730F0 /* ChargeViewModel.swift */; };
+		B4E337F5850F237294C8195D /* NuAlertPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */; };
 		B4E33808FF82CF40BD5CBE6B /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */; };
 		B4E33855C5F12674B87FA176 /* ChargebackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */; };
+		B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */; };
+		B4E339830A2F3748596EC95C /* ChargebackUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */; };
+		B4E339B361042629334AEF47 /* NuAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3390EE43950F8B6F1822F /* NuAlertType.swift */; };
 		B4E339E50CEAEE3C735D2C9F /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */; };
+		B4E33A4E27AC9BA4C1074E72 /* CardBlockerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */; };
+		B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */; };
 		B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */; };
+		B4E33AB2F6221EC570F9A5C1 /* NuAlertPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */; };
 		B4E33AE060EE57C7683471BC /* ChargebackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */; };
 		B4E33B262E5A4B4E47A91C88 /* ResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */; };
 		B4E33B819B8B3CF7D5EBEA22 /* ShowNoticeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */; };
@@ -55,6 +70,7 @@
 		B4E33D162C3880CB39B3563C /* NubankTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33600525F955954F9FA9D /* NubankTarget.swift */; };
 		B4E33D45E1610007D32CCBD9 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FF3480757F3E900EBFA /* Notice.swift */; };
 		B4E33DA244740CBFFAF44765 /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3384AEB610A1B88169332 /* ResourceError.swift */; };
+		B4E33DC5BB1C4D5E6E8BD250 /* NuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */; };
 		B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330925724986058B197C8 /* DictionaryTests.swift */; };
 		B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3351B7F53E09355EE96AD /* BaseViewController.swift */; };
 		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
@@ -98,7 +114,9 @@
 		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
 		B4E330925724986058B197C8 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
+		B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewController.swift; sourceTree = "<group>"; };
 		B4E3319126382CF198FACC60 /* NuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuView.swift; sourceTree = "<group>"; };
 		B4E331D4E46248E2484359CA /* NoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
@@ -109,18 +127,26 @@
 		B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceGateway.swift; sourceTree = "<group>"; };
 		B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E3351B7F53E09355EE96AD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCaseFactory.swift; sourceTree = "<group>"; };
 		B4E3355327D2F843626730F0 /* ChargeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeViewModel.swift; sourceTree = "<group>"; };
 		B4E33565EFB26C5D51FAC41B /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceGateway.swift; sourceTree = "<group>"; };
 		B4E33600525F955954F9FA9D /* NubankTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NubankTarget.swift; sourceTree = "<group>"; };
+		B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterOutput.swift; sourceTree = "<group>"; };
 		B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterFactory.swift; sourceTree = "<group>"; };
+		B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenter.swift; sourceTree = "<group>"; };
 		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
 		B4E3384AEB610A1B88169332 /* ResourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
 		B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCase.swift; sourceTree = "<group>"; };
+		B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailUserResponse.swift; sourceTree = "<group>"; };
+		B4E3390EE43950F8B6F1822F /* NuAlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertType.swift; sourceTree = "<group>"; };
 		B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMoyaGateway.swift; sourceTree = "<group>"; };
 		B4E3392FEF60189C8CF41146 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailViewModel.swift; sourceTree = "<group>"; };
 		B4E339EB745070DC222952B5 /* BindableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
 		B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouter.swift; sourceTree = "<group>"; };
+		B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailView.swift; sourceTree = "<group>"; };
 		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
@@ -128,17 +154,23 @@
 		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
 		B4E33BCCB3BF6CD361D11241 /* ChargebackPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterOutput.swift; sourceTree = "<group>"; };
 		B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCase.swift; sourceTree = "<group>"; };
+		B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewModel.swift; sourceTree = "<group>"; };
+		B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeBackUserResponse.swift; sourceTree = "<group>"; };
 		B4E33C607CE179104644B532 /* ResourceRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRoutable.swift; sourceTree = "<group>"; };
 		B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenter.swift; sourceTree = "<group>"; };
 		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
 		B4E33CF42B29491BDF2499ED /* ShowChargebackInformationUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertView.swift; sourceTree = "<group>"; };
 		B4E33D312BCEE97D9F053A62 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B4E33D4B31D74724607DE556 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		B4E33D503AFC1B24CA20BD18 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusView.swift; sourceTree = "<group>"; };
 		B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseFactory.swift; sourceTree = "<group>"; };
 		B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterInput.swift; sourceTree = "<group>"; };
 		B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		B4E33E22826637B208D3084E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCase.swift; sourceTree = "<group>"; };
 		B4E33EA68BADE5B833B97CFE /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewController.swift; sourceTree = "<group>"; };
 		B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackView.swift; sourceTree = "<group>"; };
@@ -276,6 +308,16 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		B4E330735F5EFA4691FD8AA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */,
+				B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */,
+				B4E3390EE43950F8B6F1822F /* NuAlertType.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B4E331B8222111AAB771E263 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +325,17 @@
 				B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4E331D5857E176F69BC3CF4 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3327EEBD297A8B82B824C /* ViewModel */,
+				B4E330735F5EFA4691FD8AA2 /* Controller */,
+				B4E33BF1E4D2E21B7E879242 /* View */,
+				B4E33FEC797237E0C43C36F9 /* Presenter */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		B4E332515AE364255E2A4478 /* Controller */ = {
@@ -299,6 +352,14 @@
 				B4E3384AEB610A1B88169332 /* ResourceError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		B4E3327EEBD297A8B82B824C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B4E332BE8D4E2678390B7DC4 /* Controller */ = {
@@ -359,6 +420,7 @@
 			children = (
 				B4E33C035142D543A7D0B216 /* Notice */,
 				B4E3378190B51FBBFAA7C8D3 /* Chargeback */,
+				B4E331D5857E176F69BC3CF4 /* Alert */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -411,6 +473,8 @@
 			children = (
 				B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */,
 				B4E33CF42B29491BDF2499ED /* ShowChargebackInformationUseCaseFactory.swift */,
+				B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */,
+				B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -419,6 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3355327D2F843626730F0 /* ChargeViewModel.swift */,
+				B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -454,6 +519,8 @@
 				B4E33D503AFC1B24CA20BD18 /* Action.swift */,
 				B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */,
 				B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */,
+				B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */,
+				B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,6 +556,7 @@
 				B4E33E22826637B208D3084E /* UIView.swift */,
 				B4E33D312BCEE97D9F053A62 /* UIColor.swift */,
 				B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */,
+				B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -497,6 +565,8 @@
 			isa = PBXGroup;
 			children = (
 				B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */,
+				B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */,
+				B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +582,14 @@
 				B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */,
 			);
 			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B4E33BF1E4D2E21B7E879242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B4E33C035142D543A7D0B216 /* Notice */ = {
@@ -557,6 +635,16 @@
 				B4E33BCCB3BF6CD361D11241 /* ChargebackPresenterOutput.swift */,
 				B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */,
 				B4E33B5395E0E0FDEA8ADA8A /* ChargebackPresenterFactory.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E33FEC797237E0C43C36F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */,
+				B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */,
+				B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -749,6 +837,22 @@
 				B4E337481C54829168C5B170 /* ChargebackPresenterFactory.swift in Sources */,
 				B4E33D127B49893031DB7B1C /* ShowChargebackInformationUseCaseFactory.swift in Sources */,
 				B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */,
+				B4E336AAFC653083D48D7B01 /* ReasonDetailViewModel.swift in Sources */,
+				B4E33005E16E29121203B10D /* ReasonDetailView.swift in Sources */,
+				B4E33A4E27AC9BA4C1074E72 /* CardBlockerStatusView.swift in Sources */,
+				B4E339830A2F3748596EC95C /* ChargebackUseCase.swift in Sources */,
+				B4E3317A14CD453947C78374 /* ChargebackUseCaseFactory.swift in Sources */,
+				B4E337CEB6789B8BB57899E7 /* NuAlertViewModel.swift in Sources */,
+				B4E3365E68658541BDAF0F62 /* ObservableType.swift in Sources */,
+				B4E330336CB6B5B4C713C96A /* NuAlertViewController.swift in Sources */,
+				B4E33DC5BB1C4D5E6E8BD250 /* NuAlertView.swift in Sources */,
+				B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */,
+				B4E33AB2F6221EC570F9A5C1 /* NuAlertPresenterInput.swift in Sources */,
+				B4E337F5850F237294C8195D /* NuAlertPresenterOutput.swift in Sources */,
+				B4E339B361042629334AEF47 /* NuAlertType.swift in Sources */,
+				B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */,
+				B4E337863563B0D68A760BEB /* ChargeBackUserResponse.swift in Sources */,
+				B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

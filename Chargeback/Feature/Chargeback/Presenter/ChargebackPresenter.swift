@@ -1,5 +1,5 @@
 //
-// Created by douglas.barreto on 3/31/18.
+// Created by Douglas Mendes on 3/31/18.
 // Copyright (c) 2018 Douglas Mendes Barreto. All rights reserved.
 //
 
@@ -29,32 +29,47 @@ final class ChargebackPresenter: ChargebackPresenterInput {
               let reasonCardInPossession = get(reasonDetails: chargeback.reasonDetails, by: .cardInPossession) else {
             throw ChargebackPresenterError.problemToFindDetailsReasons
         }
+        let reasonMerchantViewModel = ReasonDetailViewModel(detailIdKey: reasonMerchantRecognized.reasonKey!,
+                                                            description: .descriptionBlack(withText: reasonMerchantRecognized.title))
+        let reasonCardInPossessionViewModel = ReasonDetailViewModel(detailIdKey: reasonCardInPossession.reasonKey!,
+                                                                    description: .descriptionBlack(withText: reasonCardInPossession.title))
+
         let hint: NSAttributedString = try .descriptionHTML(withText: chargeback.commentHint)
         let descriptionLockedCard = ChargebackPresenterConst.descriptionLockedCard
-        let descriptionUnLockedCard = ChargebackPresenterConst.descriptionLockedCard
+        let descriptionUnLockedCard = ChargebackPresenterConst.descriptionUnLockedCard
         let titleContestButton = ChargebackPresenterConst.titleContestButton
         let titleCancelButton = ChargebackPresenterConst.titleCancelButton
+        let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,
+                                                                    unLockIconImage: Assets.icChargebackUnlock.image,
+                                                                    descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
+                                                                    descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard))
         let chargebackViewModel =
                 ChargebackViewModel(title: .titleSmallBlack(withText: chargeback.title.uppercased()),
-                                    descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
-                                    descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard),
-                                    descriptionMerchantRecognized: .descriptionBlack(withText: reasonMerchantRecognized.title),
-                                    descriptionCardInPossession: .descriptionBlack(withText: reasonCardInPossession.title),
+                                    reasonCardInPossessionViewModel: reasonCardInPossessionViewModel,
+                                    reasonMerchantViewModel: reasonMerchantViewModel,
                                     descriptionHint: hint,
                                     titleContestButton: .titleButtonGray(withText: titleContestButton),
                                     titleCancelButton: .titleButtonGray(withText: titleCancelButton),
                                     isCardInPossession: false,
                                     isMerchantRecognized: false,
-                                    lockIconImage: Assets.icChargebackLock.image,
-                                    unLockIconImage: Assets.icChargebackUnlock.image)
+                                    cardBlockerStatusViewModel: cardBlockerStatusViewModel)
+
         presenterOutput?.show(chargebackViewModel: chargebackViewModel)
     }
 
     func showError () {
-        presenterOutput?.showError()
+
     }
 
-    private func get (reasonDetails: [ReasonDetail], by: ReasonDetailIdKey) -> ReasonDetail? {
-        return reasonDetails.first { $0.reasonKey == .merchantRecognized }
+    func showChargeBackActionSuccess () {
+        presenterOutput?.showChargebackSuccessAlert()
+    }
+
+    func showChargeBackActionError () {
+        presenterOutput?.showChargebackFailAlert()
+    }
+
+    private func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
+        return reasonDetails.first { $0.reasonKey == key }
     }
 }

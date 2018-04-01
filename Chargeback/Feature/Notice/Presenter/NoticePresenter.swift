@@ -25,7 +25,7 @@ final class NoticePresenter: NoticePresenterInput {
 
     func show(notice: Notice) throws {
         let noticeDescriptionHTML: NSAttributedString = try .descriptionHTML(withText: notice.description)
-        let viewModel = NoticeViewModel(title: .titlePurple(withText: notice.title),
+        let viewModel = NoticeViewModel(title: .titleLargePurple(withText: notice.title),
                                         description: noticeDescriptionHTML,
                                         continueButtonTitle: .titleButtonPurple(withText: notice.primaryAction.title.uppercased()),
                                         closeButtonTitle: .titleButtonGray(withText: notice.secondaryAction.title.uppercased()))
