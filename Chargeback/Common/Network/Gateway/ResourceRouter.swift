@@ -7,18 +7,6 @@ import RxSwift
 import Foundation
 import Moya
 
-extension Encodable {
-    func asJson () -> [String: Any]? {
-        let jsonEncoder = JSONEncoder()
-        guard let jsonData = try? jsonEncoder.encode(self),
-              let jsonObj = try? JSONSerialization.jsonObject(with: jsonData,
-                                                              options: .allowFragments) else {
-            return nil
-        }
-        return jsonObj as? [String: Any]
-    }
-}
-
 enum ResourceAction {
     case chargeback(userResponse: ChargeBackUserResponse)
     case blockCard

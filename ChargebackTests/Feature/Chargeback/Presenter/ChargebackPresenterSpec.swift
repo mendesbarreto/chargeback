@@ -26,6 +26,52 @@ final class ChargebackPresenterSpec: QuickSpec {
                     presenterOutput = ChargebackPresenterOutputMock()
                     presenter = ChargebackPresenter(presenterOutput: presenterOutput)
                 }
+                context("and called showError") {
+                    beforeEach {
+                        presenter.showError()
+                    }
+                    it("should call presenter output show fail alert") {
+                        expect(presenterOutput.invokedShowChargebackFailAlert).to(beTrue())
+                        expect(presenterOutput.invokedShowChargebackFailAlertCount).to(equal(1))
+                    }
+                }
+                context("and called show charge back action error") {
+                    beforeEach {
+                        presenter.showChargeBackActionError()
+                    }
+                    it("should call presenter output show fail alert") {
+                        expect(presenterOutput.invokedShowChargebackFailAlert).to(beTrue())
+                        expect(presenterOutput.invokedShowChargebackFailAlertCount).to(equal(1))
+                    }
+                }
+                context("and called show charge back action success") {
+                    beforeEach {
+                        presenter.showChargeBackActionSuccess()
+                    }
+                    it("should call presenter output show success alert") {
+                        expect(presenterOutput.invokedShowChargebackSuccessAlert).to(beTrue())
+                        expect(presenterOutput.invokedShowChargebackSuccessAlertCount).to(equal(1))
+                    }
+                }
+                context("and called show show loading") {
+                    beforeEach {
+                        presenter.showLoading()
+                    }
+                    it("should call presenter output show loading") {
+                        expect(presenterOutput.invokedShowLoading).to(beTrue())
+                        expect(presenterOutput.invokedShowLoadingCount).to(equal(1))
+                    }
+                }
+                context("and called show hide loading") {
+                    beforeEach {
+                        presenter.hideLoading()
+                    }
+                    it("should call presenter output hide loading") {
+                        expect(presenterOutput.invokedHideLoading).to(beTrue())
+                        expect(presenterOutput.invokedHideLoadingCount).to(equal(1))
+                    }
+                }
+
                 context("with a valid model") {
                     context("and called show") {
                         beforeEach {

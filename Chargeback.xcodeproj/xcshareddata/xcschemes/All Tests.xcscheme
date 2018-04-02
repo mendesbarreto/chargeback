@@ -45,6 +45,9 @@
                   Identifier = "ChangeUserCardBlockStatusUseCaseSpec">
                </Test>
                <Test
+                  Identifier = "ChargebackPresenterSpec">
+               </Test>
+               <Test
                   Identifier = "ChargebackUseCaseSpec">
                </Test>
                <Test
