@@ -37,4 +37,6 @@ brew install swiftlint
 
 ### Beta Access
 
-To start receive versions using the test flight please register on Beta Access by **[HEROKU PAGE](https://nuchargeback.herokuapp.com)** with password: **nubank131213**
+To start receive versions using the test flight please register on **[Beta Access](https://nuchargeback.herokuapp.com)** with password: **nubank131213**
+
+After you are registered, you will receive a email with your TestFlight instructions to start your beta access program. 
