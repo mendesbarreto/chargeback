@@ -29,9 +29,12 @@ carthage update --cache-builds --platform ios
 
 ### Swift lint
 
-
 To run swift lint on project you should install it:
 
 ```shell
 brew install swiftlint
 ```
+
+### Beta Access
+
+To register Beta Access in TestFlight please acess **[HEROKU PAGE](https://nuchargeback.herokuapp.com)** with password: **nubank131213**
