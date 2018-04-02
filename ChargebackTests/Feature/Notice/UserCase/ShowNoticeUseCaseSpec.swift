@@ -6,7 +6,6 @@
 import Quick
 import Nimble
 import RxSwift
-import RxBlocking
 import RxTest
 
 @testable import Chargeback
