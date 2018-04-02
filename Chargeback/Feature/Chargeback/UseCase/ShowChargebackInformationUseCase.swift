@@ -18,10 +18,8 @@ final class ShowChargebackInformationUseCase {
     }
 
     func show () {
-        presenter.showLoading()
-        if let chargeback = chargeback {
-            show(chargeback: chargeback)
-        } else {
+        if chargeback == nil {
+            presenter.showLoading()
             resourceRouter.chargeBack()
                           .subscribe(onNext: { [weak self] chargeback in
                               guard let strongSelf = self else { return }
@@ -33,6 +31,8 @@ final class ShowChargebackInformationUseCase {
                                   strongSelf.presenter.showError()
                               }
                           }).disposed(by: disposableBag)
+        } else {
+            presenter.hideLoading(onComplete: nil)
         }
     }
 
