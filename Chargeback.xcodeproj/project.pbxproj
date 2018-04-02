@@ -49,6 +49,8 @@
 		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
 		B4E3340C401904FF02CD7C1F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EA68BADE5B833B97CFE /* Assets.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */; };
+		B4E3359CA003B084BC6A372F /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A1FAE66BB85CF733BC2 /* TestError.swift */; };
 		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
 		B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4B31D74724607DE556 /* Bindable.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
@@ -71,6 +73,7 @@
 		B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */; };
 		B4E339026B122ED50FE6CCE2 /* NoticePresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */; };
 		B4E339830A2F3748596EC95C /* ChargebackUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */; };
+		B4E3399EF0365B0734BB5A87 /* ChargebackUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */; };
 		B4E339B361042629334AEF47 /* NuAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3390EE43950F8B6F1822F /* NuAlertType.swift */; };
 		B4E339E50CEAEE3C735D2C9F /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */; };
 		B4E33A216F546BB00019A1CB /* CardBlockerStatusPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */; };
@@ -98,6 +101,7 @@
 		B4E33DF0CD59CF31830820B3 /* ShowNoticeUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3332203028FEFCA970C95 /* ShowNoticeUseCaseSpec.swift */; };
 		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
+		B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */; };
 		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
 		B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */; };
@@ -145,6 +149,7 @@
 		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
 		B4E330925724986058B197C8 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
 		B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
 		B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +162,7 @@
 		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterInput.swift; sourceTree = "<group>"; };
+		B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeBackUserResponseMock.swift; sourceTree = "<group>"; };
 		B4E3332203028FEFCA970C95 /* ShowNoticeUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBaseModelFactory.swift; sourceTree = "<group>"; };
 		B4E33430591D91087C9FD1C3 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailViewModel.swift; sourceTree = "<group>"; };
 		B4E339EB745070DC222952B5 /* BindableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
 		B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouter.swift; sourceTree = "<group>"; };
+		B4E33A1FAE66BB85CF733BC2 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailView.swift; sourceTree = "<group>"; };
 		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
@@ -217,6 +224,7 @@
 		B4E33E22826637B208D3084E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCase.swift; sourceTree = "<group>"; };
 		B4E33EA68BADE5B833B97CFE /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewController.swift; sourceTree = "<group>"; };
 		B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterInputMock.swift; sourceTree = "<group>"; };
 		B4E33F5FCD115C98F7CAE50B /* ChangeUserCardBlockStatusUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserCardBlockStatusUseCase.swift; sourceTree = "<group>"; };
@@ -266,6 +274,7 @@
 				B4E3395B0CC3374D146CDBA0 /* Common */,
 				B4E3338A7DAEB6D8087F4D1B /* Feature */,
 				B4E33DD2AE92A57E9B424B59 /* Mock */,
+				B4E33EDCEBDFF071670C43BB /* Core */,
 			);
 			path = ChargebackTests;
 			sourceTree = "<group>";
@@ -482,6 +491,7 @@
 			children = (
 				B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */,
 				B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */,
+				B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -722,6 +732,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3359883F47A2A4AC4BA7F /* NoticeMock.swift */,
+				B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -745,6 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */,
+				B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -757,6 +769,14 @@
 				B4E33C81E3240709AD370E64 /* Model */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		B4E33EDCEBDFF071670C43BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A1FAE66BB85CF733BC2 /* TestError.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		B4E33F9303ED05C9F27371D5 /* Presenter */ = {
@@ -958,6 +978,10 @@
 				B4E33AF919035DABF7C27BDB /* ResourceRouterMock.swift in Sources */,
 				B4E33F440848047E07EC6896 /* CardBlockerStatusPresenterInputMock.swift in Sources */,
 				B4E33CC118CA905F2F1031A6 /* NoticeMock.swift in Sources */,
+				B4E3399EF0365B0734BB5A87 /* ChargebackUseCaseSpec.swift in Sources */,
+				B4E3359CA003B084BC6A372F /* TestError.swift in Sources */,
+				B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */,
+				B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,10 +11,6 @@ import RxTest
 
 @testable import Chargeback
 
-enum TestError: Error {
-    case defaultError
-}
-
 final class ChangeUserCardBlockStatusUseCaseSpec: QuickSpec {
     override func spec () {
         super.spec()

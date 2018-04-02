@@ -42,6 +42,9 @@
                   Identifier = "BaseViewControllerTests">
                </Test>
                <Test
+                  Identifier = "ChangeUserCardBlockStatusUseCaseSpec">
+               </Test>
+               <Test
                   Identifier = "DictionaryTests">
                </Test>
                <Test
