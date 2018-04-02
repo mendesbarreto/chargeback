@@ -56,8 +56,9 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading () {
+    func hideLoading (onComplete: (() -> ())?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
+        onComplete?()
     }
 }

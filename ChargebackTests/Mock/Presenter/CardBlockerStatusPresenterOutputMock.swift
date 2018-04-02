@@ -7,6 +7,7 @@ import Foundation
 @testable import Chargeback
 
 final class CardBlockerStatusPresenterOutputMock: CardBlockerStatusPresenterOutput {
+
     var invokedShow = false
     var invokedShowCount = 0
     var invokedShowParameters: (cardBlockViewModel: CardBlockerStatusViewModel, Void)?
@@ -30,8 +31,9 @@ final class CardBlockerStatusPresenterOutputMock: CardBlockerStatusPresenterOutp
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading () {
+    func hideLoading (onComplete: (() -> ())?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
+        onComplete?()
     }
 }
