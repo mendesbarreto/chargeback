@@ -4,34 +4,7 @@
 //
 
 import RxSwift
-import Foundation
 import Moya
-
-enum ResourceAction {
-    case chargeback(userResponse: ChargeBackUserResponse)
-    case blockCard
-    case unblockCard
-
-    var name: String {
-        switch self {
-        case .chargeback: return "self"
-        case .blockCard: return "block_card"
-        case .unblockCard: return "unblock_card"
-        }
-    }
-
-    var params: [String: Any] {
-        switch self {
-        case .chargeback(let userResponse): return userResponse.asJson() ?? [:]
-        default: return [:]
-        }
-    }
-}
-
-enum ResourceRouterError: Error {
-    case resourceNotFound
-    case resourceActionNotFound
-}
 
 final class ResourceRouter: ResourceRoutable {
 
@@ -41,9 +14,9 @@ final class ResourceRouter: ResourceRoutable {
 
     private(set) var currentResource: BaseModel
 
-    init(noticeGateway: ResourceGateway & EntryPointResourceGateway) {
+    init (noticeGateway: ResourceGateway & EntryPointResourceGateway, starterResource: BaseModel = BaseModel(links: [:])) {
         self.resourceGateway = noticeGateway
-        currentResource = BaseModel(links: [:])
+        currentResource = starterResource
     }
 
     func notice() -> Observable<Notice> {

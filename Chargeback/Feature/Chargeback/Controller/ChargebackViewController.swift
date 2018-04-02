@@ -94,17 +94,17 @@ extension ChargebackViewController: ChargebackPresenterOutput {
     }
 
     func showChargebackSuccessAlert () {
-        let alertViewController = NuAlertViewControllerFactory.make(title: NuAlertConst.successTitle,
-                                                                    description: NuAlertConst.successDescription,
-                                                                    buttonTitle: NuAlertConst.closeButtonTitle,
+        let alertViewController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.successTitle,
+                                                                    description: Strings.NuAlert.successDescription,
+                                                                    buttonTitle: Strings.NuAlert.closeButtonTitle,
                                                                     type: .success) { [weak self] in self?.dismiss(animated: true) }
         present(alertViewController, animated: true)
     }
 
     func showChargebackFailAlert () {
-        NuAlertViewControllerFactory.make(title: NuAlertConst.successTitle,
-                                          description: NuAlertConst.successDescription,
-                                          buttonTitle: NuAlertConst.closeButtonTitle,
+        NuAlertViewControllerFactory.make(title: Strings.NuAlert.successTitle,
+                                          description: Strings.NuAlert.successDescription,
+                                          buttonTitle: Strings.NuAlert.closeButtonTitle,
                                           type: .fail)
     }
 }

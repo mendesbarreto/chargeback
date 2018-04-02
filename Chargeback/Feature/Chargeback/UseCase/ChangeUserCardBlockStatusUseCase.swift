@@ -5,44 +5,6 @@
 
 import RxSwift
 
-final class CardBlockerStatusPresenter: CardBlockerStatusPresenterInput {
-    private weak var presenterOutput: CardBlockerStatusPresenterOutput?
-
-    init (presenterOutput: CardBlockerStatusPresenterOutput) {
-        self.presenterOutput = presenterOutput
-    }
-
-    func showLoading () {
-        presenterOutput?.showLoading()
-    }
-
-    func hideLoading () {
-        presenterOutput?.hideLoading()
-    }
-
-    func lockPadLockView () {
-        let descriptionLockedCard = ChargebackPresenterConst.descriptionLockedCard
-        let descriptionUnLockedCard = ChargebackPresenterConst.descriptionUnLockedCard
-        let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,
-                                                                    unLockIconImage: Assets.icChargebackUnlock.image,
-                                                                    descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
-                                                                    descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard),
-                                                                    isCardBlocked: true)
-        presenterOutput?.show(cardBlockViewModel: cardBlockerStatusViewModel)
-    }
-
-    func unlockPadLockView () {
-        let descriptionLockedCard = ChargebackPresenterConst.descriptionLockedCard
-        let descriptionUnLockedCard = ChargebackPresenterConst.descriptionUnLockedCard
-        let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,
-                                                                    unLockIconImage: Assets.icChargebackUnlock.image,
-                                                                    descriptionLockedCard: .descriptionRed(withText: descriptionLockedCard),
-                                                                    descriptionUnLockedCard: .descriptionRed(withText: descriptionUnLockedCard),
-                                                                    isCardBlocked: false)
-        presenterOutput?.show(cardBlockViewModel: cardBlockerStatusViewModel)
-    }
-}
-
 final class ChangeUserCardBlockStatusUseCase {
 
     private let resourceRouter: ResourceRoutable

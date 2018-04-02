@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum NuAlertType {
+enum NuAlertType: String {
     case success
     case fail
 }

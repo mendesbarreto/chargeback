@@ -6,14 +6,15 @@
 import UIKit
 
 final class NuAlertViewControllerFactory {
-    static func make (title: String,
-                      description: String,
-                      buttonTitle: String,
-                      type: NuAlertType,
+    static func make (title: String = Strings.NuAlert.successTitle,
+                      description: String = Strings.NuAlert.successDescription,
+                      buttonTitle: String = Strings.NuAlert.closeButtonTitle,
+                      type: NuAlertType = .success,
                       action: (() -> ())? = nil) -> UIViewController {
-        return NuAlertViewController(title: NuAlertConst.successTitle,
-                                     description: NuAlertConst.successDescription,
-                                     buttonTitle: NuAlertConst.closeButtonTitle,
-                                     type: .success, action: action)
+        return NuAlertViewController(title: title,
+                                     description: description,
+                                     buttonTitle: buttonTitle,
+                                     type: type,
+                                     action: action)
     }
 }

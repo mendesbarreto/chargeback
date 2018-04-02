@@ -7,19 +7,20 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-struct NuAlertConst {
-    static let successTitle = "Contestação de compra recebida"
-    static let successDescription = "Fique de olho no seu email! Nos próximos 3 dias você deverá receber um primeiro retorno sobre sua contestação"
-    static let closeButtonTitle = "Fechar"
-}
-
 final class NuAlertViewController: BaseViewController {
 
     private var presenter: NuAlertPresenter!
     private let nuAlertView = NuAlertView()
     private var action: (() -> ())?
 
+    let alertType: NuAlertType
+
+    var viewModel: NuAlertViewModel {
+        return nuAlertView.viewModel
+    }
+
     init (title: String, description: String, buttonTitle: String, type: NuAlertType, action: (() -> ())? = nil) {
+        alertType = type
         super.init()
         self.action = action
         presenter = NuAlertPresenter(title: title,
