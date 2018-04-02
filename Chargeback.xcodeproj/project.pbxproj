@@ -677,6 +677,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 751254712066E6B800FE888E /* Build configuration list for PBXNativeTarget "ChargebackTests" */;
 			buildPhases = (
+				7594AC992071AB8F00000CF3 /* Carthage */,
 				751254662066E6B800FE888E /* Sources */,
 				751254672066E6B800FE888E /* Frameworks */,
 				751254682066E6B800FE888E /* Resources */,
@@ -769,6 +770,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7594AC992071AB8F00000CF3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		75C471172066F9860060E0F1 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

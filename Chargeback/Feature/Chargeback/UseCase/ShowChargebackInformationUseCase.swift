@@ -25,7 +25,7 @@ final class ShowChargebackInformationUseCase {
             guard let strongSelf = self else { return }
             strongSelf.presenter.hideLoading()
             strongSelf.presenter.showError()
-        })
+        }).disposed(by: disposableBag)
     }
 
     private func show (chargeback: Chargeback) {
