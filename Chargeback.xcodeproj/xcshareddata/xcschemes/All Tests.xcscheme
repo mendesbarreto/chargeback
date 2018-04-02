@@ -44,6 +44,9 @@
                <Test
                   Identifier = "DictionaryTests">
                </Test>
+               <Test
+                  Identifier = "ShowNoticeUseCaseSpec">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>

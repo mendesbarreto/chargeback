@@ -13,12 +13,8 @@ import RxTest
 
 final class ShowNoticeUseCaseSpec: QuickSpec {
 
-    private var noticeMock: Notice {
-        return Notice(title: "Some Title",
-                      description: "Some Description",
-                      primaryAction: Action(title: "Action1", action: "Action2"),
-                      secondaryAction: Action(title: "Action2", action: "Action2"),
-                      links: [:])
+    var noticeMock: Notice {
+        return NoticeMock.noticeMock
     }
 
     override func spec () {
