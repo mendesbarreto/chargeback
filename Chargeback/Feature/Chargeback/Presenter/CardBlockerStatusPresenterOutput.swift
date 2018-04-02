@@ -5,7 +5,6 @@
 
 import Foundation
 
-enum NuAlertType: String {
-    case success
-    case fail
+protocol CardBlockerStatusPresenterOutput: class, LoadablePresenter {
+    func show (cardBlockViewModel: CardBlockerStatusViewModel)
 }

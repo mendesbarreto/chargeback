@@ -23,7 +23,7 @@ final class ChargebackUseCase {
             }
         }, onError: { [weak self] error in
             if let presenter = self?.presenter {
-                presenter.showChargeBackActionSuccess()
+                presenter.showChargeBackActionError()
             }
         }).disposed(by: disposableBag)
     }

@@ -46,6 +46,6 @@ final class DictionaryTests: XCTestCase {
         var dictionary = [ResourceKey.notice.rawValue: resource]
 
         //Assertion
-        XCTAssertNil(dictionary["invalidResourceKey"])
+        XCTAssertNil(dictionary[invalidResourceKey])
     }
 }

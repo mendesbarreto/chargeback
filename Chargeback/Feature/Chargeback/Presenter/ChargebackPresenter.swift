@@ -8,14 +8,6 @@ import Foundation
 enum ChargebackPresenterError: Error {
     case problemToFindDetailsReasons
 }
-
-struct ChargebackPresenterConst {
-    static let titleContestButton = "Contestar"
-    static let titleCancelButton = "Cancelar"
-    static let descriptionLockedCard = "Bloqueamos preventivamente o seu cartão"
-    static let descriptionUnLockedCard = "Cartão desbloqueado, recomendamos mantê-lo bloqueado"
-}
-
 final class ChargebackPresenter: ChargebackPresenterInput {
 
     private weak var presenterOutput: ChargebackPresenterOutput?
@@ -35,8 +27,8 @@ final class ChargebackPresenter: ChargebackPresenterInput {
                                                                     description: .descriptionBlack(withText: reasonCardInPossession.title))
 
         let hint: NSAttributedString = try .descriptionHTML(withText: chargeback.commentHint)
-        let titleContestButton = ChargebackPresenterConst.titleContestButton
-        let titleCancelButton = ChargebackPresenterConst.titleCancelButton
+        let titleContestButton = Strings.Chargeback.titleContestButton
+        let titleCancelButton = Strings.Chargeback.titleCancelButton
 
         let chargebackViewModel =
                 ChargebackViewModel(title: .titleSmallBlack(withText: chargeback.title.uppercased()),
@@ -52,7 +44,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
     }
 
     func showError () {
-
+        presenterOutput?.showChargebackFailAlert()
     }
 
     func showChargeBackActionSuccess () {
@@ -75,7 +67,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
         presenterOutput?.showAutoblock()
     }
 
-    private func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
+    func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
         return reasonDetails.first { $0.reasonKey == key }
     }
 }

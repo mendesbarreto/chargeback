@@ -5,7 +5,6 @@
 
 import Foundation
 
-enum NuAlertType: String {
-    case success
-    case fail
+enum TestError: Error {
+    case defaultError
 }
