@@ -28,7 +28,7 @@ final class ShowNoticeUseCase {
                 return
             }
             strongSelf.presenter.showError()
-            strongSelf.presenter.showLoading()
+            strongSelf.presenter.hideLoading()
         }).disposed(by: disposableBag)
     }
 

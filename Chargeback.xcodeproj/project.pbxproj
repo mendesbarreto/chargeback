@@ -10,6 +10,17 @@
 		7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC52066A6F600B33E41 /* AppDelegate.swift */; };
 		7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCC2066A6F600B33E41 /* Assets.xcassets */; };
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
+		7594AC9E2071AFFB00000CF3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9A2071AFFB00000CF3 /* Quick.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7594ACA22071B16F00000CF3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9D2071AFFB00000CF3 /* Nimble.framework */; };
+		7594ACA32071B16F00000CF3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9A2071AFFB00000CF3 /* Quick.framework */; };
+		7594ACA42071B16F00000CF3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */; };
+		7594ACA52071B16F00000CF3 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9C2071AFFB00000CF3 /* RxTest.framework */; };
+		7594ACA62071B25700000CF3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711C2066FB620060E0F1 /* Alamofire.framework */; };
+		7594ACA72071B25700000CF3 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471222066FB620060E0F1 /* Moya.framework */; };
+		7594ACA82071B25700000CF3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711F2066FB620060E0F1 /* Result.framework */; };
+		7594ACA92071B25700000CF3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */; };
+		7594ACAA2071B25700000CF3 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471192066FB620060E0F1 /* RxMoya.framework */; };
+		7594ACAB2071B25700000CF3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711A2066FB620060E0F1 /* RxSwift.framework */; };
 		75BEA1B9206F0CC6005ECE89 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */; };
 		75C471232066FB630060E0F1 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471192066FB620060E0F1 /* RxMoya.framework */; };
 		75C471242066FB630060E0F1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711A2066FB620060E0F1 /* RxSwift.framework */; };
@@ -38,6 +49,7 @@
 		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
 		B4E3340C401904FF02CD7C1F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EA68BADE5B833B97CFE /* Assets.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E3354027932950461149C7 /* NoticePresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3305662C5D245A7AB2184 /* NoticePresenterInputMock.swift */; };
 		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
 		B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4B31D74724607DE556 /* Bindable.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
@@ -78,11 +90,13 @@
 		B4E33DC5BB1C4D5E6E8BD250 /* NuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */; };
 		B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330925724986058B197C8 /* DictionaryTests.swift */; };
 		B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3351B7F53E09355EE96AD /* BaseViewController.swift */; };
+		B4E33DF0CD59CF31830820B3 /* ShowNoticeUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3332203028FEFCA970C95 /* ShowNoticeUseCaseSpec.swift */; };
 		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
 		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
 		B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */; };
+		B4E33F3664D891F18CEA6F5E /* ResourceRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D9E3AC794A7A12DDEAC /* ResourceRouterMock.swift */; };
 		B4E33F54A067AD1423865964 /* ShowChargebackInformationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */; };
 		B4E33F73835CD0AD489543FA /* ResourceRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C607CE179104644B532 /* ResourceRoutable.swift */; };
 		B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33430591D91087C9FD1C3 /* Resource.swift */; };
@@ -107,6 +121,10 @@
 		7538DFCC2066A6F600B33E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7538DFCF2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7538DFD12066A6F600B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7594AC9A2071AFFB00000CF3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		7594AC9C2071AFFB00000CF3 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		7594AC9D2071AFFB00000CF3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		75C471192066FB620060E0F1 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		75C4711A2066FB620060E0F1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -120,6 +138,7 @@
 		75C471222066FB620060E0F1 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
+		B4E3305662C5D245A7AB2184 /* NoticePresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterInputMock.swift; sourceTree = "<group>"; };
 		B4E330925724986058B197C8 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
@@ -131,6 +150,7 @@
 		B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
 		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		B4E3332203028FEFCA970C95 /* ShowNoticeUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBaseModelFactory.swift; sourceTree = "<group>"; };
 		B4E33430591D91087C9FD1C3 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceGateway.swift; sourceTree = "<group>"; };
@@ -179,6 +199,7 @@
 		B4E33D503AFC1B24CA20BD18 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusView.swift; sourceTree = "<group>"; };
 		B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33D9E3AC794A7A12DDEAC /* ResourceRouterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterMock.swift; sourceTree = "<group>"; };
 		B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterInput.swift; sourceTree = "<group>"; };
 		B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
@@ -196,6 +217,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7594ACA32071B16F00000CF3 /* Quick.framework in Frameworks */,
+				7594ACA42071B16F00000CF3 /* RxBlocking.framework in Frameworks */,
+				7594ACA52071B16F00000CF3 /* RxTest.framework in Frameworks */,
+				7594ACA62071B25700000CF3 /* Alamofire.framework in Frameworks */,
+				7594ACA72071B25700000CF3 /* Moya.framework in Frameworks */,
+				7594ACA82071B25700000CF3 /* Result.framework in Frameworks */,
+				7594ACA92071B25700000CF3 /* RxCocoa.framework in Frameworks */,
+				7594ACAA2071B25700000CF3 /* RxMoya.framework in Frameworks */,
+				7594ACAB2071B25700000CF3 /* RxSwift.framework in Frameworks */,
+				7594ACA22071B16F00000CF3 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +240,7 @@
 				75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */,
 				75C471292066FB630060E0F1 /* Result.framework in Frameworks */,
 				75C4712C2066FB630060E0F1 /* Moya.framework in Frameworks */,
+				7594AC9E2071AFFB00000CF3 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +253,7 @@
 				7512546E2066E6B800FE888E /* Info.plist */,
 				B4E3395B0CC3374D146CDBA0 /* Common */,
 				B4E3338A7DAEB6D8087F4D1B /* Feature */,
+				B4E33DD2AE92A57E9B424B59 /* Mock */,
 			);
 			path = ChargebackTests;
 			sourceTree = "<group>";
@@ -257,6 +290,10 @@
 		75C471182066FB620060E0F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7594AC9D2071AFFB00000CF3 /* Nimble.framework */,
+				7594AC9A2071AFFB00000CF3 /* Quick.framework */,
+				7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */,
+				7594AC9C2071AFFB00000CF3 /* RxTest.framework */,
 				75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */,
 				75C4711C2066FB620060E0F1 /* Alamofire.framework */,
 				75C4711D2066FB620060E0F1 /* Alamofire.framework.dSYM */,
@@ -391,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E336555D096DA67AE5363D /* UserCase */,
+				B4E33D4635525EE912B645DD /* Notice */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -642,11 +680,28 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		B4E33D4635525EE912B645DD /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3332203028FEFCA970C95 /* ShowNoticeUseCaseSpec.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
 		B4E33D5D16305E6AC8D2DA78 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		B4E33DD2AE92A57E9B424B59 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D9E3AC794A7A12DDEAC /* ResourceRouterMock.swift */,
+				B4E3305662C5D245A7AB2184 /* NoticePresenterInputMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		B4E33F9303ED05C9F27371D5 /* Presenter */ = {
@@ -780,6 +835,12 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -787,10 +848,16 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		75C471172066F9860060E0F1 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -827,6 +894,9 @@
 			files = (
 				B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */,
 				B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */,
+				B4E33DF0CD59CF31830820B3 /* ShowNoticeUseCaseSpec.swift in Sources */,
+				B4E33F3664D891F18CEA6F5E /* ResourceRouterMock.swift in Sources */,
+				B4E3354027932950461149C7 /* NoticePresenterInputMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +1007,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ChargebackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
@@ -956,6 +1030,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ChargebackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
@@ -975,6 +1053,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ChargebackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
