@@ -52,7 +52,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
     }
 
     func showError () {
-
+        presenterOutput?.showChargebackFailAlert()
     }
 
     func showChargeBackActionSuccess () {
@@ -75,7 +75,7 @@ final class ChargebackPresenter: ChargebackPresenterInput {
         presenterOutput?.showAutoblock()
     }
 
-    private func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
+    func get (reasonDetails: [ReasonDetail], by key: ReasonDetailIdKey) -> ReasonDetail? {
         return reasonDetails.first { $0.reasonKey == key }
     }
 }

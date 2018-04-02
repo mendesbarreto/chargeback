@@ -51,6 +51,9 @@
                   Identifier = "DictionaryTests">
                </Test>
                <Test
+                  Identifier = "NoticePresenterSpec">
+               </Test>
+               <Test
                   Identifier = "ShowChargebackInformationUseCaseSpec">
                </Test>
                <Test

@@ -44,6 +44,8 @@
 		B4E3324A280DE2B359A5F327 /* ShowNoticeUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */; };
 		B4E332769EF92D17D5F5D50E /* LoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */; };
 		B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */; };
+		B4E3334D8BDCB6A8897E7288 /* ChargebackPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */; };
+		B4E33355ED1691A6864886B3 /* CardBlockerStatusPresenterOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */; };
 		B4E33375A1ACF6369E0016B0 /* NuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3319126382CF198FACC60 /* NuView.swift */; };
 		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
 		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
@@ -109,6 +111,7 @@
 		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
 		B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */; };
+		B4E33F18988FBF5DE8D815F0 /* ChargebackPresenterOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */; };
 		B4E33F440848047E07EC6896 /* CardBlockerStatusPresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */; };
 		B4E33F54A067AD1423865964 /* ShowChargebackInformationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */; };
 		B4E33F70DCE41B01599F246F /* CardBlockerStatusPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3316F1AFA5A9001E21C48 /* CardBlockerStatusPresenterFactory.swift */; };
@@ -166,12 +169,15 @@
 		B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
 		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterOutputMock.swift; sourceTree = "<group>"; };
 		B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterInput.swift; sourceTree = "<group>"; };
 		B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeBackUserResponseMock.swift; sourceTree = "<group>"; };
+		B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterOutputMock.swift; sourceTree = "<group>"; };
 		B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBaseModelFactory.swift; sourceTree = "<group>"; };
 		B4E33430591D91087C9FD1C3 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceGateway.swift; sourceTree = "<group>"; };
 		B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewControllerFactory.swift; sourceTree = "<group>"; };
+		B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterSpec.swift; sourceTree = "<group>"; };
 		B4E3351B7F53E09355EE96AD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCaseFactory.swift; sourceTree = "<group>"; };
 		B4E3355327D2F843626730F0 /* ChargeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeViewModel.swift; sourceTree = "<group>"; };
@@ -500,6 +506,8 @@
 				B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */,
 				B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */,
 				B4E33968E1F3BF67D8415631 /* NoticePresenterOutputMock.swift */,
+				B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */,
+				B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -544,6 +552,14 @@
 				B4E33A633FA7833C0EB04589 /* NoticeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B4E33740559B3516EE143869 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		B4E3378190B51FBBFAA7C8D3 /* Chargeback */ = {
@@ -619,6 +635,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E33DBA029CA467EF5AD451 /* UseCase */,
+				B4E33740559B3516EE143869 /* Presenter */,
 			);
 			path = Chargeback;
 			sourceTree = "<group>";
@@ -1006,6 +1023,9 @@
 				B4E3366781E6D5C4745FB7AB /* ShowNoticeUseCaseSpec.swift in Sources */,
 				B4E33629891DCF5D32551337 /* NoticePresenterSpec.swift in Sources */,
 				B4E33AE2E98785D1181A78CD /* NoticePresenterOutputMock.swift in Sources */,
+				B4E33355ED1691A6864886B3 /* CardBlockerStatusPresenterOutputMock.swift in Sources */,
+				B4E3334D8BDCB6A8897E7288 /* ChargebackPresenterSpec.swift in Sources */,
+				B4E33F18988FBF5DE8D815F0 /* ChargebackPresenterOutputMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
