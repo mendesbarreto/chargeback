@@ -49,6 +49,7 @@
 		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
 		B4E3340C401904FF02CD7C1F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EA68BADE5B833B97CFE /* Assets.swift */; };
 		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E33492A2C9422452CE3D08 /* ChargebackMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33141812E45C486032678 /* ChargebackMock.swift */; };
 		B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */; };
 		B4E3359CA003B084BC6A372F /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A1FAE66BB85CF733BC2 /* TestError.swift */; };
 		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
@@ -102,6 +103,7 @@
 		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
 		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
 		B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */; };
+		B4E33E5417F5757B94111EF5 /* ShowChargebackInformationUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */; };
 		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
 		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
 		B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */; };
@@ -153,6 +155,7 @@
 		B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
 		B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewController.swift; sourceTree = "<group>"; };
+		B4E33141812E45C486032678 /* ChargebackMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackMock.swift; sourceTree = "<group>"; };
 		B4E3314FB46E52B5F1B3CAA7 /* NoticePresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterInput.swift; sourceTree = "<group>"; };
 		B4E3316F1AFA5A9001E21C48 /* CardBlockerStatusPresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterFactory.swift; sourceTree = "<group>"; };
 		B4E3319126382CF198FACC60 /* NuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuView.swift; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouter.swift; sourceTree = "<group>"; };
 		B4E33A1FAE66BB85CF733BC2 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailView.swift; sourceTree = "<group>"; };
+		B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
@@ -733,6 +737,7 @@
 			children = (
 				B4E3359883F47A2A4AC4BA7F /* NoticeMock.swift */,
 				B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */,
+				B4E33141812E45C486032678 /* ChargebackMock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -757,6 +762,7 @@
 			children = (
 				B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */,
 				B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */,
+				B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -982,6 +988,8 @@
 				B4E3359CA003B084BC6A372F /* TestError.swift in Sources */,
 				B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */,
 				B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */,
+				B4E33E5417F5757B94111EF5 /* ShowChargebackInformationUseCaseSpec.swift in Sources */,
+				B4E33492A2C9422452CE3D08 /* ChargebackMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
