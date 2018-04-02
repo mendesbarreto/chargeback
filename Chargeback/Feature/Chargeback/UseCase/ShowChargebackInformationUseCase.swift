@@ -21,8 +21,9 @@ final class ShowChargebackInformationUseCase {
         resourceRouter.chargeBack().subscribe(onNext: { [weak self] chargeback in
             guard let strongSelf = self else { return }
             strongSelf.show(chargeback: chargeback)
-        }, onError: { [weak self] _ in
+        }, onError: { [weak self] error in
             guard let strongSelf = self else { return }
+            print(error)
             strongSelf.presenter.hideLoading {
                 strongSelf.presenter.showError()
             }

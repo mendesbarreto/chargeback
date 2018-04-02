@@ -7,7 +7,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> {
+final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>, UITextViewDelegate {
 
     private let titleLabel = UILabel()
     private let commentTextView = UITextView()
@@ -56,6 +56,7 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
     override init (frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
+        setupCommentTextView()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -72,9 +73,31 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
         reasonCardInPossessionView.bind(to: viewModel.reasonCardInPossessionViewModel)
     }
 
+    private func setupCommentTextView () {
+        commentTextView.delegate = self
+    }
+
     // In the next refactor Remover cardBlockerStatusView and move to view controller
     func bind (toCardBlockerViewModel viewModel: CardBlockerStatusViewModel) {
         cardBlockerStatusView.bind(to: viewModel)
+    }
+
+    // MARK: TextView Delegate
+    func textViewDidBeginEditing (_ textView: UITextView) {
+        if commentTextView.attributedText == viewModel.descriptionHint {
+            commentTextView.text = ""
+        }
+    }
+
+    func textViewDidEndEditing (_ textView: UITextView) {
+        if commentTextView.text.isEmpty {
+            commentTextView.attributedText = viewModel.descriptionHint
+        }
+    }
+
+    override func touchesBegan (_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        commentTextView.resignFirstResponder()
     }
 }
 

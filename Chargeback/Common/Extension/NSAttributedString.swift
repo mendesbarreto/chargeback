@@ -24,6 +24,12 @@ extension NSAttributedString {
                                 andFont: .systemFont(ofSize: FontSize.medium, weight: .regular))
     }
 
+    static func titleMediumRead (withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .redNu,
+                                andFont: .systemFont(ofSize: FontSize.medium, weight: .regular))
+    }
+
     static func titleSmallBlack (withText text: String) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: .blackNu,

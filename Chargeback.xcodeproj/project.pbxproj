@@ -60,6 +60,7 @@
 		B4E33523CFC6053F101CB7FD /* ResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3350A233970BB6A18365B /* ResourceGateway.swift */; };
 		B4E3359CA003B084BC6A372F /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A1FAE66BB85CF733BC2 /* TestError.swift */; };
 		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
+		B4E335AB1B1DEE9657838E53 /* NoticeViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */; };
 		B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4B31D74724607DE556 /* Bindable.swift */; };
 		B4E3360D7AA921ECF343B6BA /* ChargebackViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3370469C80167501E25B5 /* ChargebackViewControllerFactorySpec.swift */; };
 		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
@@ -262,6 +263,7 @@
 		B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterInput.swift; sourceTree = "<group>"; };
 		B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E33E0E9AAD5B97BCCD3E8D /* CardBlockerStatusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenter.swift; sourceTree = "<group>"; };
 		B4E33E15A2695B367550C970 /* ResourceRouterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterMock.swift; sourceTree = "<group>"; };
 		B4E33E170B05ACC5DB97D919 /* LoadingAlertScreenFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactorySpec.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */,
+				B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1198,6 +1201,7 @@
 				B4E33B04F267B954066B524A /* Strings.swift in Sources */,
 				B4E33C2B5BEE052E777CDB2E /* ResourceAction.swift in Sources */,
 				B4E33A6FA5C466AA00AE75AD /* NuDefaultButton.swift in Sources */,
+				B4E335AB1B1DEE9657838E53 /* NoticeViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

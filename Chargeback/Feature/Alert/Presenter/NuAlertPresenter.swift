@@ -15,7 +15,8 @@ final class NuAlertPresenter: NuAlertPresenterInput {
           type: NuAlertType,
           presenterOutput: NuAlertPresenterOutput) {
         self.presenterOutput = presenterOutput
-        viewModel = NuAlertViewModel(title: .titleMediumPurple(withText: title),
+        let titleAttr: NSAttributedString = type != .success ? .titleMediumRead(withText: title) : .titleMediumPurple(withText: title)
+        viewModel = NuAlertViewModel(title: titleAttr,
                                      description: .descriptionSmallGray(withText: description),
                                      buttonTile: .titleButtonGray(withText: buttonTitle.uppercased()))
     }
