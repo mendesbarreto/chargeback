@@ -8,15 +8,135 @@
 
 /* Begin PBXBuildFile section */
 		7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC52066A6F600B33E41 /* AppDelegate.swift */; };
-		7538DFC82066A6F600B33E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC72066A6F600B33E41 /* ViewController.swift */; };
-		7538DFCB2066A6F600B33E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFC92066A6F600B33E41 /* Main.storyboard */; };
 		7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCC2066A6F600B33E41 /* Assets.xcassets */; };
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
-		7538DFDB2066A6F700B33E41 /* ChargebackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */; };
+		7594ACA22071B16F00000CF3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9D2071AFFB00000CF3 /* Nimble.framework */; };
+		7594ACA32071B16F00000CF3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9A2071AFFB00000CF3 /* Quick.framework */; };
+		7594ACA42071B16F00000CF3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */; };
+		7594ACA52071B16F00000CF3 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9C2071AFFB00000CF3 /* RxTest.framework */; };
+		7594ACA62071B25700000CF3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711C2066FB620060E0F1 /* Alamofire.framework */; };
+		7594ACA72071B25700000CF3 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471222066FB620060E0F1 /* Moya.framework */; };
+		7594ACA82071B25700000CF3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711F2066FB620060E0F1 /* Result.framework */; };
+		7594ACA92071B25700000CF3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */; };
+		7594ACAA2071B25700000CF3 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471192066FB620060E0F1 /* RxMoya.framework */; };
+		7594ACAB2071B25700000CF3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711A2066FB620060E0F1 /* RxSwift.framework */; };
+		75BEA1B9206F0CC6005ECE89 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */; };
+		75C471232066FB630060E0F1 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471192066FB620060E0F1 /* RxMoya.framework */; };
+		75C471242066FB630060E0F1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711A2066FB620060E0F1 /* RxSwift.framework */; };
+		75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711C2066FB620060E0F1 /* Alamofire.framework */; };
+		75C471292066FB630060E0F1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4711F2066FB620060E0F1 /* Result.framework */; };
+		75C4712C2066FB630060E0F1 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C471222066FB620060E0F1 /* Moya.framework */; };
+		75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */; };
+		75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */; };
+		B4E33005E16E29121203B10D /* ReasonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */; };
+		B4E3301ABBCE60EBB79B170C /* ReasonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */; };
+		B4E330336CB6B5B4C713C96A /* NuAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */; };
+		B4E33049391045373115516C /* EntryPointResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */; };
+		B4E330DAB2C530ABF65864E0 /* ResourceMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */; };
+		B4E33104CE9387825906B088 /* ResourceRouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33097F45AC9CB490EB633 /* ResourceRouterError.swift */; };
+		B4E33133A7126DDC5F6C9840 /* ChargebackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */; };
+		B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A633FA7833C0EB04589 /* NoticeView.swift */; };
+		B4E331447A1AD42119B4E4A0 /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339EB745070DC222952B5 /* BindableView.swift */; };
+		B4E3317A14CD453947C78374 /* ChargebackUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */; };
+		B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D312BCEE97D9F053A62 /* UIColor.swift */; };
+		B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */; };
+		B4E3324276869EB1D2C3A116 /* LoadingAlertScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */; };
+		B4E3324A280DE2B359A5F327 /* ShowNoticeUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */; };
+		B4E332769EF92D17D5F5D50E /* LoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */; };
+		B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */; };
+		B4E3334D8BDCB6A8897E7288 /* ChargebackPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */; };
+		B4E33355ED1691A6864886B3 /* CardBlockerStatusPresenterOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */; };
+		B4E33375A1ACF6369E0016B0 /* NuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3319126382CF198FACC60 /* NuView.swift */; };
+		B4E33385B6E3371F07460CA9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D503AFC1B24CA20BD18 /* Action.swift */; };
+		B4E333AD7412436E62F717D3 /* ResourceRouterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330D1FAEE7CDC7E16CEC5 /* ResourceRouterSpec.swift */; };
+		B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */; };
+		B4E3340C401904FF02CD7C1F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EA68BADE5B833B97CFE /* Assets.swift */; };
+		B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33565EFB26C5D51FAC41B /* BaseModel.swift */; };
+		B4E3346F7D54A44A1B3C0A3B /* LoadingAlertScreenFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E170B05ACC5DB97D919 /* LoadingAlertScreenFactorySpec.swift */; };
+		B4E33492A2C9422452CE3D08 /* ChargebackMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33141812E45C486032678 /* ChargebackMock.swift */; };
+		B4E3349BA5FF88779EBE3421 /* MainWindowFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335D29BCA33D626DF30B1 /* MainWindowFactorySpec.swift */; };
+		B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */; };
+		B4E33523CFC6053F101CB7FD /* ResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3350A233970BB6A18365B /* ResourceGateway.swift */; };
+		B4E3359CA003B084BC6A372F /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A1FAE66BB85CF733BC2 /* TestError.swift */; };
+		B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E22826637B208D3084E /* UIView.swift */; };
+		B4E335AB1B1DEE9657838E53 /* NoticeViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */; };
+		B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4B31D74724607DE556 /* Bindable.swift */; };
+		B4E3360D7AA921ECF343B6BA /* ChargebackViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3370469C80167501E25B5 /* ChargebackViewControllerFactorySpec.swift */; };
+		B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */; };
+		B4E33629891DCF5D32551337 /* NoticePresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D81784DF033B21E9F73 /* NoticePresenterSpec.swift */; };
+		B4E3365E68658541BDAF0F62 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */; };
+		B4E3366781E6D5C4745FB7AB /* ShowNoticeUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337312F84425AC848C7A1 /* ShowNoticeUseCaseSpec.swift */; };
+		B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D4E46248E2484359CA /* NoticeViewModel.swift */; };
+		B4E336AAFC653083D48D7B01 /* ReasonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */; };
+		B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */; };
+		B4E336EA074FA3B989DC4F65 /* ResourceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */; };
+		B4E33703B2DD39BC2ABA40D5 /* CardBlockerStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BA8AD2E2D78268F2649 /* CardBlockerStatusViewModel.swift */; };
+		B4E337481C54829168C5B170 /* ChargebackPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B5395E0E0FDEA8ADA8A /* ChargebackPresenterFactory.swift */; };
+		B4E33753015E4F4EA55EB8D4 /* ChangeUserCardBlockStatusUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F5FCD115C98F7CAE50B /* ChangeUserCardBlockStatusUseCase.swift */; };
+		B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */; };
+		B4E337863563B0D68A760BEB /* ChargeBackUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */; };
+		B4E337CEB6789B8BB57899E7 /* NuAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */; };
+		B4E337D04AB8273AB99EB372 /* CardBlockerStatusPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3399FEA0C8AE31E6B4F71 /* CardBlockerStatusPresenterOutput.swift */; };
+		B4E337DAB1DC6C35C72FA742 /* ChargeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3355327D2F843626730F0 /* ChargeViewModel.swift */; };
+		B4E337F5850F237294C8195D /* NuAlertPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */; };
+		B4E33808FF82CF40BD5CBE6B /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */; };
+		B4E338354D9331A793095DBF /* CardBlockerStatusPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338EE3A1DEB39F8431DC6 /* CardBlockerStatusPresenterSpec.swift */; };
+		B4E33855C5F12674B87FA176 /* ChargebackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */; };
+		B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */; };
+		B4E338965525A56B32DD8943 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A88DA939C3E2B0C937E /* Encodable.swift */; };
+		B4E339026B122ED50FE6CCE2 /* NoticePresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */; };
+		B4E33932DC40BA1E79520690 /* CardBlockerStatusViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A4F05954FF259360066 /* CardBlockerStatusViewModelMock.swift */; };
+		B4E339830A2F3748596EC95C /* ChargebackUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */; };
+		B4E3399C2D5820887B941801 /* CardBlockerStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E0E9AAD5B97BCCD3E8D /* CardBlockerStatusPresenter.swift */; };
+		B4E3399EF0365B0734BB5A87 /* ChargebackUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */; };
+		B4E339B361042629334AEF47 /* NuAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3390EE43950F8B6F1822F /* NuAlertType.swift */; };
+		B4E339E50CEAEE3C735D2C9F /* ChargebackPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */; };
+		B4E33A216F546BB00019A1CB /* CardBlockerStatusPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */; };
+		B4E33A2281434C38119359DB /* NoticeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338C11CBD86A9D54B8FC4 /* NoticeViewControllerSpec.swift */; };
+		B4E33A4E27AC9BA4C1074E72 /* CardBlockerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */; };
+		B4E33A6FA5C466AA00AE75AD /* NuDefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A371EA76BEA78A219A5 /* NuDefaultButton.swift */; };
+		B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */; };
+		B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */; };
+		B4E33AB2F6221EC570F9A5C1 /* NuAlertPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */; };
+		B4E33ABED13E0EB6D64EFDA2 /* ChangeUserCardBlockStatusUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */; };
+		B4E33AE060EE57C7683471BC /* ChargebackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */; };
+		B4E33AE2E98785D1181A78CD /* NoticePresenterOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33968E1F3BF67D8415631 /* NoticePresenterOutputMock.swift */; };
+		B4E33AF919035DABF7C27BDB /* ResourceRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E15A2695B367550C970 /* ResourceRouterMock.swift */; };
+		B4E33B04F267B954066B524A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C6AA4567A3425A4DFB5 /* Strings.swift */; };
+		B4E33B262E5A4B4E47A91C88 /* ResourceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */; };
+		B4E33B819B8B3CF7D5EBEA22 /* ShowNoticeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */; };
+		B4E33C080DD53CB4A2DE1847 /* ChargebackPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BCCB3BF6CD361D11241 /* ChargebackPresenterOutput.swift */; };
+		B4E33C290174A2E39BFD3707 /* NoticePresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331BECF88603BC908DFC6 /* NoticePresenterOutput.swift */; };
+		B4E33C2B5BEE052E777CDB2E /* ResourceAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3309F2F795DAAC568E3B9 /* ResourceAction.swift */; };
+		B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A95A10498AC52B452CF /* NoticePresenter.swift */; };
+		B4E33CC118CA905F2F1031A6 /* NoticeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3359883F47A2A4AC4BA7F /* NoticeMock.swift */; };
+		B4E33CD32492DA5F0BCD60BC /* NuAlertViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339CC84001A2C8F09791D /* NuAlertViewControllerFactorySpec.swift */; };
+		B4E33CEA6924C97BEDF69283 /* Chargeback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */; };
+		B4E33D127B49893031DB7B1C /* ShowChargebackInformationUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CF42B29491BDF2499ED /* ShowChargebackInformationUseCaseFactory.swift */; };
+		B4E33D162C3880CB39B3563C /* NubankTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33600525F955954F9FA9D /* NubankTarget.swift */; };
+		B4E33D45E1610007D32CCBD9 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FF3480757F3E900EBFA /* Notice.swift */; };
+		B4E33DA244740CBFFAF44765 /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3384AEB610A1B88169332 /* ResourceError.swift */; };
+		B4E33DC5BB1C4D5E6E8BD250 /* NuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */; };
+		B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E330925724986058B197C8 /* DictionaryTests.swift */; };
+		B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3351B7F53E09355EE96AD /* BaseViewController.swift */; };
+		B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */; };
+		B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */; };
+		B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */; };
+		B4E33E5417F5757B94111EF5 /* ShowChargebackInformationUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */; };
+		B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */; };
+		B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3392FEF60189C8CF41146 /* Dictionary.swift */; };
+		B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */; };
+		B4E33F18988FBF5DE8D815F0 /* ChargebackPresenterOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */; };
+		B4E33F440848047E07EC6896 /* CardBlockerStatusPresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */; };
+		B4E33F54A067AD1423865964 /* ShowChargebackInformationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */; };
+		B4E33F70DCE41B01599F246F /* CardBlockerStatusPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3316F1AFA5A9001E21C48 /* CardBlockerStatusPresenterFactory.swift */; };
+		B4E33F73835CD0AD489543FA /* ResourceRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C607CE179104644B532 /* ResourceRoutable.swift */; };
+		B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33430591D91087C9FD1C3 /* Resource.swift */; };
+		B4E33FD7A406496CD945A11F /* NoticePresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3314FB46E52B5F1B3CAA7 /* NoticePresenterInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7538DFD72066A6F700B33E41 /* PBXContainerItemProxy */ = {
+		7512546F2066E6B800FE888E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7538DFBA2066A6F600B33E41 /* Project object */;
 			proxyType = 1;
@@ -26,42 +146,190 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7512546A2066E6B800FE888E /* ChargebackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargebackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7512546E2066E6B800FE888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7538DFC22066A6F600B33E41 /* Chargeback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargeback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7538DFC52066A6F600B33E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7538DFC72066A6F600B33E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7538DFCA2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7538DFCC2066A6F600B33E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7538DFCF2066A6F600B33E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7538DFD12066A6F600B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargebackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargebackTests.swift; sourceTree = "<group>"; };
-		7538DFDC2066A6F700B33E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7594AC9A2071AFFB00000CF3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		7594AC9C2071AFFB00000CF3 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		7594AC9D2071AFFB00000CF3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		75C471192066FB620060E0F1 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		75C4711A2066FB620060E0F1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		75C4711B2066FB620060E0F1 /* Moya.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Moya.framework.dSYM; path = Carthage/Build/iOS/Moya.framework.dSYM; sourceTree = "<group>"; };
+		75C4711C2066FB620060E0F1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		75C4711D2066FB620060E0F1 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		75C4711E2066FB620060E0F1 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		75C4711F2066FB620060E0F1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		75C471202066FB620060E0F1 /* RxMoya.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxMoya.framework.dSYM; path = Carthage/Build/iOS/RxMoya.framework.dSYM; sourceTree = "<group>"; };
+		75C471212066FB620060E0F1 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/iOS/RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		75C471222066FB620060E0F1 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
+		75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
+		B4E330925724986058B197C8 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		B4E33097F45AC9CB490EB633 /* ResourceRouterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterError.swift; sourceTree = "<group>"; };
+		B4E3309F2F795DAAC568E3B9 /* ResourceAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceAction.swift; sourceTree = "<group>"; };
+		B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
+		B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactory.swift; sourceTree = "<group>"; };
+		B4E330D1FAEE7CDC7E16CEC5 /* ResourceRouterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterSpec.swift; sourceTree = "<group>"; };
+		B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceKey.swift; sourceTree = "<group>"; };
+		B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewController.swift; sourceTree = "<group>"; };
+		B4E33141812E45C486032678 /* ChargebackMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackMock.swift; sourceTree = "<group>"; };
+		B4E3314FB46E52B5F1B3CAA7 /* NoticePresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterInput.swift; sourceTree = "<group>"; };
+		B4E3316F1AFA5A9001E21C48 /* CardBlockerStatusPresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterFactory.swift; sourceTree = "<group>"; };
+		B4E3319126382CF198FACC60 /* NuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuView.swift; sourceTree = "<group>"; };
+		B4E331BECF88603BC908DFC6 /* NoticePresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterOutput.swift; sourceTree = "<group>"; };
+		B4E331D4E46248E2484359CA /* NoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
+		B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
+		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
+		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterOutputMock.swift; sourceTree = "<group>"; };
+		B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterInput.swift; sourceTree = "<group>"; };
+		B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeBackUserResponseMock.swift; sourceTree = "<group>"; };
+		B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterOutputMock.swift; sourceTree = "<group>"; };
+		B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBaseModelFactory.swift; sourceTree = "<group>"; };
+		B4E33430591D91087C9FD1C3 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceGateway.swift; sourceTree = "<group>"; };
+		B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewControllerFactory.swift; sourceTree = "<group>"; };
+		B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterSpec.swift; sourceTree = "<group>"; };
+		B4E3350A233970BB6A18365B /* ResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceGateway.swift; sourceTree = "<group>"; };
+		B4E3351B7F53E09355EE96AD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E3355327D2F843626730F0 /* ChargeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeViewModel.swift; sourceTree = "<group>"; };
+		B4E33565EFB26C5D51FAC41B /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceGateway.swift; sourceTree = "<group>"; };
+		B4E3359883F47A2A4AC4BA7F /* NoticeMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeMock.swift; sourceTree = "<group>"; };
+		B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserCardBlockStatusUseCaseSpec.swift; sourceTree = "<group>"; };
+		B4E335D29BCA33D626DF30B1 /* MainWindowFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowFactorySpec.swift; sourceTree = "<group>"; };
+		B4E33600525F955954F9FA9D /* NubankTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NubankTarget.swift; sourceTree = "<group>"; };
+		B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterOutput.swift; sourceTree = "<group>"; };
+		B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterFactory.swift; sourceTree = "<group>"; };
+		B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenter.swift; sourceTree = "<group>"; };
+		B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableViewController.swift; sourceTree = "<group>"; };
+		B4E3370469C80167501E25B5 /* ChargebackViewControllerFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewControllerFactorySpec.swift; sourceTree = "<group>"; };
+		B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactory.swift; sourceTree = "<group>"; };
+		B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTests.swift; sourceTree = "<group>"; };
+		B4E337312F84425AC848C7A1 /* ShowNoticeUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseSpec.swift; sourceTree = "<group>"; };
+		B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterInputMock.swift; sourceTree = "<group>"; };
+		B4E3384AEB610A1B88169332 /* ResourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
+		B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCase.swift; sourceTree = "<group>"; };
+		B4E338C11CBD86A9D54B8FC4 /* NoticeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewControllerSpec.swift; sourceTree = "<group>"; };
+		B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailUserResponse.swift; sourceTree = "<group>"; };
+		B4E338EE3A1DEB39F8431DC6 /* CardBlockerStatusPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterSpec.swift; sourceTree = "<group>"; };
+		B4E3390EE43950F8B6F1822F /* NuAlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertType.swift; sourceTree = "<group>"; };
+		B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMoyaGateway.swift; sourceTree = "<group>"; };
+		B4E3392FEF60189C8CF41146 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		B4E33968E1F3BF67D8415631 /* NoticePresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterOutputMock.swift; sourceTree = "<group>"; };
+		B4E3399FEA0C8AE31E6B4F71 /* CardBlockerStatusPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterOutput.swift; sourceTree = "<group>"; };
+		B4E339CC84001A2C8F09791D /* NuAlertViewControllerFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewControllerFactorySpec.swift; sourceTree = "<group>"; };
+		B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailViewModel.swift; sourceTree = "<group>"; };
+		B4E339EB745070DC222952B5 /* BindableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
+		B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouter.swift; sourceTree = "<group>"; };
+		B4E33A1FAE66BB85CF733BC2 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		B4E33A371EA76BEA78A219A5 /* NuDefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuDefaultButton.swift; sourceTree = "<group>"; };
+		B4E33A4F05954FF259360066 /* CardBlockerStatusViewModelMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusViewModelMock.swift; sourceTree = "<group>"; };
+		B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetailView.swift; sourceTree = "<group>"; };
+		B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCaseSpec.swift; sourceTree = "<group>"; };
+		B4E33A633FA7833C0EB04589 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		B4E33A88DA939C3E2B0C937E /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		B4E33A95A10498AC52B452CF /* NoticePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
+		B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointResourceMoyaGateway.swift; sourceTree = "<group>"; };
+		B4E33B5395E0E0FDEA8ADA8A /* ChargebackPresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterFactory.swift; sourceTree = "<group>"; };
+		B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonDetail.swift; sourceTree = "<group>"; };
+		B4E33BA8AD2E2D78268F2649 /* CardBlockerStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusViewModel.swift; sourceTree = "<group>"; };
+		B4E33BCCB3BF6CD361D11241 /* ChargebackPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterOutput.swift; sourceTree = "<group>"; };
+		B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCase.swift; sourceTree = "<group>"; };
+		B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertViewModel.swift; sourceTree = "<group>"; };
+		B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeBackUserResponse.swift; sourceTree = "<group>"; };
+		B4E33C607CE179104644B532 /* ResourceRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRoutable.swift; sourceTree = "<group>"; };
+		B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenter.swift; sourceTree = "<group>"; };
+		B4E33C6AA4567A3425A4DFB5 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserCardBlockStatusUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chargeback.swift; sourceTree = "<group>"; };
+		B4E33CF42B29491BDF2499ED /* ShowChargebackInformationUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowChargebackInformationUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertView.swift; sourceTree = "<group>"; };
+		B4E33D312BCEE97D9F053A62 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B4E33D4B31D74724607DE556 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		B4E33D503AFC1B24CA20BD18 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusView.swift; sourceTree = "<group>"; };
+		B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNoticeUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33D81784DF033B21E9F73 /* NoticePresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterSpec.swift; sourceTree = "<group>"; };
+		B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuAlertPresenterInput.swift; sourceTree = "<group>"; };
+		B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewControllerFactory.swift; sourceTree = "<group>"; };
+		B4E33E0E9AAD5B97BCCD3E8D /* CardBlockerStatusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenter.swift; sourceTree = "<group>"; };
+		B4E33E15A2695B367550C970 /* ResourceRouterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceRouterMock.swift; sourceTree = "<group>"; };
+		B4E33E170B05ACC5DB97D919 /* LoadingAlertScreenFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactorySpec.swift; sourceTree = "<group>"; };
+		B4E33E22826637B208D3084E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCase.swift; sourceTree = "<group>"; };
+		B4E33EA68BADE5B833B97CFE /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackUseCaseSpec.swift; sourceTree = "<group>"; };
+		B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackViewController.swift; sourceTree = "<group>"; };
+		B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterInputMock.swift; sourceTree = "<group>"; };
+		B4E33F5FCD115C98F7CAE50B /* ChangeUserCardBlockStatusUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserCardBlockStatusUseCase.swift; sourceTree = "<group>"; };
+		B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackView.swift; sourceTree = "<group>"; };
+		B4E33FF3480757F3E900EBFA /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		751254672066E6B800FE888E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7594ACA32071B16F00000CF3 /* Quick.framework in Frameworks */,
+				7594ACA42071B16F00000CF3 /* RxBlocking.framework in Frameworks */,
+				7594ACA52071B16F00000CF3 /* RxTest.framework in Frameworks */,
+				7594ACA62071B25700000CF3 /* Alamofire.framework in Frameworks */,
+				7594ACA72071B25700000CF3 /* Moya.framework in Frameworks */,
+				7594ACA82071B25700000CF3 /* Result.framework in Frameworks */,
+				7594ACA92071B25700000CF3 /* RxCocoa.framework in Frameworks */,
+				7594ACAA2071B25700000CF3 /* RxMoya.framework in Frameworks */,
+				7594ACAB2071B25700000CF3 /* RxSwift.framework in Frameworks */,
+				7594ACA22071B16F00000CF3 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7538DFBF2066A6F600B33E41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7538DFD32066A6F700B33E41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				75BEA1B9206F0CC6005ECE89 /* RxCocoa.framework in Frameworks */,
+				75C471232066FB630060E0F1 /* RxMoya.framework in Frameworks */,
+				75C471242066FB630060E0F1 /* RxSwift.framework in Frameworks */,
+				75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */,
+				75C471292066FB630060E0F1 /* Result.framework in Frameworks */,
+				75C4712C2066FB630060E0F1 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7512546B2066E6B800FE888E /* ChargebackTests */ = {
+			isa = PBXGroup;
+			children = (
+				7512546E2066E6B800FE888E /* Info.plist */,
+				B4E3395B0CC3374D146CDBA0 /* Common */,
+				B4E3338A7DAEB6D8087F4D1B /* Feature */,
+				B4E33DD2AE92A57E9B424B59 /* Mock */,
+				B4E33EDCEBDFF071670C43BB /* Core */,
+			);
+			path = ChargebackTests;
+			sourceTree = "<group>";
+		};
 		7538DFB92066A6F600B33E41 = {
 			isa = PBXGroup;
 			children = (
 				7538DFC42066A6F600B33E41 /* Chargeback */,
-				7538DFD92066A6F700B33E41 /* ChargebackTests */,
+				7512546B2066E6B800FE888E /* ChargebackTests */,
 				7538DFC32066A6F600B33E41 /* Products */,
+				75C471182066FB620060E0F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				7538DFC22066A6F600B33E41 /* Chargeback.app */,
-				7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */,
+				7512546A2066E6B800FE888E /* ChargebackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,32 +345,607 @@
 		7538DFC42066A6F600B33E41 /* Chargeback */ = {
 			isa = PBXGroup;
 			children = (
-				7538DFC52066A6F600B33E41 /* AppDelegate.swift */,
-				7538DFC72066A6F600B33E41 /* ViewController.swift */,
-				7538DFC92066A6F600B33E41 /* Main.storyboard */,
-				7538DFCC2066A6F600B33E41 /* Assets.xcassets */,
-				7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */,
-				7538DFD12066A6F600B33E41 /* Info.plist */,
+				75DB2E752066E18E00DC799F /* Common */,
+				75DB2E722066CA2A00DC799F /* Resource */,
+				B4E336CD5AC2F0AE0ACEDEC8 /* Feature */,
 			);
 			path = Chargeback;
 			sourceTree = "<group>";
 		};
-		7538DFD92066A6F700B33E41 /* ChargebackTests */ = {
+		75C471182066FB620060E0F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7538DFDA2066A6F700B33E41 /* ChargebackTests.swift */,
-				7538DFDC2066A6F700B33E41 /* Info.plist */,
+				7594AC9D2071AFFB00000CF3 /* Nimble.framework */,
+				7594AC9A2071AFFB00000CF3 /* Quick.framework */,
+				7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */,
+				7594AC9C2071AFFB00000CF3 /* RxTest.framework */,
+				75BEA1B8206F0CC6005ECE89 /* RxCocoa.framework */,
+				75C4711C2066FB620060E0F1 /* Alamofire.framework */,
+				75C4711D2066FB620060E0F1 /* Alamofire.framework.dSYM */,
+				75C471222066FB620060E0F1 /* Moya.framework */,
+				75C4711B2066FB620060E0F1 /* Moya.framework.dSYM */,
+				75C4711F2066FB620060E0F1 /* Result.framework */,
+				75C4711E2066FB620060E0F1 /* Result.framework.dSYM */,
+				75C471192066FB620060E0F1 /* RxMoya.framework */,
+				75C471202066FB620060E0F1 /* RxMoya.framework.dSYM */,
+				75C4711A2066FB620060E0F1 /* RxSwift.framework */,
+				75C471212066FB620060E0F1 /* RxSwift.framework.dSYM */,
 			);
-			path = ChargebackTests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75DB2E722066CA2A00DC799F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				75DB2E742066CA5200DC799F /* Asset */,
+				75DB2E732066CA4400DC799F /* SupportFile */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		75DB2E732066CA4400DC799F /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				7538DFD12066A6F600B33E41 /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		75DB2E742066CA5200DC799F /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */,
+				7538DFCC2066A6F600B33E41 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		75DB2E752066E18E00DC799F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				75DB2E762066E1AC00DC799F /* Factory */,
+				7538DFC52066A6F600B33E41 /* AppDelegate.swift */,
+				B4E3351B7F53E09355EE96AD /* BaseViewController.swift */,
+				B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */,
+				B4E3344EF123D9EAE1D8B494 /* Network */,
+				B4E33B9CC287512CC1FDFF68 /* Extension */,
+				B4E339E3B21C6CA66640E38F /* View */,
+				B4E33C09CB008FF7D04E46CC /* Asset */,
+				B4E337219520A6FF684F49D8 /* LoadingAlertScreenFactory.swift */,
+				B4E336B32D2DF2DDD71BA33B /* LoadableViewController.swift */,
+				B4E33C6AA4567A3425A4DFB5 /* Strings.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		75DB2E762066E1AC00DC799F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				75DB2E772066E1D900DC799F /* RootViewControllerFactory.swift */,
+				75DB2E7B2066E24D00DC799F /* MainWindowFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4E330735F5EFA4691FD8AA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3311C263862E2D7728B25 /* NuAlertViewController.swift */,
+				B4E330CE5A45FAC21408F714 /* NuAlertViewControllerFactory.swift */,
+				B4E3390EE43950F8B6F1822F /* NuAlertType.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E331B8222111AAB771E263 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3333CA34DE85BA19EBAA2 /* EntryPointBaseModelFactory.swift */,
+				B4E3364B27FCBEADA75610CC /* ResourceRouterFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4E331D5857E176F69BC3CF4 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3327EEBD297A8B82B824C /* ViewModel */,
+				B4E330735F5EFA4691FD8AA2 /* Controller */,
+				B4E33BF1E4D2E21B7E879242 /* View */,
+				B4E33FEC797237E0C43C36F9 /* Presenter */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B4E332515AE364255E2A4478 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */,
+				B4E33DFB6319E2BBDED1D9F9 /* NoticeViewControllerFactory.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E3326CA24628F26438C791 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3384AEB610A1B88169332 /* ResourceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		B4E3327EEBD297A8B82B824C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33C116F12C31C0DB71B02 /* NuAlertViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4E332BE8D4E2678390B7DC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33EC7B1A0935B17945EA8 /* ChargebackViewController.swift */,
+				B4E3346B0F2AACBDAB752C90 /* ChargebackViewControllerFactory.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E3338A7DAEB6D8087F4D1B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D4635525EE912B645DD /* Notice */,
+				B4E339B5D711D80F99336BAF /* Chargeback */,
+				B4E33DB40A16527D99C56B27 /* Alert */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B4E333BBAD1CE3E496F6B62E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B4E335929AD96515951616CA /* EntryPointResourceGateway.swift */,
+				B4E33461E9B8F16AC261E752 /* ResourceGateway.swift */,
+				B4E33C607CE179104644B532 /* ResourceRoutable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B4E3344EF123D9EAE1D8B494 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A4309339B2C6B7D2627 /* Model */,
+				B4E336F7612897D2B0718D16 /* Provider */,
+				B4E33BD89CCCC477B2988567 /* Gateway */,
+				B4E331B8222111AAB771E263 /* Factory */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B4E3348C998F7410EA2A57F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A95A10498AC52B452CF /* NoticePresenter.swift */,
+				B4E331BECF88603BC908DFC6 /* NoticePresenterOutput.swift */,
+				B4E3314FB46E52B5F1B3CAA7 /* NoticePresenterInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E334B440628F6C1D4A4835 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33F02B06E7957ED5D95E4 /* NoticePresenterInputMock.swift */,
+				B4E337574C1D25E1F76D591C /* CardBlockerStatusPresenterInputMock.swift */,
+				B4E330AE70F38BAE017316DF /* ChargebackPresenterInput.swift */,
+				B4E33968E1F3BF67D8415631 /* NoticePresenterOutputMock.swift */,
+				B4E332FA674B94FEC0FD58D9 /* CardBlockerStatusPresenterOutputMock.swift */,
+				B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E3355CA91CBF46940AE852 /* UserCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E337312F84425AC848C7A1 /* ShowNoticeUseCaseSpec.swift */,
+			);
+			path = UserCase;
+			sourceTree = "<group>";
+		};
+		B4E336CD5AC2F0AE0ACEDEC8 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33C035142D543A7D0B216 /* Notice */,
+				B4E3378190B51FBBFAA7C8D3 /* Chargeback */,
+				B4E331D5857E176F69BC3CF4 /* Alert */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B4E336E8B2B52EE80206315F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D4B31D74724607DE556 /* Bindable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B4E336F7612897D2B0718D16 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33600525F955954F9FA9D /* NubankTarget.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		B4E33729577AFCF8262902B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A633FA7833C0EB04589 /* NoticeView.swift */,
+				B4E33A371EA76BEA78A219A5 /* NuDefaultButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E33740559B3516EE143869 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3348DFADF207081334A5E /* ChargebackPresenterSpec.swift */,
+				B4E338EE3A1DEB39F8431DC6 /* CardBlockerStatusPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E3378190B51FBBFAA7C8D3 /* Chargeback */ = {
+			isa = PBXGroup;
+			children = (
+				B4E332BE8D4E2678390B7DC4 /* Controller */,
+				B4E338826F30BFE423CA6991 /* UseCase */,
+				B4E33B9EE4254FB932281902 /* View */,
+				B4E3389FCDA1CAC1573755E8 /* ViewModel */,
+				B4E33F9303ED05C9F27371D5 /* Presenter */,
+			);
+			path = Chargeback;
+			sourceTree = "<group>";
+		};
+		B4E338685616AEE42CE1BACB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E338826F30BFE423CA6991 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3389EB572BB870ACBF95E /* ShowChargebackInformationUseCase.swift */,
+				B4E33CF42B29491BDF2499ED /* ShowChargebackInformationUseCaseFactory.swift */,
+				B4E33E4BE729C199E210B54D /* ChargebackUseCase.swift */,
+				B4E33526590DFA7DD751BF31 /* ChargebackUseCaseFactory.swift */,
+				B4E33F5FCD115C98F7CAE50B /* ChangeUserCardBlockStatusUseCase.swift */,
+				B4E33CB3B55239EF95C0FEB8 /* ChangeUserCardBlockStatusUseCaseFactory.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4E3389FCDA1CAC1573755E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3355327D2F843626730F0 /* ChargeViewModel.swift */,
+				B4E339E0A88512FCA60C6C46 /* ReasonDetailViewModel.swift */,
+				B4E33BA8AD2E2D78268F2649 /* CardBlockerStatusViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4E33957A008BF385294C722 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33E15A2695B367550C970 /* ResourceRouterMock.swift */,
+				B4E3350A233970BB6A18365B /* ResourceGateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B4E3395B0CC3374D146CDBA0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33721A9DD25BF3D3A2C21 /* BaseViewControllerTests.swift */,
+				B4E33AE37CA3C14F7CB90496 /* Extension */,
+				B4E33D5D16305E6AC8D2DA78 /* Network */,
+				B4E338685616AEE42CE1BACB /* View */,
+				B4E33E170B05ACC5DB97D919 /* LoadingAlertScreenFactorySpec.swift */,
+				B4E335D29BCA33D626DF30B1 /* MainWindowFactorySpec.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4E3396162E6B1253A893A65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D81784DF033B21E9F73 /* NoticePresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E339A011A896FD1342D737 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B4E330D1FAEE7CDC7E16CEC5 /* ResourceRouterSpec.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B4E339B5D711D80F99336BAF /* Chargeback */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33DBA029CA467EF5AD451 /* UseCase */,
+				B4E33740559B3516EE143869 /* Presenter */,
+				B4E33EE697A11F2B86257DF6 /* Controller */,
+			);
+			path = Chargeback;
+			sourceTree = "<group>";
+		};
+		B4E339E3B21C6CA66640E38F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3319126382CF198FACC60 /* NuView.swift */,
+				B4E339EB745070DC222952B5 /* BindableView.swift */,
+				B4E336E8B2B52EE80206315F /* Protocol */,
+				B4E33DA1BBC6F367FBD546D1 /* FontSize.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E33A4309339B2C6B7D2627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33565EFB26C5D51FAC41B /* BaseModel.swift */,
+				B4E33430591D91087C9FD1C3 /* Resource.swift */,
+				B4E33FF3480757F3E900EBFA /* Notice.swift */,
+				B4E33D503AFC1B24CA20BD18 /* Action.swift */,
+				B4E33CB870FA05D5D8C1C337 /* Chargeback.swift */,
+				B4E33B6222F6D4667F87F13D /* ReasonDetail.swift */,
+				B4E33C4760A047EAF1868CF0 /* ChargeBackUserResponse.swift */,
+				B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E33AE37CA3C14F7CB90496 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B4E330925724986058B197C8 /* DictionaryTests.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B4E33AE79983310892B31E50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E331D4E46248E2484359CA /* NoticeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4E33B40C67D6A62B03CDA9A /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D6FB36222FE4F444C53 /* ShowNoticeUseCaseFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4E33B9CC287512CC1FDFF68 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3392FEF60189C8CF41146 /* Dictionary.swift */,
+				B4E33E22826637B208D3084E /* UIView.swift */,
+				B4E33D312BCEE97D9F053A62 /* UIColor.swift */,
+				B4E33DF21707F7991CD1CF16 /* NSAttributedString.swift */,
+				B4E338CA3E1D3A3471E0E3DC /* ObservableType.swift */,
+				B4E33A88DA939C3E2B0C937E /* Encodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B4E33B9EE4254FB932281902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33F88034A0CD334B5BB2E /* ChargebackView.swift */,
+				B4E33A5817813A2991A9DF37 /* ReasonDetailView.swift */,
+				B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E33BD89CCCC477B2988567 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A981F8641957540E577 /* EntryPointResourceMoyaGateway.swift */,
+				B4E339144573656124C19C9E /* ResourceMoyaGateway.swift */,
+				B4E3311603F3ADF20FD8EDE2 /* ResourceKey.swift */,
+				B4E333BBAD1CE3E496F6B62E /* Protocol */,
+				B4E3326CA24628F26438C791 /* Error */,
+				B4E339EF392D4771B89BDF16 /* ResourceRouter.swift */,
+				B4E3309F2F795DAAC568E3B9 /* ResourceAction.swift */,
+				B4E33097F45AC9CB490EB633 /* ResourceRouterError.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B4E33BF1E4D2E21B7E879242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33D1BE7CFDE751C8A58E8 /* NuAlertView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E33C035142D543A7D0B216 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				B4E332515AE364255E2A4478 /* Controller */,
+				B4E33C6B31852596C05DABE0 /* UseCase */,
+				B4E33AE79983310892B31E50 /* ViewModel */,
+				B4E33729577AFCF8262902B2 /* View */,
+				B4E3348C998F7410EA2A57F5 /* Presenter */,
+				B4E33B40C67D6A62B03CDA9A /* Factory */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		B4E33C09CB008FF7D04E46CC /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33EA68BADE5B833B97CFE /* Assets.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		B4E33C6B31852596C05DABE0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33BFD2D3E87340CECB6A6 /* ShowNoticeUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4E33C81E3240709AD370E64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3359883F47A2A4AC4BA7F /* NoticeMock.swift */,
+				B4E332EAF382A8EF7A08B62D /* ChargeBackUserResponseMock.swift */,
+				B4E33141812E45C486032678 /* ChargebackMock.swift */,
+				B4E33A4F05954FF259360066 /* CardBlockerStatusViewModelMock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E33D4635525EE912B645DD /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3355CA91CBF46940AE852 /* UserCase */,
+				B4E3396162E6B1253A893A65 /* Presenter */,
+				B4E33DC3095047D53EB84790 /* Controller */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		B4E33D5D16305E6AC8D2DA78 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B4E339A011A896FD1342D737 /* Gateway */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B4E33DB40A16527D99C56B27 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B4E339CC84001A2C8F09791D /* NuAlertViewControllerFactorySpec.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B4E33DBA029CA467EF5AD451 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */,
+				B4E33EB804DCD341ED30D14F /* ChargebackUseCaseSpec.swift */,
+				B4E33A5872051A8EF906609F /* ShowChargebackInformationUseCaseSpec.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4E33DC3095047D53EB84790 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E338C11CBD86A9D54B8FC4 /* NoticeViewControllerSpec.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E33DD2AE92A57E9B424B59 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B4E334B440628F6C1D4A4835 /* Presenter */,
+				B4E33957A008BF385294C722 /* Gateway */,
+				B4E33C81E3240709AD370E64 /* Model */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B4E33EDCEBDFF071670C43BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33A1FAE66BB85CF733BC2 /* TestError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B4E33EE697A11F2B86257DF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3370469C80167501E25B5 /* ChargebackViewControllerFactorySpec.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E33F9303ED05C9F27371D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */,
+				B4E33BCCB3BF6CD361D11241 /* ChargebackPresenterOutput.swift */,
+				B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */,
+				B4E33B5395E0E0FDEA8ADA8A /* ChargebackPresenterFactory.swift */,
+				B4E3399FEA0C8AE31E6B4F71 /* CardBlockerStatusPresenterOutput.swift */,
+				B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */,
+				B4E3316F1AFA5A9001E21C48 /* CardBlockerStatusPresenterFactory.swift */,
+				B4E33E0E9AAD5B97BCCD3E8D /* CardBlockerStatusPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4E33FEC797237E0C43C36F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */,
+				B4E33602D66DF88E21946C76 /* NuAlertPresenterOutput.swift */,
+				B4E3366C62D5EBE7EF6F43E5 /* NuAlertPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		751254692066E6B800FE888E /* ChargebackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751254712066E6B800FE888E /* Build configuration list for PBXNativeTarget "ChargebackTests" */;
+			buildPhases = (
+				7594AC992071AB8F00000CF3 /* Carthage */,
+				751254662066E6B800FE888E /* Sources */,
+				751254672066E6B800FE888E /* Frameworks */,
+				751254682066E6B800FE888E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				751254702066E6B800FE888E /* PBXTargetDependency */,
+			);
+			name = ChargebackTests;
+			productName = ChargebackTests;
+			productReference = 7512546A2066E6B800FE888E /* ChargebackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7538DFC12066A6F600B33E41 /* Chargeback */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7538DFDF2066A6F700B33E41 /* Build configuration list for PBXNativeTarget "Chargeback" */;
 			buildPhases = (
+				75C471172066F9860060E0F1 /* Carthage */,
+				7511D4392072B3D800664FD7 /* Swiftlint */,
 				7538DFBE2066A6F600B33E41 /* Sources */,
 				7538DFBF2066A6F600B33E41 /* Frameworks */,
 				7538DFC02066A6F600B33E41 /* Resources */,
@@ -116,24 +959,6 @@
 			productReference = 7538DFC22066A6F600B33E41 /* Chargeback.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7538DFD52066A6F700B33E41 /* ChargebackTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7538DFE22066A6F700B33E41 /* Build configuration list for PBXNativeTarget "ChargebackTests" */;
-			buildPhases = (
-				7538DFD22066A6F700B33E41 /* Sources */,
-				7538DFD32066A6F700B33E41 /* Frameworks */,
-				7538DFD42066A6F700B33E41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7538DFD82066A6F700B33E41 /* PBXTargetDependency */,
-			);
-			name = ChargebackTests;
-			productName = ChargebackTests;
-			productReference = 7538DFD62066A6F700B33E41 /* ChargebackTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,14 +969,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Douglas Mendes Barreto";
 				TargetAttributes = {
+					751254692066E6B800FE888E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 7538DFC12066A6F600B33E41;
+					};
 					7538DFC12066A6F600B33E41 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					7538DFD52066A6F700B33E41 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7538DFC12066A6F600B33E41;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -169,68 +994,241 @@
 			projectRoot = "";
 			targets = (
 				7538DFC12066A6F600B33E41 /* Chargeback */,
-				7538DFD52066A6F700B33E41 /* ChargebackTests */,
+				751254692066E6B800FE888E /* ChargebackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		751254682066E6B800FE888E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7538DFC02066A6F600B33E41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */,
 				7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */,
-				7538DFCB2066A6F600B33E41 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7538DFD42066A6F700B33E41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7511D4392072B3D800664FD7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		7594AC992071AB8F00000CF3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		75C471172066F9860060E0F1 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		751254662066E6B800FE888E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E33E1FF15D8194459F7316 /* BaseViewControllerTests.swift in Sources */,
+				B4E33DD471536B23D2817B53 /* DictionaryTests.swift in Sources */,
+				B4E33ABED13E0EB6D64EFDA2 /* ChangeUserCardBlockStatusUseCaseSpec.swift in Sources */,
+				B4E339026B122ED50FE6CCE2 /* NoticePresenterInputMock.swift in Sources */,
+				B4E33AF919035DABF7C27BDB /* ResourceRouterMock.swift in Sources */,
+				B4E33F440848047E07EC6896 /* CardBlockerStatusPresenterInputMock.swift in Sources */,
+				B4E33CC118CA905F2F1031A6 /* NoticeMock.swift in Sources */,
+				B4E3399EF0365B0734BB5A87 /* ChargebackUseCaseSpec.swift in Sources */,
+				B4E3359CA003B084BC6A372F /* TestError.swift in Sources */,
+				B4E334B6A0DAF120C5727996 /* ChargebackPresenterInput.swift in Sources */,
+				B4E33E4518ED6DFFACA7C1F8 /* ChargeBackUserResponseMock.swift in Sources */,
+				B4E33E5417F5757B94111EF5 /* ShowChargebackInformationUseCaseSpec.swift in Sources */,
+				B4E33492A2C9422452CE3D08 /* ChargebackMock.swift in Sources */,
+				B4E3366781E6D5C4745FB7AB /* ShowNoticeUseCaseSpec.swift in Sources */,
+				B4E33629891DCF5D32551337 /* NoticePresenterSpec.swift in Sources */,
+				B4E33AE2E98785D1181A78CD /* NoticePresenterOutputMock.swift in Sources */,
+				B4E33355ED1691A6864886B3 /* CardBlockerStatusPresenterOutputMock.swift in Sources */,
+				B4E3334D8BDCB6A8897E7288 /* ChargebackPresenterSpec.swift in Sources */,
+				B4E33F18988FBF5DE8D815F0 /* ChargebackPresenterOutputMock.swift in Sources */,
+				B4E333AD7412436E62F717D3 /* ResourceRouterSpec.swift in Sources */,
+				B4E33523CFC6053F101CB7FD /* ResourceGateway.swift in Sources */,
+				B4E338354D9331A793095DBF /* CardBlockerStatusPresenterSpec.swift in Sources */,
+				B4E33932DC40BA1E79520690 /* CardBlockerStatusViewModelMock.swift in Sources */,
+				B4E3346F7D54A44A1B3C0A3B /* LoadingAlertScreenFactorySpec.swift in Sources */,
+				B4E3349BA5FF88779EBE3421 /* MainWindowFactorySpec.swift in Sources */,
+				B4E33CD32492DA5F0BCD60BC /* NuAlertViewControllerFactorySpec.swift in Sources */,
+				B4E3360D7AA921ECF343B6BA /* ChargebackViewControllerFactorySpec.swift in Sources */,
+				B4E33A2281434C38119359DB /* NoticeViewControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7538DFBE2066A6F600B33E41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7538DFC82066A6F600B33E41 /* ViewController.swift in Sources */,
+				75DB2E7C2066E24D00DC799F /* MainWindowFactory.swift in Sources */,
 				7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7538DFD22066A6F700B33E41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7538DFDB2066A6F700B33E41 /* ChargebackTests.swift in Sources */,
+				75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */,
+				B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */,
+				B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */,
+				B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */,
+				B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */,
+				B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */,
+				B4E33D45E1610007D32CCBD9 /* Notice.swift in Sources */,
+				B4E33385B6E3371F07460CA9 /* Action.swift in Sources */,
+				B4E33CEA6924C97BEDF69283 /* Chargeback.swift in Sources */,
+				B4E3301ABBCE60EBB79B170C /* ReasonDetail.swift in Sources */,
+				B4E33D162C3880CB39B3563C /* NubankTarget.swift in Sources */,
+				B4E33049391045373115516C /* EntryPointResourceMoyaGateway.swift in Sources */,
+				B4E330DAB2C530ABF65864E0 /* ResourceMoyaGateway.swift in Sources */,
+				B4E336DA652B88E1072BD08E /* ResourceKey.swift in Sources */,
+				B4E3361EA3477D8337A33FC3 /* EntryPointResourceGateway.swift in Sources */,
+				B4E33B262E5A4B4E47A91C88 /* ResourceGateway.swift in Sources */,
+				B4E33DA244740CBFFAF44765 /* ResourceError.swift in Sources */,
+				B4E337624583CA5CB2CE3D25 /* EntryPointBaseModelFactory.swift in Sources */,
+				B4E33EBB34A598965C6AFD38 /* Dictionary.swift in Sources */,
+				B4E33135AF5E72FD65D8D5CB /* NoticeView.swift in Sources */,
+				B4E336760C5DB84454267EEB /* NoticeViewModel.swift in Sources */,
+				B4E33CBD42EED35A29B5A2B1 /* NoticePresenter.swift in Sources */,
+				B4E3359D75C7F6B144811FA3 /* UIView.swift in Sources */,
+				B4E3319A4C4E0429DE2C2357 /* UIColor.swift in Sources */,
+				B4E33E1CF5F9C77B7918F184 /* NSAttributedString.swift in Sources */,
+				B4E33B819B8B3CF7D5EBEA22 /* ShowNoticeUseCase.swift in Sources */,
+				B4E3324A280DE2B359A5F327 /* ShowNoticeUseCaseFactory.swift in Sources */,
+				B4E33375A1ACF6369E0016B0 /* NuView.swift in Sources */,
+				B4E331447A1AD42119B4E4A0 /* BindableView.swift in Sources */,
+				B4E335C8C9B6AED35DCCD83C /* Bindable.swift in Sources */,
+				B4E33808FF82CF40BD5CBE6B /* FontSize.swift in Sources */,
+				B4E336EA074FA3B989DC4F65 /* ResourceRouter.swift in Sources */,
+				B4E33F73835CD0AD489543FA /* ResourceRoutable.swift in Sources */,
+				B4E33EAAFDB17DFA959F6FFB /* ResourceRouterFactory.swift in Sources */,
+				B4E33855C5F12674B87FA176 /* ChargebackViewController.swift in Sources */,
+				B4E33133A7126DDC5F6C9840 /* ChargebackView.swift in Sources */,
+				B4E337DAB1DC6C35C72FA742 /* ChargeViewModel.swift in Sources */,
+				B4E3340C401904FF02CD7C1F /* Assets.swift in Sources */,
+				B4E33F54A067AD1423865964 /* ShowChargebackInformationUseCase.swift in Sources */,
+				B4E339E50CEAEE3C735D2C9F /* ChargebackPresenterInput.swift in Sources */,
+				B4E33C080DD53CB4A2DE1847 /* ChargebackPresenterOutput.swift in Sources */,
+				B4E33AE060EE57C7683471BC /* ChargebackPresenter.swift in Sources */,
+				B4E337481C54829168C5B170 /* ChargebackPresenterFactory.swift in Sources */,
+				B4E33D127B49893031DB7B1C /* ShowChargebackInformationUseCaseFactory.swift in Sources */,
+				B4E333B892FC834141130119 /* ChargebackViewControllerFactory.swift in Sources */,
+				B4E336AAFC653083D48D7B01 /* ReasonDetailViewModel.swift in Sources */,
+				B4E33005E16E29121203B10D /* ReasonDetailView.swift in Sources */,
+				B4E33A4E27AC9BA4C1074E72 /* CardBlockerStatusView.swift in Sources */,
+				B4E339830A2F3748596EC95C /* ChargebackUseCase.swift in Sources */,
+				B4E3317A14CD453947C78374 /* ChargebackUseCaseFactory.swift in Sources */,
+				B4E337CEB6789B8BB57899E7 /* NuAlertViewModel.swift in Sources */,
+				B4E3365E68658541BDAF0F62 /* ObservableType.swift in Sources */,
+				B4E330336CB6B5B4C713C96A /* NuAlertViewController.swift in Sources */,
+				B4E33DC5BB1C4D5E6E8BD250 /* NuAlertView.swift in Sources */,
+				B4E3333B0D8B19F2C44E2F52 /* NuAlertViewControllerFactory.swift in Sources */,
+				B4E33AB2F6221EC570F9A5C1 /* NuAlertPresenterInput.swift in Sources */,
+				B4E337F5850F237294C8195D /* NuAlertPresenterOutput.swift in Sources */,
+				B4E339B361042629334AEF47 /* NuAlertType.swift in Sources */,
+				B4E338692690DD6C2158C9D2 /* NuAlertPresenter.swift in Sources */,
+				B4E337863563B0D68A760BEB /* ChargeBackUserResponse.swift in Sources */,
+				B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */,
+				B4E3324276869EB1D2C3A116 /* LoadingAlertScreenFactory.swift in Sources */,
+				B4E332769EF92D17D5F5D50E /* LoadableViewController.swift in Sources */,
+				B4E33C290174A2E39BFD3707 /* NoticePresenterOutput.swift in Sources */,
+				B4E33FD7A406496CD945A11F /* NoticePresenterInput.swift in Sources */,
+				B4E33753015E4F4EA55EB8D4 /* ChangeUserCardBlockStatusUseCase.swift in Sources */,
+				B4E33ECEC140C3B33BC8B390 /* ChangeUserCardBlockStatusUseCaseFactory.swift in Sources */,
+				B4E33703B2DD39BC2ABA40D5 /* CardBlockerStatusViewModel.swift in Sources */,
+				B4E33A216F546BB00019A1CB /* CardBlockerStatusPresenterInput.swift in Sources */,
+				B4E337D04AB8273AB99EB372 /* CardBlockerStatusPresenterOutput.swift in Sources */,
+				B4E33F70DCE41B01599F246F /* CardBlockerStatusPresenterFactory.swift in Sources */,
+				B4E338965525A56B32DD8943 /* Encodable.swift in Sources */,
+				B4E3399C2D5820887B941801 /* CardBlockerStatusPresenter.swift in Sources */,
+				B4E33104CE9387825906B088 /* ResourceRouterError.swift in Sources */,
+				B4E33B04F267B954066B524A /* Strings.swift in Sources */,
+				B4E33C2B5BEE052E777CDB2E /* ResourceAction.swift in Sources */,
+				B4E33A6FA5C466AA00AE75AD /* NuDefaultButton.swift in Sources */,
+				B4E335AB1B1DEE9657838E53 /* NoticeViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7538DFD82066A6F700B33E41 /* PBXTargetDependency */ = {
+		751254702066E6B800FE888E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7538DFC12066A6F600B33E41 /* Chargeback */;
-			targetProxy = 7538DFD72066A6F700B33E41 /* PBXContainerItemProxy */;
+			targetProxy = 7512546F2066E6B800FE888E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7538DFC92066A6F600B33E41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7538DFCA2066A6F600B33E41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -242,6 +1240,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		751254722066E6B800FE888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Debug;
+		};
+		751254732066E6B800FE888E /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Test;
+		};
+		751254742066E6B800FE888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WQVLGGBH98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChargebackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+			};
+			name = Release;
+		};
 		7538DFDD2066A6F700B33E41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,15 +1422,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74dcbc6d-5e10-44bb-9554-46b2d53a8318";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -371,49 +1447,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "323764fa-e7f6-4bd6-9dfd-4ef6f47d2d37";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		7538DFE32066A6F700B33E41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
-			};
-			name = Debug;
-		};
-		7538DFE42066A6F700B33E41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -479,38 +1530,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = Chargeback/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Chargeback/Resource/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.Chargeback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74dcbc6d-5e10-44bb-9554-46b2d53a8318";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.Chargeback";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Test;
-		};
-		7538DFE72066A99C00B33E41 /* Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = ChargebackTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChargebackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargeback.app/Chargeback";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Test;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		751254712066E6B800FE888E /* Build configuration list for PBXNativeTarget "ChargebackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751254722066E6B800FE888E /* Debug */,
+				751254732066E6B800FE888E /* Test */,
+				751254742066E6B800FE888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7538DFBD2066A6F600B33E41 /* Build configuration list for PBXProject "Chargeback" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -527,16 +1580,6 @@
 				7538DFE02066A6F700B33E41 /* Debug */,
 				7538DFE62066A99C00B33E41 /* Test */,
 				7538DFE12066A6F700B33E41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7538DFE22066A6F700B33E41 /* Build configuration list for PBXNativeTarget "ChargebackTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7538DFE32066A6F700B33E41 /* Debug */,
-				7538DFE72066A99C00B33E41 /* Test */,
-				7538DFE42066A6F700B33E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
