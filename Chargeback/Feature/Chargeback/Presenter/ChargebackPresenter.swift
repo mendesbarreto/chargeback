@@ -59,8 +59,8 @@ final class ChargebackPresenter: ChargebackPresenterInput {
         presenterOutput?.showLoading()
     }
 
-    func hideLoading () {
-        presenterOutput?.hideLoading()
+    func hideLoading (onComplete: (() -> ())? = nil) {
+        presenterOutput?.hideLoading(onComplete: onComplete)
     }
 
     func showAutoblock () {

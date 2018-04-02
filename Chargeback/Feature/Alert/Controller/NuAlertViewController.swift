@@ -11,6 +11,7 @@ final class NuAlertViewController: BaseViewController {
 
     private var presenter: NuAlertPresenter!
     private let nuAlertView = NuAlertView()
+    private let opacityBalckBackground = UIView()
     private var action: (() -> ())?
 
     let alertType: NuAlertType
@@ -53,12 +54,16 @@ final class NuAlertViewController: BaseViewController {
     }
 
     private func setupLayout () {
+        view.addSubview(opacityBalckBackground)
+        view.backgroundColor = .backgroundNu
+        opacityBalckBackground.anchorToFit(in: view)
+        opacityBalckBackground.backgroundColor = .transparentBlack
+
         view.addSubview(nuAlertView)
         nuAlertView.startAnchor().heightAnchor.constraint(equalToConstant: 300).isActive = true
         nuAlertView.widthAnchor.constraint(equalToConstant: 300).isActive = true
         nuAlertView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         nuAlertView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        view.backgroundColor = .transparentBlack
     }
 }
 

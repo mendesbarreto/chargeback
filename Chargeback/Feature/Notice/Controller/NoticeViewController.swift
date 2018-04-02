@@ -53,6 +53,10 @@ extension NoticeViewController: NoticePresenterOutput {
     }
 
     func showError () {
-        //TODO: SHOW SOME ALERT
+        let aletController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.failTitle,
+                                                               description: Strings.NuAlert.failDescription,
+                                                               buttonTitle: Strings.NuAlert.closeButtonTitle,
+                                                               type: .fail)
+        present(aletController, animated: true)
     }
 }

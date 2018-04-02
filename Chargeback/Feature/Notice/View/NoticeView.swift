@@ -7,27 +7,6 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class NuDefaultButton: UIButton {
-    override init(frame: CGRect = .zero) {
-        super.init(frame: frame)
-        setupLayout()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("This view could not be initialized by coder", file: #file, line: #line)
-    }
-
-    private func setupLayout() {
-        addTopBorder(color: .disabledGrayNu, width: 1)
-        backgroundColor = .clear
-    }
-
-    override func layoutSubviews () {
-        super.layoutSubviews()
-        setupLayout()
-    }
-}
-
 final class NoticeView: BindableView<NoticeViewModel> {
 
     private let titleLabel: UILabel

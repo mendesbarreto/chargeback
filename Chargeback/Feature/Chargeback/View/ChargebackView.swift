@@ -7,7 +7,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> {
+final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>, UITextViewDelegate {
 
     private let titleLabel = UILabel()
     private let commentTextView = UITextView()
@@ -21,6 +21,9 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
     private let bodyContentView = UIView()
     private let bottomContentView = UIView()
     private let buttonsStackView = UIStackView()
+
+    private let separatorHeaderView = UIView()
+    private let separatorBottomView = UIView()
 
     private let reasonCardInPossessionView = ReasonDetailView()
     private let reasonMerchantView = ReasonDetailView()
@@ -53,6 +56,7 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
     override init (frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
+        setupCommentTextView()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -69,9 +73,31 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel> 
         reasonCardInPossessionView.bind(to: viewModel.reasonCardInPossessionViewModel)
     }
 
+    private func setupCommentTextView () {
+        commentTextView.delegate = self
+    }
+
     // In the next refactor Remover cardBlockerStatusView and move to view controller
     func bind (toCardBlockerViewModel viewModel: CardBlockerStatusViewModel) {
         cardBlockerStatusView.bind(to: viewModel)
+    }
+
+    // MARK: TextView Delegate
+    func textViewDidBeginEditing (_ textView: UITextView) {
+        if commentTextView.attributedText == viewModel.descriptionHint {
+            commentTextView.text = ""
+        }
+    }
+
+    func textViewDidEndEditing (_ textView: UITextView) {
+        if commentTextView.text.isEmpty {
+            commentTextView.attributedText = viewModel.descriptionHint
+        }
+    }
+
+    override func touchesBegan (_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        commentTextView.resignFirstResponder()
     }
 }
 
@@ -93,6 +119,24 @@ extension ChargebackView {
                                   .trailingAnchor(to: bodyContentView)
                                   .topAnchor(toEqualAnchor: reasonMerchantView.bottomAnchor)
         reasonCardInPossessionView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        setupSeparatorLayout()
+    }
+
+    private func setupSeparatorLayout () {
+        addChild(view: separatorHeaderView)
+        separatorHeaderView.startAnchor()
+                           .topAnchor(toEqualAnchor: bodyContentView.bottomAnchor)
+                           .leadingAnchor(to: contentView)
+                           .trailingAnchor(to: contentView)
+                .heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorHeaderView.backgroundColor = .disabledGrayNu
+        addChild(view: separatorBottomView)
+        separatorBottomView.startAnchor()
+                           .topAnchor(toEqualAnchor: bodyContentView.topAnchor)
+                           .leadingAnchor(to: contentView)
+                           .trailingAnchor(to: contentView)
+                .heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorBottomView.backgroundColor = .disabledGrayNu
     }
 
     private func setupREasonMerchanViewLayout () {
@@ -102,6 +146,7 @@ extension ChargebackView {
                           .trailingAnchor(to: bodyContentView)
                           .topAnchor(toEqualAnchor: cardBlockerStatusView.bottomAnchor)
         reasonMerchantView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        reasonMerchantView.backgroundColor = .clear
     }
 
     private func setupCardBalockStackViewLayout () {
@@ -143,8 +188,8 @@ extension ChargebackView {
         addChild(view: bottomContentView)
         bottomContentView.startAnchor()
                          .bottomAnchor(to: contentView)
-                         .leadingAnchor(to: contentView)
-                         .trailingAnchor(to: contentView)
+                         .leadingAnchor(to: contentView, constant: 15)
+                         .trailingAnchor(to: contentView, constant: -15)
                          .topAnchor(toEqualAnchor: bodyContentView.bottomAnchor)
     }
 
@@ -152,8 +197,8 @@ extension ChargebackView {
         addChild(view: bodyContentView)
         bodyContentView.startAnchor()
                        .topAnchor(toEqualAnchor: headerContentView.bottomAnchor)
-                       .leadingAnchor(to: contentView, constant: 10)
-                       .trailingAnchor(to: contentView, constant: -10)
+                       .leadingAnchor(to: contentView, constant: 15)
+                       .trailingAnchor(to: contentView, constant: -15)
         bodyContentView.heightAnchor.constraint(equalToConstant: 250).isActive = true
     }
 

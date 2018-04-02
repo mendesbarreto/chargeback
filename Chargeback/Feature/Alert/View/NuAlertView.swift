@@ -16,6 +16,7 @@ final class NuAlertView: BindableView<NuAlertViewModel> {
     private let bodyContentView = UIView()
     private let bottomContentView = UIView()
     private let contentStackView = UIStackView()
+    private let backgroundView = UIView()
 
     var onButtonTap: SharedSequence<SignalSharingStrategy, Void> {
         return actionButton.rx.tap.asSignal(onErrorJustReturn: ())
@@ -69,9 +70,6 @@ extension NuAlertView {
     }
 
     private func setupConentViewLayout () {
-        headerContentView.backgroundColor = .clear
-        bodyContentView.backgroundColor = .clear
-        bottomContentView.backgroundColor = .clear
         addChild(view: contentStackView)
         contentStackView.startAnchor()
                         .topAnchor(to: contentView, constant: 10)

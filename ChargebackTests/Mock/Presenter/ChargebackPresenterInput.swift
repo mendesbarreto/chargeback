@@ -11,7 +11,7 @@ import RxTest
 
 @testable import Chargeback
 
-class ChargebackPresenterInputMock: ChargebackPresenterInput {
+final class ChargebackPresenterInputMock: ChargebackPresenterInput {
 
     var invokedShow = false
     var invokedShowCount = 0
@@ -72,8 +72,9 @@ class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading () {
+    func hideLoading (onComplete: (() -> ())?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
+        onComplete?()
     }
 }

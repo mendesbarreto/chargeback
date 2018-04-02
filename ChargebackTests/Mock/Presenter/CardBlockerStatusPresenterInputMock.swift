@@ -9,7 +9,6 @@ import RxSwift
 @testable import Chargeback
 
 final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput {
-
     var invokedLockPadLockView = false
     var invokedLockPadLockViewCount = 0
 
@@ -37,8 +36,9 @@ final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading () {
+    func hideLoading (onComplete: (() -> ())?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
+        onComplete?()
     }
 }
