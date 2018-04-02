@@ -5,22 +5,6 @@
 
 import RxSwift
 
-protocol CardBlockerStatusPresenterOutput: class, LoadablePresenter {
-    func show (cardBlockViewModel: CardBlockerStatusViewModel)
-}
-
-protocol CardBlockerStatusPresenterInput: LoadablePresenter {
-    func lockPadLockView ()
-
-    func unlockPadLockView ()
-}
-
-final class CardBlockerStatusPresenterFactory {
-    static func make (presenterOutput: CardBlockerStatusPresenterOutput) -> CardBlockerStatusPresenterInput {
-        return CardBlockerStatusPresenter(presenterOutput: presenterOutput)
-    }
-}
-
 final class CardBlockerStatusPresenter: CardBlockerStatusPresenterInput {
     private weak var presenterOutput: CardBlockerStatusPresenterOutput?
 
