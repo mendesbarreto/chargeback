@@ -10,7 +10,6 @@
 		7538DFC62066A6F600B33E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538DFC52066A6F600B33E41 /* AppDelegate.swift */; };
 		7538DFCD2066A6F600B33E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCC2066A6F600B33E41 /* Assets.xcassets */; };
 		7538DFD02066A6F600B33E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DFCE2066A6F600B33E41 /* LaunchScreen.storyboard */; };
-		7594AC9E2071AFFB00000CF3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9A2071AFFB00000CF3 /* Quick.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7594ACA22071B16F00000CF3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9D2071AFFB00000CF3 /* Nimble.framework */; };
 		7594ACA32071B16F00000CF3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9A2071AFFB00000CF3 /* Quick.framework */; };
 		7594ACA42071B16F00000CF3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AC9B2071AFFB00000CF3 /* RxBlocking.framework */; };
@@ -306,7 +305,6 @@
 				75C471262066FB630060E0F1 /* Alamofire.framework in Frameworks */,
 				75C471292066FB630060E0F1 /* Result.framework in Frameworks */,
 				75C4712C2066FB630060E0F1 /* Moya.framework in Frameworks */,
-				7594AC9E2071AFFB00000CF3 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
