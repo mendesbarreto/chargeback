@@ -9,11 +9,11 @@ final class NuAlertPresenter: NuAlertPresenterInput {
     private weak var presenterOutput: NuAlertPresenterOutput?
     private let viewModel: NuAlertViewModel
 
-    init (title: String,
-          description: String,
-          buttonTitle: String,
-          type: NuAlertType,
-          presenterOutput: NuAlertPresenterOutput) {
+    init(title: String,
+         description: String,
+         buttonTitle: String,
+         type: NuAlertType,
+         presenterOutput: NuAlertPresenterOutput) {
         self.presenterOutput = presenterOutput
         let titleAttr: NSAttributedString = type != .success ? .titleMediumRead(withText: title) : .titleMediumPurple(withText: title)
         viewModel = NuAlertViewModel(title: titleAttr,

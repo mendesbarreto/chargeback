@@ -31,7 +31,7 @@ final class NoticePresenter: NoticePresenterInput {
         presenterOutput?.showLoading()
     }
 
-    func hideLoading (onComplete: (() -> ())? = nil) {
+    func hideLoading (onComplete: (() -> Void)? = nil) {
         presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

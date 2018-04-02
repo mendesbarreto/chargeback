@@ -7,6 +7,7 @@ import UIKit
 
 enum NSAttributedStringError: Error {
     case problemToConvertStringToDataWithUnicode
+    //swiftlint:disable identifier_name
     case problemToCreateAttributedStringWithHTMLString(reason: String)
 }
 

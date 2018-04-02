@@ -11,7 +11,7 @@ struct NubankResourceTarget: TargetType {
     private(set) var path: String = ""
     private(set) var parameters: [String: Any] = [:]
     private(set) var sampleData: Data = Data()
-    private(set) var headers: [String: String]? = nil
+    private(set) var headers: [String: String]?
 
     var method: Moya.Method {
         return .get
@@ -40,7 +40,7 @@ struct NubankActionTarget: TargetType {
     private(set) var parameters: [String: Any]
     private(set) var path: String = ""
     private(set) var sampleData: Data = Data()
-    private(set) var headers: [String: String]? = nil
+    private(set) var headers: [String: String]?
 
     var method: Moya.Method {
         return .post

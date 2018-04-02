@@ -30,7 +30,7 @@ extension BaseViewController: LoadablePresenter {
         present(loadingAlert!, animated: true)
     }
 
-    func hideLoading (onComplete: (() -> ())?) {
+    func hideLoading (onComplete: (() -> Void)?) {
         loadingAlert?.dismiss(animated: true) {
             onComplete?()
         }

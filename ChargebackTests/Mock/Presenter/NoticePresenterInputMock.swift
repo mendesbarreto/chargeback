@@ -44,7 +44,7 @@ final class NoticePresenterInputMock: NoticePresenterInput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> ())?) {
+    func hideLoading (onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

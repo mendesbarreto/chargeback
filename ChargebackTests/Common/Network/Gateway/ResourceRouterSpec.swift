@@ -26,6 +26,7 @@ final class ResourceRouterSpec: QuickSpec {
         return ChargebackMock.chargeback
     }
 
+    //swiftlint:disable function_body_length
     //swiftlint:disable force_try
     override func spec () {
         super.spec()

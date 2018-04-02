@@ -16,7 +16,7 @@ final class CardBlockerStatusPresenter: CardBlockerStatusPresenterInput {
         presenterOutput?.showLoading()
     }
 
-    func hideLoading (onComplete: (() -> ())? = nil) {
+    func hideLoading (onComplete: (() -> Void)? = nil) {
         presenterOutput?.hideLoading(onComplete: onComplete)
     }
 

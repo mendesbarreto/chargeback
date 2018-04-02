@@ -7,7 +7,7 @@ import Foundation
 import RxSwift
 
 @testable import Chargeback
-
+//swiftlint:disable force_cast
 final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResourceGateway {
     var invokedRequestResource = false
     var invokedRequestResourceCount = 0

@@ -24,7 +24,7 @@ final class ChargebackUseCase {
                     presenter.showChargeBackActionSuccess()
                 }
             }
-        }, onError: { [weak self] error in
+        }, onError: { [weak self] _ in
             if let presenter = self?.presenter {
                 presenter.hideLoading {
                     presenter.showChargeBackActionError()

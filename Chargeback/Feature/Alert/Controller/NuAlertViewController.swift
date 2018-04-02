@@ -12,7 +12,7 @@ final class NuAlertViewController: BaseViewController {
     private var presenter: NuAlertPresenter!
     private let nuAlertView = NuAlertView()
     private let opacityBalckBackground = UIView()
-    private var action: (() -> ())?
+    private var action: (() -> Void)?
 
     let alertType: NuAlertType
 
@@ -20,7 +20,7 @@ final class NuAlertViewController: BaseViewController {
         return nuAlertView.viewModel
     }
 
-    init (title: String, description: String, buttonTitle: String, type: NuAlertType, action: (() -> ())? = nil) {
+    init (title: String, description: String, buttonTitle: String, type: NuAlertType, action: (() -> Void)? = nil) {
         alertType = type
         super.init()
         self.action = action

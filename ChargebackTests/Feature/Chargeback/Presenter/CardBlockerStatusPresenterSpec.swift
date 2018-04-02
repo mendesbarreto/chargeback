@@ -15,6 +15,7 @@ final class CardBlockerStatusPresenterSpec: QuickSpec {
         return ChargebackMock.chargeback
     }
 
+    //swiftlint:disable function_body_length
     override func spec () {
         super.spec()
         describe("CardBlockerStatusPresenter") {

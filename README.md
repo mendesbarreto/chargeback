@@ -27,3 +27,11 @@ After the carthage was installed run the command to generates the frameworks:
 carthage update --cache-builds --platform ios
 ```
 
+### Swift lint
+
+
+To run swift lint on project you should install it:
+
+```shell
+brew install swiftlint
+```

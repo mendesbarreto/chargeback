@@ -25,11 +25,12 @@ final class ResourceRouter: ResourceRoutable {
                               .do(onNext: { [weak self] model in
                                   self?.currentResource = model
                               })
-                              .flatMap { [unowned self] (model: BaseModel) -> Observable<Notice> in
-                                  guard let notice = self.get(resource: .notice) else {
+                              .flatMap { [weak self] _ -> Observable<Notice> in
+                                  guard let strongSelf = self,
+                                        let notice = strongSelf.get(resource: .notice) else {
                                       return Observable.error(ResourceRouterError.resourceNotFound)
                                   }
-                                  return self.resourceGateway.request(resource: notice)
+                                  return strongSelf.resourceGateway.request(resource: notice)
                               }
                               .do(onNext: { [weak self] model in
                                   self?.currentResource = model

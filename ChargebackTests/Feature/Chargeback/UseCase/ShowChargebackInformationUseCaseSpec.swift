@@ -17,6 +17,7 @@ final class ShowChargebackInformationUseCaseSpec: QuickSpec {
         return ChargebackMock.chargeback
     }
 
+    //swiftlint:disable function_body_length
     override func spec () {
         describe("ShowChargebackInformationUseCase") {
             var showChargebackUseCase: ShowChargebackInformationUseCase!

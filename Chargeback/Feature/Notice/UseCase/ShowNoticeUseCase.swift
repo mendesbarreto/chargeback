@@ -23,11 +23,11 @@ final class ShowNoticeUseCase {
                 return
             }
             strongSelf.show(notice: notice)
-        }, onError: { [weak self] error in
+        }, onError: { [weak self] _ in
             guard let strongSelf  = self else {
                 return
             }
-            strongSelf.presenter.hideLoading() {
+            strongSelf.presenter.hideLoading {
                 strongSelf.presenter.showError()
             }
         }).disposed(by: disposableBag)

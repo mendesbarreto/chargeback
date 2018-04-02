@@ -16,6 +16,7 @@ final class ShowNoticeUseCaseSpec: QuickSpec {
         return NoticeMock.noticeMock
     }
 
+    //swiftlint:disable function_body_length
     override func spec () {
         super.spec()
         describe("ShowNoticeUseCase") {

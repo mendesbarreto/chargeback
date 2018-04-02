@@ -10,7 +10,7 @@ final class NuAlertViewControllerFactory {
                       description: String = Strings.NuAlert.successDescription,
                       buttonTitle: String = Strings.NuAlert.closeButtonTitle,
                       type: NuAlertType = .success,
-                      action: (() -> ())? = nil) -> UIViewController {
+                      action: (() -> Void)? = nil) -> UIViewController {
         return NuAlertViewController(title: title,
                                      description: description,
                                      buttonTitle: buttonTitle,
