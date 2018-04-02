@@ -15,7 +15,7 @@ struct Strings {
         static let successTitle = "Contestação de compra recebida"
         static let successDescription = "Fique de olho no seu email! Nos próximos 3 dias você deverá receber um primeiro retorno sobre sua contestação"
 
-        static let failTitle = "Ops, Ocorreu alguma problema"
+        static let failTitle = "Ops, Ocorreu algum problema!"
         static let failDescription = "Verifique sua conexão com a rede ou tente mais tarde. Muito Obrigado"
 
         static let closeButtonTitle = "Fechar"

@@ -31,11 +31,11 @@ final class ChargebackViewController: BaseViewController {
         setupLayout()
         setupChargebackView()
         setupKeyboardEvents()
-        showChargebackUserCase.show()
     }
 
     override func viewDidAppear (_ animated: Bool) {
         super.viewDidAppear(animated)
+        showChargebackUserCase.show()
     }
 
     private func setupLayout () {
