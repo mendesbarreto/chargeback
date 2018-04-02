@@ -28,12 +28,12 @@ final class ShowNoticeUseCase {
                 return
             }
             strongSelf.presenter.showError()
-            strongSelf.presenter.hideLoading()
+            strongSelf.presenter.hideLoading(onComplete: nil)
         }).disposed(by: disposableBag)
     }
 
     private func show(notice: Notice) {
-        presenter.hideLoading()
+        presenter.hideLoading(onComplete: nil)
         do {
             try presenter.show(notice: notice)
         } catch {

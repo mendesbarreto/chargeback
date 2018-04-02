@@ -17,13 +17,18 @@ final class ChargebackUseCase {
     }
 
     func chargeback (withUserResponse response: ChargeBackUserResponse) {
+        presenter.showLoading()
         resourceRouter.exec(action: .chargeback(userResponse: response)).subscribe(onNext: { [weak self] in
             if let presenter = self?.presenter {
-                presenter.showChargeBackActionSuccess()
+                presenter.hideLoading {
+                    presenter.showChargeBackActionSuccess()
+                }
             }
         }, onError: { [weak self] error in
             if let presenter = self?.presenter {
-                presenter.showChargeBackActionError()
+                presenter.hideLoading {
+                    presenter.showChargeBackActionError()
+                }
             }
         }).disposed(by: disposableBag)
     }

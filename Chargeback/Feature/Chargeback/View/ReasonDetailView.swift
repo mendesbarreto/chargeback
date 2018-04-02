@@ -41,5 +41,7 @@ extension ReasonDetailView {
                         .leadingAnchor(to: self)
                 .trailingAnchor.constraint(equalTo: toggleSwitch.leadingAnchor).isActive = true
         descriptionLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        contentView.backgroundColor = .clear
+        backgroundColor = .clear
     }
 }

@@ -8,5 +8,5 @@ import Foundation
 protocol LoadablePresenter {
     func showLoading ()
 
-    func hideLoading ()
+    func hideLoading (onComplete: (() -> ())?)
 }

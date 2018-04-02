@@ -23,13 +23,14 @@ final class ShowChargebackInformationUseCase {
             strongSelf.show(chargeback: chargeback)
         }, onError: { [weak self] _ in
             guard let strongSelf = self else { return }
-            strongSelf.presenter.hideLoading()
-            strongSelf.presenter.showError()
+            strongSelf.presenter.hideLoading {
+                strongSelf.presenter.showError()
+            }
         }).disposed(by: disposableBag)
     }
 
     private func show (chargeback: Chargeback) {
-        presenter.hideLoading()
+        presenter.hideLoading(onComplete: nil)
         do {
             try presenter.show(chargeback: chargeback)
             shouldSHowAutoBlock(of: chargeback)
