@@ -4,10 +4,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class ReasonDetailView: BindableView<ReasonDetailViewModel> {
     private let descriptionLabel: UILabel = UILabel()
     private let toggleSwitch: UISwitch = UISwitch()
+    private let disposableBag = DisposeBag()
 
     var isOn: Bool {
         return toggleSwitch.isOn
@@ -25,6 +28,20 @@ final class ReasonDetailView: BindableView<ReasonDetailViewModel> {
     override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         descriptionLabel.attributedText = viewModel.description
+        setupToggle()
+    }
+
+    private func setupToggle() {
+        toggleSwitch.rx.isOn.asSignal(onErrorJustReturn: false)
+                            .emit(onNext: changeDescriptionColor).disposed(by: disposableBag)
+    }
+
+    private func changeDescriptionColor(_ isOn: Bool) {
+        if isOn {
+            descriptionLabel.attributedText = viewModel.descriptionSelected
+        } else {
+            descriptionLabel.attributedText = viewModel.description
+        }
     }
 }
 

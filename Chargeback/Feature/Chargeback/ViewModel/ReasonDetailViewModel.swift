@@ -8,4 +8,5 @@ import Foundation
 struct ReasonDetailViewModel {
     let detailIdKey: ReasonDetailIdKey
     let description: NSAttributedString
+    let descriptionSelected: NSAttributedString
 }
