@@ -62,16 +62,16 @@ final class CardBlockerStatusPresenterSpec: QuickSpec {
                         it("should be the same as presenter view model is locked ") {
                             expect(parameterViewModel.isCardBlocked).to(equal(viewModel.isCardBlocked))
                         }
-                        it("should be the same as presenter view model is locked ") {
+                        it("should be the same as presenter view model description unlocked card] ") {
                             expect(parameterViewModel.descriptionUnLockedCard.string).to(equal(viewModel.descriptionUnLockedCard.string))
                         }
-                        it("should be the same as presenter view model is locked ") {
+                        it("should be the same as presenter view model description locked card ") {
                             expect(parameterViewModel.descriptionLockedCard.string).to(equal(viewModel.descriptionLockedCard.string))
                         }
-                        it("should be the same as presenter view model is locked ") {
+                        it("should be the same as presenter view model unlock image ") {
                             expect(parameterViewModel.unLockIconImage.cgImage).to(equal(viewModel.unLockIconImage.cgImage))
                         }
-                        it("should be the same as presenter view model is locked ") {
+                        it("should be the same as presenter view model lock image") {
                             expect(parameterViewModel.lockIconImage.cgImage).to(equal(viewModel.lockIconImage.cgImage))
                         }
                     }
