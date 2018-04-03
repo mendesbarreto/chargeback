@@ -12,6 +12,7 @@ struct ChargebackViewModel {
     let descriptionHint: NSAttributedString
 
     let titleContestButton: NSAttributedString
+    let titleContestDisabledButton: NSAttributedString
     let titleCancelButton: NSAttributedString
 
     let isCardInPossession: Bool

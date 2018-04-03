@@ -48,6 +48,12 @@ extension NSAttributedString {
                                 andColor: .closeGrayNu,
                                 andFont: .systemFont(ofSize: FontSize.small, weight: .bold))
     }
+
+    static func titleButtonLightGray(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .disabledGrayNu,
+                                andFont: .systemFont(ofSize: FontSize.small, weight: .bold))
+    }
 }
 
 extension NSAttributedString {
@@ -78,6 +84,12 @@ extension NSAttributedString {
     static func descriptionBlack(withText text: String) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: .blackNu,
+                                andFont: .systemFont(ofSize: FontSize.xSmall, weight: .regular))
+    }
+
+    static func descriptionGreen(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .greenNu,
                                 andFont: .systemFont(ofSize: FontSize.xSmall, weight: .regular))
     }
 

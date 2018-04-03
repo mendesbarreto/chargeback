@@ -23,9 +23,11 @@ final class ChargebackPresenter: ChargebackPresenterInput {
             throw ChargebackPresenterError.problemToFindDetailsReasons
         }
         let reasonMerchantViewModel = ReasonDetailViewModel(detailIdKey: reasonMerchantRecognized.reasonKey!,
-                                                            description: .descriptionBlack(withText: reasonMerchantRecognized.title))
+                                                            description: .descriptionBlack(withText: reasonMerchantRecognized.title),
+                                                            descriptionSelected: .descriptionGreen(withText: reasonMerchantRecognized.title))
         let reasonCardInPossessionViewModel = ReasonDetailViewModel(detailIdKey: reasonCardInPossession.reasonKey!,
-                                                                    description: .descriptionBlack(withText: reasonCardInPossession.title))
+                                                                    description: .descriptionBlack(withText: reasonCardInPossession.title),
+                                                                    descriptionSelected: .descriptionGreen(withText: reasonCardInPossession.title))
         let hint: NSAttributedString = try .descriptionHTML(withText: chargeback.commentHint)
         let titleContestButton = Strings.Chargeback.titleContestButton
         let titleCancelButton = Strings.Chargeback.titleCancelButton
@@ -34,7 +36,8 @@ final class ChargebackPresenter: ChargebackPresenterInput {
                                     reasonCardInPossessionViewModel: reasonCardInPossessionViewModel,
                                     reasonMerchantViewModel: reasonMerchantViewModel,
                                     descriptionHint: hint,
-                                    titleContestButton: .titleButtonGray(withText: titleContestButton),
+                                    titleContestButton: .titleButtonPurple(withText: titleContestButton),
+                                    titleContestDisabledButton: .titleButtonLightGray(withText: titleContestButton),
                                     titleCancelButton: .titleButtonGray(withText: titleCancelButton),
                                     isCardInPossession: false,
                                     isMerchantRecognized: false)

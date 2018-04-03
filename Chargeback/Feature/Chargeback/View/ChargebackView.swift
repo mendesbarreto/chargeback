@@ -67,10 +67,12 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
         super.bind(to: viewModel)
         titleLabel.attributedText = viewModel.title
         commentTextView.attributedText = viewModel.descriptionHint
-        contestButton.setAttributedTitle(viewModel.titleContestButton, for: .normal)
         cancelButton.setAttributedTitle(viewModel.titleCancelButton, for: .normal)
         reasonMerchantView.bind(to: viewModel.reasonMerchantViewModel)
+        contestButton.setAttributedTitle(viewModel.titleContestButton, for: .normal)
+        contestButton.setAttributedTitle(viewModel.titleContestDisabledButton, for: .disabled)
         reasonCardInPossessionView.bind(to: viewModel.reasonCardInPossessionViewModel)
+        updateButtonContext()
     }
 
     private func setupCommentTextView() {
@@ -89,6 +91,10 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
         }
     }
 
+    func textViewDidChange(_ textView: UITextView) {
+        updateButtonContext()
+    }
+
     func textViewDidEndEditing(_ textView: UITextView) {
         if commentTextView.text.isEmpty {
             commentTextView.attributedText = viewModel.descriptionHint
@@ -98,6 +104,14 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         commentTextView.resignFirstResponder()
+    }
+
+    private func updateButtonContext() {
+        if commentTextView.attributedText != viewModel.descriptionHint && !commentTextView.text.isEmpty {
+            contestButton.isEnabled = true
+        } else {
+            contestButton.isEnabled = false
+        }
     }
 }
 
