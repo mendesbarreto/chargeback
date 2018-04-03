@@ -28,7 +28,7 @@ final class ResourceRouterSpec: QuickSpec {
 
     //swiftlint:disable function_body_length
     //swiftlint:disable force_try
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ResourceRouter") {
             var router: ResourceRouter!
@@ -67,7 +67,6 @@ final class ResourceRouterSpec: QuickSpec {
                     }
                 }
             }
-
             context("with notice gateway") {
                 var gatewayNotice: ResourceGatewayMock<Notice>!
                 beforeEach {

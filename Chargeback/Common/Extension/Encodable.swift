@@ -6,7 +6,7 @@
 import Moya
 
 extension Encodable {
-    func asJson () -> [String: Any]? {
+    func asJson() -> [String: Any]? {
         let jsonEncoder = JSONEncoder()
         guard let jsonData = try? jsonEncoder.encode(self),
               let jsonObj = try? JSONSerialization.jsonObject(with: jsonData,

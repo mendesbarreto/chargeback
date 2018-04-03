@@ -10,7 +10,7 @@ import UIKit
 @testable import Chargeback
 
 final class ChargebackViewControllerFactorySpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ChargebackViewControllerFactory") {
             context("when called make") {

@@ -6,7 +6,7 @@
 import Foundation
 
 protocol LoadablePresenter {
-    func showLoading ()
+    func showLoading()
 
-    func hideLoading (onComplete: (() -> Void)?)
+    func hideLoading(onComplete: (() -> Void)?)
 }

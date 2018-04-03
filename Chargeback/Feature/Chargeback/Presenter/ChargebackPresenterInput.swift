@@ -6,10 +6,13 @@
 import Foundation
 
 protocol ChargebackPresenterInput: LoadablePresenter {
-    func show (chargeback: Chargeback) throws
-    func showChargeBackActionSuccess ()
-    func showChargeBackActionError ()
+    func show(chargeback: Chargeback) throws
 
-    func showAutoblock ()
-    func showError ()
+    func showChargeBackActionSuccess()
+
+    func showChargeBackActionError()
+
+    func showAutoblock()
+
+    func showError()
 }

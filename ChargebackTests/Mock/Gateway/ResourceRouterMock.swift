@@ -21,7 +21,7 @@ final class ResourceRouterMock: ResourceRoutable {
     var invokedNoticeCount = 0
     var stubbedNoticeResult: Observable<Notice>!
 
-    func notice () -> Observable<Notice> {
+    func notice() -> Observable<Notice> {
         invokedNotice = true
         invokedNoticeCount += 1
         return stubbedNoticeResult
@@ -31,7 +31,7 @@ final class ResourceRouterMock: ResourceRoutable {
     var invokedChargeBackCount = 0
     var stubbedChargeBackResult: Observable<Chargeback>!
 
-    func chargeBack () -> Observable<Chargeback> {
+    func chargeBack() -> Observable<Chargeback> {
         invokedChargeBack = true
         invokedChargeBackCount += 1
         return stubbedChargeBackResult
@@ -43,7 +43,7 @@ final class ResourceRouterMock: ResourceRoutable {
     var invokedExecParametersList = [(action: ResourceAction, Void)]()
     var stubbedExecResult: Observable<Void>!
 
-    func exec (action: ResourceAction) -> Observable<Void> {
+    func exec(action: ResourceAction) -> Observable<Void> {
         invokedExec = true
         invokedExecCount += 1
         invokedExecParameters = (action, ())

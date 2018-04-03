@@ -12,12 +12,12 @@ final class ShowChargebackInformationUseCase {
     private let disposableBag = DisposeBag()
     private var chargeback: Chargeback?
 
-    init (resourceRouter: ResourceRoutable, presenter: ChargebackPresenterInput) {
+    init(resourceRouter: ResourceRoutable, presenter: ChargebackPresenterInput) {
         self.presenter = presenter
         self.resourceRouter = resourceRouter
     }
 
-    func show () {
+    func show() {
         if chargeback == nil {
             presenter.showLoading()
             resourceRouter.chargeBack()
@@ -36,17 +36,17 @@ final class ShowChargebackInformationUseCase {
         }
     }
 
-    private func show (chargeback: Chargeback) {
+    private func show(chargeback: Chargeback) {
         presenter.hideLoading(onComplete: nil)
         do {
             try presenter.show(chargeback: chargeback)
-            shouldSHowAutoBlock(of: chargeback)
+            shouldShowAutoBlock(of: chargeback)
         } catch {
             presenter.showError()
         }
     }
 
-    private func shouldSHowAutoBlock (of chargeback: Chargeback) {
+    private func shouldShowAutoBlock(of chargeback: Chargeback) {
         if chargeback.autoblock {
             presenter.showAutoblock()
         }

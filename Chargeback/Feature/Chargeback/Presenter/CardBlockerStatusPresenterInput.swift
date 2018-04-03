@@ -6,7 +6,7 @@
 import Foundation
 
 protocol CardBlockerStatusPresenterInput: LoadablePresenter {
-    func lockPadLockView ()
+    func lockPadLockView()
 
-    func unlockPadLockView ()
+    func unlockPadLockView()
 }

@@ -26,19 +26,19 @@ final class ChargebackViewController: BaseViewController {
         fatalError("init?(coder aDecoder: NSCoder) not implemented", file: #file, line: #line)
     }
 
-    override func viewDidLoad () {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         setupChargebackView()
         setupKeyboardEvents()
     }
 
-    override func viewDidAppear (_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         showChargebackUserCase.show()
     }
 
-    private func setupLayout () {
+    private func setupLayout() {
         view.backgroundColor = .backgroundNu
     }
 
@@ -50,19 +50,19 @@ final class ChargebackViewController: BaseViewController {
         chargebackView.blockCardAction.emit(onNext: onBlockCardAction).disposed(by: disposableBag)
     }
 
-    private func onCancelAction () {
+    private func onCancelAction() {
         backToNotice()
     }
 
-    private func onBlockCardAction (_ isBlocked: Bool) {
+    private func onBlockCardAction(_ isBlocked: Bool) {
         changeUserCardBlockStatusUseCase.change(to: isBlocked)
     }
 
-    private func onContestAction () {
+    private func onContestAction() {
         requestChargeBack()
     }
 
-    private func requestChargeBack () {
+    private func requestChargeBack() {
         let comment = chargebackView.hinComment
         let reasonMerchantRecognized = ReasonDetailUserResponse(id: .merchantRecognized,
                                                                 response: chargebackView.reasonMerchantIsOn)
@@ -73,16 +73,16 @@ final class ChargebackViewController: BaseViewController {
                                                                                                reasonMerchantRecognized]))
     }
 
-    private func backToNotice () {
+    private func backToNotice() {
         self.dismiss(animated: true)
     }
 
-    private func setupKeyboardEvents () {
+    private func setupKeyboardEvents() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
-    @objc func keyboardWillShow (notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         if let infoKey = notification.userInfo?[UIKeyboardFrameEndUserInfoKey],
            let rawFrame = (infoKey as AnyObject).cgRectValue {
             if self.view.frame.origin.y == 0 {
@@ -91,7 +91,7 @@ final class ChargebackViewController: BaseViewController {
         }
     }
 
-    @objc func keyboardWillHide (notification: NSNotification) {
+    @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
@@ -99,22 +99,22 @@ final class ChargebackViewController: BaseViewController {
 }
 
 extension ChargebackViewController: CardBlockerStatusPresenterOutput {
-    func show (cardBlockViewModel: CardBlockerStatusViewModel) {
+    func show(cardBlockViewModel: CardBlockerStatusViewModel) {
         self.chargebackView.bind(toCardBlockerViewModel: cardBlockViewModel)
     }
 }
 
 extension ChargebackViewController: ChargebackPresenterOutput {
 
-    func showAutoblock () {
+    func showAutoblock() {
         changeUserCardBlockStatusUseCase.change(to: true)
     }
 
-    func show (chargebackViewModel: ChargebackViewModel) {
+    func show(chargebackViewModel: ChargebackViewModel) {
         chargebackView.bind(to: chargebackViewModel)
     }
 
-    func showChargebackSuccessAlert () {
+    func showChargebackSuccessAlert() {
         let alertViewController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.successTitle,
                                                                     description: Strings.NuAlert.successDescription,
                                                                     buttonTitle: Strings.NuAlert.closeButtonTitle,
@@ -122,7 +122,7 @@ extension ChargebackViewController: ChargebackPresenterOutput {
         present(alertViewController, animated: true)
     }
 
-    func showChargebackFailAlert () {
+    func showChargebackFailAlert() {
         let alertController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.failTitle,
                                                                 description: Strings.NuAlert.failDescription,
                                                                 buttonTitle: Strings.NuAlert.closeButtonTitle,

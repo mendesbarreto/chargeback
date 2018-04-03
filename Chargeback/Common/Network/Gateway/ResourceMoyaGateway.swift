@@ -29,7 +29,7 @@ class ResourceMoyaGateway: ResourceGateway {
         }
     }
 
-    func requestAction (resource: Resource, parameters: [String: Any]) -> Observable<Void> {
+    func requestAction(resource: Resource, parameters: [String: Any]) -> Observable<Void> {
         do {
             let url = try resource.href.asURL()
             let target = NubankActionTarget(resourceUrl: url, parameters: parameters)
@@ -43,7 +43,6 @@ class ResourceMoyaGateway: ResourceGateway {
         guard let resource = links[key] else {
             return Observable.error(ResourceError.resourceNotFound)
         }
-
         return request(resource: resource)
     }
 }

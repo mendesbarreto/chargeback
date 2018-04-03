@@ -10,7 +10,7 @@ import UIKit
 @testable import Chargeback
 
 final class NoticeViewControllerSpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("NoticeViewControllerSpec") {
             context("when called make") {

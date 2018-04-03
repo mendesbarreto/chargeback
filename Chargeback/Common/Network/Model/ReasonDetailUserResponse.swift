@@ -16,7 +16,7 @@ struct ReasonDetailUserResponse: Codable {
 }
 
 extension ReasonDetailUserResponse {
-    init (id: ReasonDetailIdKey, response: Bool) {
+    init(id: ReasonDetailIdKey, response: Bool) {
         self.init(id: id.rawValue, response: response)
     }
 }

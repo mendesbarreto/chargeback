@@ -11,12 +11,12 @@ final class ChargebackUseCase {
     let presenter: ChargebackPresenterInput
     let disposableBag = DisposeBag()
 
-    init (resourceRouter: ResourceRoutable, presenter: ChargebackPresenterInput) {
+    init(resourceRouter: ResourceRoutable, presenter: ChargebackPresenterInput) {
         self.resourceRouter = resourceRouter
         self.presenter = presenter
     }
 
-    func chargeback (withUserResponse response: ChargeBackUserResponse) {
+    func chargeback(withUserResponse response: ChargeBackUserResponse) {
         presenter.showLoading()
         resourceRouter.exec(action: .chargeback(userResponse: response)).subscribe(onNext: { [weak self] in
             if let presenter = self?.presenter {

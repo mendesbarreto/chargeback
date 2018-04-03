@@ -12,7 +12,7 @@ import UIKit
 @testable import Chargeback
 
 final class LoadingAlertScreenFactorySpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("LoadingAlertScreenFactory") {
             var alertViewController: UIAlertController!

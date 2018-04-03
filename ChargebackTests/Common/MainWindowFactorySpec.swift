@@ -12,7 +12,7 @@ import UIKit
 @testable import Chargeback
 
 final class MainWindowFactorySpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("MainWindowFactorySpec") {
             var window: UIWindow!

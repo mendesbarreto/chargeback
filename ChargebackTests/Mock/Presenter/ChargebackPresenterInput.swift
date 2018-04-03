@@ -19,7 +19,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowParametersList = [(chargeback: Chargeback, Void)]()
     var stubbedShowError: Error?
 
-    func show (chargeback: Chargeback) throws {
+    func show(chargeback: Chargeback) throws {
         invokedShow = true
         invokedShowCount += 1
         invokedShowParameters = (chargeback, ())
@@ -32,7 +32,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowChargeBackActionSuccess = false
     var invokedShowChargeBackActionSuccessCount = 0
 
-    func showChargeBackActionSuccess () {
+    func showChargeBackActionSuccess() {
         invokedShowChargeBackActionSuccess = true
         invokedShowChargeBackActionSuccessCount += 1
     }
@@ -40,7 +40,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowChargeBackActionError = false
     var invokedShowChargeBackActionErrorCount = 0
 
-    func showChargeBackActionError () {
+    func showChargeBackActionError() {
         invokedShowChargeBackActionError = true
         invokedShowChargeBackActionErrorCount += 1
     }
@@ -48,7 +48,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowAutoblock = false
     var invokedShowAutoblockCount = 0
 
-    func showAutoblock () {
+    func showAutoblock() {
         invokedShowAutoblock = true
         invokedShowAutoblockCount += 1
     }
@@ -56,7 +56,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowError = false
     var invokedShowErrorCount = 0
 
-    func showError () {
+    func showError() {
         invokedShowError = true
         invokedShowErrorCount += 1
     }
@@ -64,7 +64,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedShowLoading = false
     var invokedShowLoadingCount = 0
 
-    func showLoading () {
+    func showLoading() {
         invokedShowLoading = true
         invokedShowLoadingCount += 1
     }
@@ -72,7 +72,7 @@ final class ChargebackPresenterInputMock: ChargebackPresenterInput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> Void)?) {
+    func hideLoading(onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

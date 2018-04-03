@@ -6,7 +6,7 @@
 import Foundation
 
 final class ChargebackPresenterFactory {
-    static func make (presenterOutput: ChargebackPresenterOutput) -> ChargebackPresenterInput {
+    static func make(presenterOutput: ChargebackPresenterOutput) -> ChargebackPresenterInput {
         return ChargebackPresenter(presenterOutput: presenterOutput)
     }
 }

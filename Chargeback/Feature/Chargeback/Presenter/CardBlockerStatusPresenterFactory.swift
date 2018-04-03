@@ -6,7 +6,7 @@
 import Foundation
 
 final class CardBlockerStatusPresenterFactory {
-    static func make (presenterOutput: CardBlockerStatusPresenterOutput) -> CardBlockerStatusPresenterInput {
+    static func make(presenterOutput: CardBlockerStatusPresenterOutput) -> CardBlockerStatusPresenterInput {
         return CardBlockerStatusPresenter(presenterOutput: presenterOutput)
     }
 }

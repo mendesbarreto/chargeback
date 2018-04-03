@@ -13,7 +13,7 @@ final class CardBlockerStatusPresenterOutputMock: CardBlockerStatusPresenterOutp
     var invokedShowParameters: (cardBlockViewModel: CardBlockerStatusViewModel, Void)?
     var invokedShowParametersList = [(cardBlockViewModel: CardBlockerStatusViewModel, Void)]()
 
-    func show (cardBlockViewModel: CardBlockerStatusViewModel) {
+    func show(cardBlockViewModel: CardBlockerStatusViewModel) {
         invokedShow = true
         invokedShowCount += 1
         invokedShowParameters = (cardBlockViewModel, ())
@@ -23,7 +23,7 @@ final class CardBlockerStatusPresenterOutputMock: CardBlockerStatusPresenterOutp
     var invokedShowLoading = false
     var invokedShowLoadingCount = 0
 
-    func showLoading () {
+    func showLoading() {
         invokedShowLoading = true
         invokedShowLoadingCount += 1
     }
@@ -31,7 +31,7 @@ final class CardBlockerStatusPresenterOutputMock: CardBlockerStatusPresenterOutp
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> Void)?) {
+    func hideLoading(onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

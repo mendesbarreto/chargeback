@@ -18,7 +18,7 @@ final class NoticePresenterSpec: QuickSpec {
 
     //swiftlint:disable function_body_length
     //swiftlint:disable force_try
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ShowNoticeUseCase") {
             var presenterOutput: NoticePresenterOutputMock!

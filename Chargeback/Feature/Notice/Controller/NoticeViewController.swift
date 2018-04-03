@@ -11,7 +11,7 @@ final class NoticeViewController: BaseViewController {
     var showNoticeUseCase: ShowNoticeUseCase!
     let noticeView = NoticeView()
 
-    override  init() {
+    override init() {
         super.init()
         showNoticeUseCase = ShowNoticeUseCaseFactory.make(presenterOutput: self)
     }
@@ -26,7 +26,7 @@ final class NoticeViewController: BaseViewController {
         setupNoticeView()
     }
 
-    override func viewDidAppear (_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         showNoticeUseCase.show()
     }
@@ -42,21 +42,22 @@ final class NoticeViewController: BaseViewController {
     private func onContinueAction() {
         present(ChargebackViewControllerFactory.make(), animated: true)
     }
+
     private func onCloseAction() {
         print("closeAction")
     }
 }
 
 extension NoticeViewController: NoticePresenterOutput {
-    func show (notice: NoticeViewModel) {
+    func show(notice: NoticeViewModel) {
         noticeView.bind(to: notice)
     }
 
-    func showError () {
-        let aletController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.failTitle,
-                                                               description: Strings.NuAlert.failDescription,
-                                                               buttonTitle: Strings.NuAlert.closeButtonTitle,
-                                                               type: .fail)
-        present(aletController, animated: true)
+    func showError() {
+        let alertController = NuAlertViewControllerFactory.make(title: Strings.NuAlert.failTitle,
+                                                                description: Strings.NuAlert.failDescription,
+                                                                buttonTitle: Strings.NuAlert.closeButtonTitle,
+                                                                type: .fail)
+        present(alertController, animated: true)
     }
 }

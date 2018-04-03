@@ -12,7 +12,7 @@ import UIKit
 @testable import Chargeback
 
 final class NuAlertViewControllerFactorySpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("NuAlertViewControllerFactory") {
             var nuAlertViewController: NuAlertViewController?

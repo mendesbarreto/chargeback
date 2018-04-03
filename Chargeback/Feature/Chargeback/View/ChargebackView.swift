@@ -53,7 +53,7 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
         return reasonMerchantView.isOn
     }
 
-    override init (frame: CGRect = .zero) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
         setupCommentTextView()
@@ -63,7 +63,7 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
         fatalError("This view could not be initialized by coder", file: #file, line: #line)
     }
 
-    override func bind (to viewModel: ViewModel) {
+    override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         titleLabel.attributedText = viewModel.title
         commentTextView.attributedText = viewModel.descriptionHint
@@ -73,29 +73,29 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
         reasonCardInPossessionView.bind(to: viewModel.reasonCardInPossessionViewModel)
     }
 
-    private func setupCommentTextView () {
+    private func setupCommentTextView() {
         commentTextView.delegate = self
     }
 
     // In the next refactor Remover cardBlockerStatusView and move to view controller
-    func bind (toCardBlockerViewModel viewModel: CardBlockerStatusViewModel) {
+    func bind(toCardBlockerViewModel viewModel: CardBlockerStatusViewModel) {
         cardBlockerStatusView.bind(to: viewModel)
     }
 
     // MARK: TextView Delegate
-    func textViewDidBeginEditing (_ textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         if commentTextView.attributedText == viewModel.descriptionHint {
             commentTextView.text = ""
         }
     }
 
-    func textViewDidEndEditing (_ textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         if commentTextView.text.isEmpty {
             commentTextView.attributedText = viewModel.descriptionHint
         }
     }
 
-    override func touchesBegan (_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         commentTextView.resignFirstResponder()
     }
@@ -104,7 +104,7 @@ final class ChargebackView: BindableViewDefaultConstraints<ChargebackViewModel>,
 // MARK: Layout Chargeback View
 
 extension ChargebackView {
-    private func setupLayout () {
+    private func setupLayout() {
         setupHeaderLayout()
         setupTitleLayout()
         setupBodyLayout()
@@ -122,7 +122,7 @@ extension ChargebackView {
         setupSeparatorLayout()
     }
 
-    private func setupSeparatorLayout () {
+    private func setupSeparatorLayout() {
         addChild(view: separatorHeaderView)
         separatorHeaderView.startAnchor()
                            .topAnchor(toEqualAnchor: bodyContentView.bottomAnchor)
@@ -139,7 +139,7 @@ extension ChargebackView {
         separatorBottomView.backgroundColor = .disabledGrayNu
     }
 
-    private func setupREasonMerchanViewLayout () {
+    private func setupREasonMerchanViewLayout() {
         bodyContentView.addSubview(reasonMerchantView)
         reasonMerchantView.startAnchor()
                           .leadingAnchor(to: bodyContentView)
@@ -149,7 +149,7 @@ extension ChargebackView {
         reasonMerchantView.backgroundColor = .clear
     }
 
-    private func setupCardBalockStackViewLayout () {
+    private func setupCardBalockStackViewLayout() {
         bodyContentView.addSubview(cardBlockerStatusView)
         cardBlockerStatusView.startAnchor()
                              .leadingAnchor(to: bodyContentView)
@@ -158,7 +158,7 @@ extension ChargebackView {
                 .heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
 
-    private func setupCommentViewLayout () {
+    private func setupCommentViewLayout() {
         bottomContentView.addSubview(commentTextView)
         commentTextView.clipsToBounds = true
         commentTextView.textAlignment = .left
@@ -170,7 +170,7 @@ extension ChargebackView {
                        .bottomAnchor(toEqualAnchor: buttonsStackView.topAnchor)
     }
 
-    private func setupButtonStackViewLayout () {
+    private func setupButtonStackViewLayout() {
         bottomContentView.addSubview(buttonsStackView)
         buttonsStackView.startAnchor()
                         .bottomAnchor(to: bottomContentView)
@@ -184,7 +184,7 @@ extension ChargebackView {
         buttonsStackView.distribution = .fillEqually
     }
 
-    private func setupBottomLayout () {
+    private func setupBottomLayout() {
         addChild(view: bottomContentView)
         bottomContentView.startAnchor()
                          .bottomAnchor(to: contentView)
@@ -193,7 +193,7 @@ extension ChargebackView {
                          .topAnchor(toEqualAnchor: bodyContentView.bottomAnchor)
     }
 
-    private func setupBodyLayout () {
+    private func setupBodyLayout() {
         addChild(view: bodyContentView)
         bodyContentView.startAnchor()
                        .topAnchor(toEqualAnchor: headerContentView.bottomAnchor)
@@ -202,7 +202,7 @@ extension ChargebackView {
         bodyContentView.heightAnchor.constraint(equalToConstant: 250).isActive = true
     }
 
-    private func setupTitleLayout () {
+    private func setupTitleLayout() {
         titleLabel.textAlignment = .center
         headerContentView.addSubview(titleLabel)
         titleLabel.startAnchor()
@@ -211,7 +211,7 @@ extension ChargebackView {
                 .centerYAnchor.constraint(equalTo: headerContentView.centerYAnchor).isActive = true
     }
 
-    private func setupHeaderLayout () {
+    private func setupHeaderLayout() {
         addChild(view: headerContentView)
         headerContentView.startAnchor()
                          .topAnchor(to: contentView)

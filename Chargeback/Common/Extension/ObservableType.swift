@@ -6,7 +6,7 @@
 import RxSwift
 
 extension ObservableType {
-    func mapTo<R> (_ value: R) -> Observable<R> {
+    func mapTo<R>(_ value: R) -> Observable<R> {
         return map({ _ in value })
     }
 }

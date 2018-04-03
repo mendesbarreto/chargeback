@@ -8,19 +8,19 @@ import Foundation
 final class CardBlockerStatusPresenter: CardBlockerStatusPresenterInput {
     private weak var presenterOutput: CardBlockerStatusPresenterOutput?
 
-    init (presenterOutput: CardBlockerStatusPresenterOutput) {
+    init(presenterOutput: CardBlockerStatusPresenterOutput) {
         self.presenterOutput = presenterOutput
     }
 
-    func showLoading () {
+    func showLoading() {
         presenterOutput?.showLoading()
     }
 
-    func hideLoading (onComplete: (() -> Void)? = nil) {
+    func hideLoading(onComplete: (() -> Void)? = nil) {
         presenterOutput?.hideLoading(onComplete: onComplete)
     }
 
-    func lockPadLockView () {
+    func lockPadLockView() {
         let descriptionLockedCard = Strings.Chargeback.descriptionLockedCard
         let descriptionUnLockedCard = Strings.Chargeback.descriptionUnLockedCard
         let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,
@@ -31,7 +31,7 @@ final class CardBlockerStatusPresenter: CardBlockerStatusPresenterInput {
         presenterOutput?.show(cardBlockViewModel: cardBlockerStatusViewModel)
     }
 
-    func unlockPadLockView () {
+    func unlockPadLockView() {
         let descriptionLockedCard = Strings.Chargeback.descriptionLockedCard
         let descriptionUnLockedCard = Strings.Chargeback.descriptionUnLockedCard
         let cardBlockerStatusViewModel = CardBlockerStatusViewModel(lockIconImage: Assets.icChargebackLock.image,

@@ -16,7 +16,7 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
         return blockCardPublishSubject.asSignal(onErrorJustReturn: false)
     }
 
-    override init (frame: CGRect = .zero) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
         setupCardBlockStackViewGesture()
@@ -26,12 +26,12 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
         fatalError("This view could not be initialized by coder", file: #file, line: #line)
     }
 
-    override func bind (to viewModel: ViewModel) {
+    override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         updateCardBlockImageView()
     }
 
-    private func updateCardBlockImageView () {
+    private func updateCardBlockImageView() {
         if viewModel.isCardBlocked {
             padLockImageView.image = viewModel.lockIconImage
             descriptionLabel.attributedText = viewModel.descriptionLockedCard
@@ -41,12 +41,12 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
         }
     }
 
-    private func setupCardBlockStackViewGesture () {
+    private func setupCardBlockStackViewGesture() {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(onCardBlockStackViewTapped))
         addGestureRecognizer(gesture)
     }
 
-    @objc private func onCardBlockStackViewTapped () {
+    @objc private func onCardBlockStackViewTapped() {
         let lastValue = viewModel.isCardBlocked
         let newValue = !viewModel.isCardBlocked
         if lastValue != newValue {
@@ -59,7 +59,7 @@ final class CardBlockerStatusView: BindableView<CardBlockerStatusViewModel> {
 // MARK: Layout Card Blocker Status View
 
 extension CardBlockerStatusView {
-    private func setupLayout () {
+    private func setupLayout() {
         addChild(view: padLockImageView)
         addChild(view: descriptionLabel)
         descriptionLabel.numberOfLines = 2

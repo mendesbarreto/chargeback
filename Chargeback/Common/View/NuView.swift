@@ -14,7 +14,7 @@ class NuView: UIView {
         setupContentLayout()
     }
 
-    func setupContentLayout () {
+    func setupContentLayout() {
         addSubview(contentView)
         contentView.anchorToFit(in: self)
         contentView.backgroundColor = .backgroundNu

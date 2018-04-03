@@ -7,6 +7,10 @@ import Foundation
 
 struct Strings {
 
+    struct App {
+        static let baseUrl = "https://nu-mobile-hiring.herokuapp.com/"
+    }
+
     struct LoadingAlert {
         static let message = "Por favor espere..."
     }

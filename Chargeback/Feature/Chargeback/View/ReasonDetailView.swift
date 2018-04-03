@@ -13,7 +13,7 @@ final class ReasonDetailView: BindableView<ReasonDetailViewModel> {
         return toggleSwitch.isOn
     }
 
-    override init (frame: CGRect = .zero) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
     }
@@ -22,7 +22,7 @@ final class ReasonDetailView: BindableView<ReasonDetailViewModel> {
         fatalError("This view could not be initialized by coder", file: #file, line: #line)
     }
 
-    override func bind (to viewModel: ViewModel) {
+    override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         descriptionLabel.attributedText = viewModel.description
     }
@@ -31,7 +31,7 @@ final class ReasonDetailView: BindableView<ReasonDetailViewModel> {
 // MARK: Layout Reason Detail View
 
 extension ReasonDetailView {
-    private func setupLayout () {
+    private func setupLayout() {
         addSubview(descriptionLabel)
         addSubview(toggleSwitch)
         toggleSwitch.startAnchor()

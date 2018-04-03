@@ -10,13 +10,13 @@ class BindableView<T>: NuView, Bindable {
 
     private(set) var viewModel: ViewModel!
 
-    func bind (to viewModel: ViewModel) {
+    func bind(to viewModel: ViewModel) {
         self.viewModel = viewModel
     }
 }
 
 class BindableViewDefaultConstraints<T>: BindableView<T> {
-    override func setupContentLayout () {
+    override func setupContentLayout() {
         addSubview(contentView)
         contentView.anchorToFit(in: self, constant: 10)
         contentView.backgroundColor = .backgroundNu
