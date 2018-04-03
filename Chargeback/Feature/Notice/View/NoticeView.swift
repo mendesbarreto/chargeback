@@ -40,7 +40,7 @@ final class NoticeView: BindableView<NoticeViewModel> {
         fatalError("This view could not be initialized by coder", file: #file, line: #line)
     }
 
-    override func bind (to viewModel: ViewModel) {
+    override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         titleLabel.attributedText = viewModel.title
         descriptionLabel.attributedText = viewModel.description
@@ -65,7 +65,6 @@ extension NoticeView {
     private func setupButtonStackView() {
         //closeButton.heightAnchor.constraint(equalToConstant: 150).isActive = true
         //continueButton.heightAnchor.constraint(equalToConstant: 150)
-
         buttonHolderView.addArrangedSubview(continueButton)
         buttonHolderView.addArrangedSubview(closeButton)
         buttonHolderView.axis = .vertical
@@ -74,7 +73,7 @@ extension NoticeView {
                         .bottomAnchor(to: contentView)
                         .leadingAnchor(to: contentView)
                         .trailingAnchor(to: contentView)
-                        .heightAnchor.constraint(equalToConstant: 210).isActive = true
+                .heightAnchor.constraint(equalToConstant: 210).isActive = true
     }
 
     private func setupLabelStackView() {
@@ -85,10 +84,9 @@ extension NoticeView {
                        .bottomAnchor(toEqualAnchor: buttonHolderView.topAnchor)
     }
 
-    private func setupTitleLayout () {
+    private func setupTitleLayout() {
         titleLabel.textAlignment = .center
         titleLabel.lineBreakMode = .byTruncatingTail
-
         labelHolderView.addSubview(titleLabel)
         titleLabel.startAnchor()
                   .trailingAnchor(to: labelHolderView)
@@ -100,7 +98,6 @@ extension NoticeView {
         descriptionLabel.textAlignment = .left
         descriptionLabel.lineBreakMode = .byWordWrapping
         descriptionLabel.numberOfLines = 0
-
         labelHolderView.addSubview(descriptionLabel)
         descriptionLabel.startAnchor()
                         .leadingAnchor(to: labelHolderView)

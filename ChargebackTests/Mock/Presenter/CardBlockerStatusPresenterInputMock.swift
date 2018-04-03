@@ -12,7 +12,7 @@ final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput
     var invokedLockPadLockView = false
     var invokedLockPadLockViewCount = 0
 
-    func lockPadLockView () {
+    func lockPadLockView() {
         invokedLockPadLockView = true
         invokedLockPadLockViewCount += 1
     }
@@ -20,7 +20,7 @@ final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput
     var invokedUnlockPadLockView = false
     var invokedUnlockPadLockViewCount = 0
 
-    func unlockPadLockView () {
+    func unlockPadLockView() {
         invokedUnlockPadLockView = true
         invokedUnlockPadLockViewCount += 1
     }
@@ -28,7 +28,7 @@ final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput
     var invokedShowLoading = false
     var invokedShowLoadingCount = 0
 
-    func showLoading () {
+    func showLoading() {
         invokedShowLoading = true
         invokedShowLoadingCount += 1
     }
@@ -36,7 +36,7 @@ final class CardBlockerStatusPresenterInputMock: CardBlockerStatusPresenterInput
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> Void)?) {
+    func hideLoading(onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

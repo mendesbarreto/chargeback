@@ -15,7 +15,7 @@ final class NoticePresenterInputMock: NoticePresenterInput {
     var invokedShowParametersList = [(notice: Notice, Void)]()
     var stubbedShowError: Error?
 
-    func show (notice: Notice) throws {
+    func show(notice: Notice) throws {
         invokedShow = true
         invokedShowCount += 1
         invokedShowParameters = (notice, ())
@@ -28,7 +28,7 @@ final class NoticePresenterInputMock: NoticePresenterInput {
     var invokedShowError = false
     var invokedShowErrorCount = 0
 
-    func showError () {
+    func showError() {
         invokedShowError = true
         invokedShowErrorCount += 1
     }
@@ -36,7 +36,7 @@ final class NoticePresenterInputMock: NoticePresenterInput {
     var invokedShowLoading = false
     var invokedShowLoadingCount = 0
 
-    func showLoading () {
+    func showLoading() {
         invokedShowLoading = true
         invokedShowLoadingCount += 1
     }
@@ -44,7 +44,7 @@ final class NoticePresenterInputMock: NoticePresenterInput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> Void)?) {
+    func hideLoading(onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

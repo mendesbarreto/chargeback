@@ -7,5 +7,6 @@ import Foundation
 
 protocol Bindable {
     associatedtype ViewModel
+
     func bind(to: ViewModel)
 }

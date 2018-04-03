@@ -12,7 +12,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedShowChargebackSuccessAlert = false
     var invokedShowChargebackSuccessAlertCount = 0
 
-    func showChargebackSuccessAlert () {
+    func showChargebackSuccessAlert() {
         invokedShowChargebackSuccessAlert = true
         invokedShowChargebackSuccessAlertCount += 1
     }
@@ -20,7 +20,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedShowChargebackFailAlert = false
     var invokedShowChargebackFailAlertCount = 0
 
-    func showChargebackFailAlert () {
+    func showChargebackFailAlert() {
         invokedShowChargebackFailAlert = true
         invokedShowChargebackFailAlertCount += 1
     }
@@ -28,7 +28,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedShowAutoblock = false
     var invokedShowAutoblockCount = 0
 
-    func showAutoblock () {
+    func showAutoblock() {
         invokedShowAutoblock = true
         invokedShowAutoblockCount += 1
     }
@@ -38,7 +38,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedShowParameters: (chargebackViewModel: ChargebackViewModel, Void)?
     var invokedShowParametersList = [(chargebackViewModel: ChargebackViewModel, Void)]()
 
-    func show (chargebackViewModel: ChargebackViewModel) {
+    func show(chargebackViewModel: ChargebackViewModel) {
         invokedShow = true
         invokedShowCount += 1
         invokedShowParameters = (chargebackViewModel, ())
@@ -48,7 +48,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedShowLoading = false
     var invokedShowLoadingCount = 0
 
-    func showLoading () {
+    func showLoading() {
         invokedShowLoading = true
         invokedShowLoadingCount += 1
     }
@@ -56,7 +56,7 @@ final class ChargebackPresenterOutputMock: ChargebackPresenterOutput {
     var invokedHideLoading = false
     var invokedHideLoadingCount = 0
 
-    func hideLoading (onComplete: (() -> Void)?) {
+    func hideLoading(onComplete: (() -> Void)?) {
         invokedHideLoading = true
         invokedHideLoadingCount += 1
         onComplete?()

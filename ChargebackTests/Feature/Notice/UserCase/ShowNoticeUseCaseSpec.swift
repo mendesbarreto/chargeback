@@ -17,7 +17,7 @@ final class ShowNoticeUseCaseSpec: QuickSpec {
     }
 
     //swiftlint:disable function_body_length
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ShowNoticeUseCase") {
             var showNoticeUseCase: ShowNoticeUseCase!

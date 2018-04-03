@@ -96,7 +96,6 @@
 		B4E33A4E27AC9BA4C1074E72 /* CardBlockerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D6F36B889BA05082FA9 /* CardBlockerStatusView.swift */; };
 		B4E33A6FA5C466AA00AE75AD /* NuDefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A371EA76BEA78A219A5 /* NuDefaultButton.swift */; };
 		B4E33A97335541708CB3A000 /* ReasonDetailUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338CC5EACCE3299790588 /* ReasonDetailUserResponse.swift */; };
-		B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */; };
 		B4E33AB2F6221EC570F9A5C1 /* NuAlertPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DDFF594D2F96A8E352B /* NuAlertPresenterInput.swift */; };
 		B4E33ABED13E0EB6D64EFDA2 /* ChangeUserCardBlockStatusUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335BCA92FBB40BF9D0F9F /* ChangeUserCardBlockStatusUseCaseSpec.swift */; };
 		B4E33AE060EE57C7683471BC /* ChargebackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C65DEE5A32E77CE4331 /* ChargebackPresenter.swift */; };
@@ -185,7 +184,6 @@
 		B4E331BECF88603BC908DFC6 /* NoticePresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticePresenterOutput.swift; sourceTree = "<group>"; };
 		B4E331D4E46248E2484359CA /* NoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		B4E331D566D373CD1C2AD546 /* ChargebackPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterInput.swift; sourceTree = "<group>"; };
-		B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		B4E3322620EDCF90FB1E7344 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		B4E33251CE9B730678EC7B00 /* ChargebackPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargebackPresenterOutputMock.swift; sourceTree = "<group>"; };
 		B4E332E8B47F603B087F9303 /* CardBlockerStatusPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBlockerStatusPresenterInput.swift; sourceTree = "<group>"; };
@@ -406,7 +404,6 @@
 				75DB2E762066E1AC00DC799F /* Factory */,
 				7538DFC52066A6F600B33E41 /* AppDelegate.swift */,
 				B4E3351B7F53E09355EE96AD /* BaseViewController.swift */,
-				B4E3321BC3629E23B65319EE /* ApplicationProperties.swift */,
 				B4E3344EF123D9EAE1D8B494 /* Network */,
 				B4E33B9CC287512CC1FDFF68 /* Extension */,
 				B4E339E3B21C6CA66640E38F /* View */,
@@ -1140,7 +1137,6 @@
 				75DB2E782066E1D900DC799F /* RootViewControllerFactory.swift in Sources */,
 				B4E33DDBBE3850656EFFCB12 /* BaseViewController.swift in Sources */,
 				B4E331FB28DB6DC20DB43310 /* NoticeViewController.swift in Sources */,
-				B4E33A9FF1EADC788450F481 /* ApplicationProperties.swift in Sources */,
 				B4E33422B5F491FF39152527 /* BaseModel.swift in Sources */,
 				B4E33FBDEAB65E728634C034 /* Resource.swift in Sources */,
 				B4E33D45E1610007D32CCBD9 /* Notice.swift in Sources */,

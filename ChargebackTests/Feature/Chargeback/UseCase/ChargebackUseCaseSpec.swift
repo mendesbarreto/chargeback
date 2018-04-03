@@ -17,7 +17,7 @@ final class ChargebackUseCaseSpec: QuickSpec {
         return ChargeBackUserResponseMock.chargeBackUserResponse
     }
 
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ChargebackUseCase") {
             var resourceRouter: ResourceRouterMock!

@@ -30,7 +30,7 @@ struct NubankResourceTarget: TargetType {
         }
     }
 
-    init (resourceUrl: URL) {
+    init(resourceUrl: URL) {
         self.baseURL = resourceUrl
     }
 }

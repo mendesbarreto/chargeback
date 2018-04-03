@@ -21,7 +21,7 @@ final class NuAlertPresenter: NuAlertPresenterInput {
                                      buttonTile: .titleButtonGray(withText: buttonTitle.uppercased()))
     }
 
-    func show () {
+    func show() {
         presenterOutput?.show(alertViewModel: viewModel)
     }
 }

@@ -6,5 +6,5 @@
 import Foundation
 
 protocol NuAlertPresenterInput {
-    func show ()
+    func show()
 }

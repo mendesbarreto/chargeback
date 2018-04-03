@@ -22,7 +22,7 @@ final class NuAlertView: BindableView<NuAlertViewModel> {
         return actionButton.rx.tap.asSignal(onErrorJustReturn: ())
     }
 
-    override init (frame: CGRect = .zero) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupLayout()
     }
@@ -31,7 +31,7 @@ final class NuAlertView: BindableView<NuAlertViewModel> {
         fatalError("init?(coder aDecoder: NSCoder) not implemented", file: #file, line: #line)
     }
 
-    override func bind (to viewModel: ViewModel) {
+    override func bind(to viewModel: ViewModel) {
         super.bind(to: viewModel)
         titleLabel.attributedText = viewModel.title
         descriptionLabel.attributedText = viewModel.description
@@ -42,7 +42,7 @@ final class NuAlertView: BindableView<NuAlertViewModel> {
 // MARK: Setup Layout Nu Alert
 
 extension NuAlertView {
-    private func setupLayout () {
+    private func setupLayout() {
         setupConentViewLayout()
         setupTitleLayout()
         setupDescriptionLayout()
@@ -50,7 +50,7 @@ extension NuAlertView {
         actionButton.anchorToFit(in: bottomContentView)
     }
 
-    private func setupDescriptionLayout () {
+    private func setupDescriptionLayout() {
         bodyContentView.addSubview(descriptionLabel)
         descriptionLabel.textAlignment = .center
         descriptionLabel.lineBreakMode = .byWordWrapping
@@ -61,7 +61,7 @@ extension NuAlertView {
                         .trailingAnchor(to: bodyContentView)
     }
 
-    private func setupTitleLayout () {
+    private func setupTitleLayout() {
         headerContentView.addSubview(titleLabel)
         titleLabel.textAlignment = .center
         titleLabel.lineBreakMode = .byWordWrapping
@@ -69,7 +69,7 @@ extension NuAlertView {
         titleLabel.anchorToFit(in: headerContentView)
     }
 
-    private func setupConentViewLayout () {
+    private func setupConentViewLayout() {
         addChild(view: contentStackView)
         contentStackView.startAnchor()
                         .topAnchor(to: contentView, constant: 10)

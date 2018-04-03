@@ -6,7 +6,7 @@
 import UIKit
 
 final class ChargebackViewControllerFactory {
-    static func make () -> UIViewController {
+    static func make() -> UIViewController {
         return ChargebackViewController()
     }
 }

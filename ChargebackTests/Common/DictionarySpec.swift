@@ -14,7 +14,7 @@ import UIKit
 @testable import Chargeback
 
 final class DictionarySpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("Dictionary") {
             var resource: Resource!

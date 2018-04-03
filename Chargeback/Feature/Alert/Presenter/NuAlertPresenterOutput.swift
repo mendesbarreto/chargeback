@@ -6,5 +6,5 @@
 import Foundation
 
 protocol NuAlertPresenterOutput: class {
-    func show (alertViewModel: NuAlertViewModel)
+    func show(alertViewModel: NuAlertViewModel)
 }

@@ -17,7 +17,7 @@ final class ChargebackPresenterSpec: QuickSpec {
 
     //swiftlint:disable function_body_length
     //swiftlint:disable force_try
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ChargebackPresenter") {
             var presenter: ChargebackPresenter!
@@ -72,7 +72,6 @@ final class ChargebackPresenterSpec: QuickSpec {
                         expect(presenterOutput.invokedHideLoadingCount).to(equal(1))
                     }
                 }
-
                 context("with a valid model") {
                     context("and called show") {
                         beforeEach {

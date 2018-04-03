@@ -6,5 +6,5 @@
 import Foundation
 
 protocol CardBlockerStatusPresenterOutput: class, LoadablePresenter {
-    func show (cardBlockViewModel: CardBlockerStatusViewModel)
+    func show(cardBlockViewModel: CardBlockerStatusViewModel)
 }

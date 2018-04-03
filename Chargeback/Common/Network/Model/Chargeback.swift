@@ -4,6 +4,7 @@
 //
 
 import Foundation
+
 final class Chargeback: BaseModel {
     private enum CodingKeys: String, CodingKey {
         case id
@@ -12,6 +13,7 @@ final class Chargeback: BaseModel {
         case commentHint = "comment_hint"
         case reasonDetails = "reason_details"
     }
+
     let id: String
     let title: String
     let autoblock: Bool

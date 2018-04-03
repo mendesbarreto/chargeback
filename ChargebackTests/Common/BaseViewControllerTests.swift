@@ -13,7 +13,7 @@ import UIKit
 @testable import Chargeback
 
 final class BaseViewControllerSpec: QuickSpec {
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("BaseViewController") {
             var baseViewController: BaseViewController?

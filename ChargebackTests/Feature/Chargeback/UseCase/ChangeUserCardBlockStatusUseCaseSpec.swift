@@ -12,7 +12,7 @@ import RxTest
 
 final class ChangeUserCardBlockStatusUseCaseSpec: QuickSpec {
     //swiftlint:disable function_body_length
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("ChangeUserCardBlockStatusUseCase") {
             var changeUserCardBlockUserCase: ChangeUserCardBlockStatusUseCase!

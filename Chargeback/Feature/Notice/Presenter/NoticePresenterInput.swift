@@ -6,7 +6,7 @@
 import Foundation
 
 protocol NoticePresenterInput: LoadablePresenter {
-    func show (notice: Notice) throws
+    func show(notice: Notice) throws
 
-    func showError ()
+    func showError()
 }

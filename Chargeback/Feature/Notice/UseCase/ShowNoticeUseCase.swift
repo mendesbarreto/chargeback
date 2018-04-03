@@ -18,13 +18,13 @@ final class ShowNoticeUseCase {
 
     func show() {
         presenter.showLoading()
-        noticeGateway.notice().subscribe(onNext: {[weak self] notice in
+        noticeGateway.notice().subscribe(onNext: { [weak self] notice in
             guard let strongSelf = self else {
                 return
             }
             strongSelf.show(notice: notice)
         }, onError: { [weak self] _ in
-            guard let strongSelf  = self else {
+            guard let strongSelf = self else {
                 return
             }
             strongSelf.presenter.hideLoading {

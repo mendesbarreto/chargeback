@@ -9,5 +9,6 @@ struct Resource: Decodable {
     enum CodingKeys: String, CodingKey {
         case href
     }
+
     let href: String
 }

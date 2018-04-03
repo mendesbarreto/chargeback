@@ -6,9 +6,11 @@
 import Foundation
 
 protocol ChargebackPresenterOutput: class, LoadablePresenter {
-    func showChargebackSuccessAlert ()
-    func showChargebackFailAlert ()
+    func showChargebackSuccessAlert()
 
-    func showAutoblock ()
-    func show (chargebackViewModel: ChargebackViewModel)
+    func showChargebackFailAlert()
+
+    func showAutoblock()
+
+    func show(chargebackViewModel: ChargebackViewModel)
 }

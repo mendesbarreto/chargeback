@@ -11,12 +11,12 @@ final class ChangeUserCardBlockStatusUseCase {
     private let presenter: CardBlockerStatusPresenterInput
     private let disposableBag = DisposeBag()
 
-    init (resourceRouter: ResourceRoutable, presenter: CardBlockerStatusPresenterInput) {
+    init(resourceRouter: ResourceRoutable, presenter: CardBlockerStatusPresenterInput) {
         self.resourceRouter = resourceRouter
         self.presenter = presenter
     }
 
-    func change (to isCardBlocked: Bool) {
+    func change(to isCardBlocked: Bool) {
         card(isCardBlocked: isCardBlocked)
         let action: ResourceAction = isCardBlocked ? .blockCard : .unblockCard
         resourceRouter.exec(action: action)
@@ -27,7 +27,7 @@ final class ChangeUserCardBlockStatusUseCase {
                       }).disposed(by: disposableBag)
     }
 
-    private func card (isCardBlocked: Bool) {
+    private func card(isCardBlocked: Bool) {
         if isCardBlocked {
             presenter.lockPadLockView()
         } else {

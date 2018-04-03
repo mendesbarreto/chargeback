@@ -20,7 +20,7 @@ final class NuAlertViewController: BaseViewController {
         return nuAlertView.viewModel
     }
 
-    init (title: String, description: String, buttonTitle: String, type: NuAlertType, action: (() -> Void)? = nil) {
+    init(title: String, description: String, buttonTitle: String, type: NuAlertType, action: (() -> Void)? = nil) {
         alertType = type
         super.init()
         self.action = action
@@ -35,30 +35,29 @@ final class NuAlertViewController: BaseViewController {
         return nil
     }
 
-    override func viewDidLoad () {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         setupAction()
         presenter.show()
     }
 
-    private func setupAction () {
+    private func setupAction() {
         nuAlertView.onButtonTap.emit(onNext: onActionButtonTap).disposed(by: disposableBag)
     }
 
-    private func onActionButtonTap () {
+    private func onActionButtonTap() {
         let action = self.action
         dismiss(animated: true) {
             action?()
         }
     }
 
-    private func setupLayout () {
+    private func setupLayout() {
         view.addSubview(opacityBalckBackground)
         view.backgroundColor = .backgroundNu
         opacityBalckBackground.anchorToFit(in: view)
         opacityBalckBackground.backgroundColor = .transparentBlack
-
         view.addSubview(nuAlertView)
         nuAlertView.startAnchor().heightAnchor.constraint(equalToConstant: 300).isActive = true
         nuAlertView.widthAnchor.constraint(equalToConstant: 300).isActive = true
@@ -68,7 +67,7 @@ final class NuAlertViewController: BaseViewController {
 }
 
 extension NuAlertViewController: NuAlertPresenterOutput {
-    func show (alertViewModel: NuAlertViewModel) {
+    func show(alertViewModel: NuAlertViewModel) {
         nuAlertView.bind(to: alertViewModel)
     }
 }

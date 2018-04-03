@@ -14,7 +14,7 @@ final class ResourceRouter: ResourceRoutable {
 
     private(set) var currentResource: BaseModel
 
-    init (noticeGateway: ResourceGateway & EntryPointResourceGateway, starterResource: BaseModel = BaseModel(links: [:])) {
+    init(noticeGateway: ResourceGateway & EntryPointResourceGateway, starterResource: BaseModel = BaseModel(links: [:])) {
         self.resourceGateway = noticeGateway
         currentResource = starterResource
     }
@@ -46,18 +46,18 @@ final class ResourceRouter: ResourceRoutable {
         })
     }
 
-    func exec (action: ResourceAction) -> Observable<Void> {
+    func exec(action: ResourceAction) -> Observable<Void> {
         guard let chargeback = get(action: action) else {
             return Observable.error(ResourceRouterError.resourceActionNotFound)
         }
         return resourceGateway.requestAction(resource: chargeback, parameters: action.params)
     }
 
-    func get (resource: ResourceKey) -> Resource? {
+    func get(resource: ResourceKey) -> Resource? {
         return currentResource.links[resource]
     }
 
-    func get (action: ResourceAction) -> Resource? {
+    func get(action: ResourceAction) -> Resource? {
         return currentResource.links[action]
     }
 }

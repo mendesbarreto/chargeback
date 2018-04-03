@@ -6,7 +6,7 @@
 import Foundation
 
 final class ChargebackUseCaseFactory {
-    static func make (presenterOutput: ChargebackPresenterOutput) -> ChargebackUseCase {
+    static func make(presenterOutput: ChargebackPresenterOutput) -> ChargebackUseCase {
         let presenterInput = ChargebackPresenterFactory.make(presenterOutput: presenterOutput)
         return ChargebackUseCase(resourceRouter: ResourceRouter.main, presenter: presenterInput)
     }

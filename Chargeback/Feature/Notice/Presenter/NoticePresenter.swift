@@ -19,19 +19,18 @@ final class NoticePresenter: NoticePresenterInput {
                                         description: noticeDescriptionHTML,
                                         continueButtonTitle: .titleButtonPurple(withText: notice.primaryAction.title.uppercased()),
                                         closeButtonTitle: .titleButtonGray(withText: notice.secondaryAction.title.uppercased()))
-
         presenterOutput?.show(notice: viewModel)
     }
 
-    func showError () {
+    func showError() {
         presenterOutput?.showError()
     }
 
-    func showLoading () {
+    func showLoading() {
         presenterOutput?.showLoading()
     }
 
-    func hideLoading (onComplete: (() -> Void)? = nil) {
+    func hideLoading(onComplete: (() -> Void)? = nil) {
         presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

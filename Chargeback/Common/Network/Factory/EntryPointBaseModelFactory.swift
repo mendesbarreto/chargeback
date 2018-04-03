@@ -7,6 +7,6 @@ import Foundation
 
 final class EntryPointBaseModelFactory {
     static func make() -> Resource {
-        return Resource(href: ApplicationProperties.baseUrl)
+        return Resource(href: Strings.App.baseUrl)
     }
 }

@@ -7,6 +7,7 @@ import Foundation
 import RxSwift
 
 @testable import Chargeback
+
 //swiftlint:disable force_cast
 final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResourceGateway {
     var invokedRequestResource = false
@@ -15,7 +16,7 @@ final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResour
     var invokedRequestResourceParametersList = [(key: ResourceKey, links: [String: Resource])]()
     var stubbedRequestResourceResult: Observable<T>!
 
-    func request<T: BaseModel> (resource key: ResourceKey, in links: [String: Resource]) -> Observable<T> {
+    func request<T: BaseModel>(resource key: ResourceKey, in links: [String: Resource]) -> Observable<T> {
         invokedRequestResource = true
         invokedRequestResourceCount += 1
         invokedRequestResourceParameters = (key, links)
@@ -29,7 +30,7 @@ final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResour
     var invokedRequestActionParametersList = [(key: Resource, parameters: [String: Any])]()
     var stubbedRequestActionResult: Observable<Void>!
 
-    func requestAction (resource key: Resource, parameters: [String: Any]) -> Observable<Void> {
+    func requestAction(resource key: Resource, parameters: [String: Any]) -> Observable<Void> {
         invokedRequestAction = true
         invokedRequestActionCount += 1
         invokedRequestActionParameters = (key, parameters)
@@ -43,7 +44,7 @@ final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResour
     var invokedRequestParametersList = [(resource: Resource, Void)]()
     var stubbedRequestResult: Observable<T>!
 
-    func request<T: BaseModel> (resource: Resource) -> Observable<T> {
+    func request<T: BaseModel>(resource: Resource) -> Observable<T> {
         invokedRequest = true
         invokedRequestCount += 1
         invokedRequestParameters = (resource, ())
@@ -55,7 +56,7 @@ final class ResourceGatewayMock<T: BaseModel>: ResourceGateway, EntryPointResour
     var invokedRequestInitialResourceCount = 0
     var stubbedRequestInitialResourceResult: Observable<BaseModel>!
 
-    func requestInitialResource () -> Observable<BaseModel> {
+    func requestInitialResource() -> Observable<BaseModel> {
         invokedRequestInitialResource = true
         invokedRequestInitialResourceCount += 1
         return stubbedRequestInitialResourceResult

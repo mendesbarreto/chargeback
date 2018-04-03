@@ -16,7 +16,7 @@ final class CardBlockerStatusPresenterSpec: QuickSpec {
     }
 
     //swiftlint:disable function_body_length
-    override func spec () {
+    override func spec() {
         super.spec()
         describe("CardBlockerStatusPresenter") {
             var presenter: CardBlockerStatusPresenter!

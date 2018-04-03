@@ -6,7 +6,7 @@
 import Foundation
 
 final class ChangeUserCardBlockStatusUseCaseFactory {
-    static func make (presenterOutput: CardBlockerStatusPresenterOutput) -> ChangeUserCardBlockStatusUseCase {
+    static func make(presenterOutput: CardBlockerStatusPresenterOutput) -> ChangeUserCardBlockStatusUseCase {
         let presenter = CardBlockerStatusPresenterFactory.make(presenterOutput: presenterOutput)
         return ChangeUserCardBlockStatusUseCase(resourceRouter: ResourceRouter.main, presenter: presenter)
     }
