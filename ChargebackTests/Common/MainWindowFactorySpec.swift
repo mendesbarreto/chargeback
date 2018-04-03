@@ -21,7 +21,7 @@ final class MainWindowFactorySpec: QuickSpec {
                     window = MainWindowFactory.make()
                 }
                 it("expect root view controller of type notice view controller") {
-                    var noticeViewController = window.rootViewController as? NoticeViewController
+                    let noticeViewController = window.rootViewController as? NoticeViewController
                     expect(noticeViewController).toNot(beNil())
                 }
                 it("expect window bound equals to screen bounds") {

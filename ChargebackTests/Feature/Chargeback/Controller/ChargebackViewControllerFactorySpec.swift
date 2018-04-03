@@ -16,7 +16,7 @@ final class ChargebackViewControllerFactorySpec: QuickSpec {
             context("when called make") {
                 var chargebackViewController: ChargebackViewController?
                 beforeEach {
-                    chargebackViewController = ChargebackViewController() as? ChargebackViewController
+                    chargebackViewController = ChargebackViewControllerFactory.make() as? ChargebackViewController
                 }
                 it("expect view controller of type chargeback") {
                     expect(chargebackViewController).toNot(beNil())
